@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!--
+		{1_ShortDesc:textkey}
+		{2_Adjective:textkey}
+		{3_State:textkey}
+		{4_Religion:textkey}
+		{5_Pre:textkey}
+		{6_Dem:textkey}
+		{7_Sov:textkey}
+		{8_Theo:textkey}
+		{9_Gr:textkey}
+		{10_Const:textkey}
+		{11_Nat:textkey}
+		{12_FC:textkey}
+		{13_NatTxt}
+	-->
+	
+	<Language_PL_PL>
+		<Row Tag="TXT_KEY_FORMAT_Always1">
+			<Text>AZTECS HUNS ZULU INCA IROQUOIS CELTS SHOSHONE MAYA OTTOMANS</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Always2">
+			<Text></Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Primitive">
+			<Text>{3_State:textkey} {2_Adjective:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Primitive_2">
+			<Text>{3_State:textkey} {1_ShortDesc[2]}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Chiefdom">
+			<Text>{9_Gr:textkey} {3_State:textkey} {2_Adjective:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Chiefdom_2">
+			<Text>{9_Gr:textkey} {3_State:textkey} {1_ShortDesc[2]}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Early">
+			<Text>{1_ShortDesc:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Early_2">
+			<Text>{1_ShortDesc:textkey}</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_FORMAT_Communist">
+			<Text>{8_Theo:textkey} {7_Sov:textkey} {6_Dem:textkey} {12_FC:textkey} {5_Pre:textkey} {3_State:textkey} {2_Adjective:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Communist_2">
+			<Text>{8_Theo:textkey} {7_Sov:textkey} {6_Dem:textkey} {12_FC:textkey} {5_Pre:textkey} {3_State:textkey} {1_ShortDesc[2]}</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_FORMAT_Autocracy">
+			<Text>{9_Gr:textkey} {8_Theo:textkey} {5_Pre:textkey} {3_State:textkey} {2_Adjective:textkey}</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_FORMAT_Autocracy_2">
+			<Text>{9_Gr:textkey} {8_Theo:textkey} {5_Pre:textkey} {3_State:textkey} {1_ShortDesc[2]}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Autocracy_3">
+			<Text>{5_Pre:textkey} {8_Theo:textkey} {9_Gr:textkey} {3_State:textkey} {11_Nat:textkey} {2_Adjective:textkey}ego</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_FORMAT_Liberty">
+			<Text>{8_Theo:textkey} {12_FC:textkey} {6_Dem:textkey} {3_State:textkey} {2_Adjective:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Liberty_2">
+			<Text>{8_Theo:textkey} {12_FC:textkey} {6_Dem:textkey} {3_State:textkey} {1_ShortDesc[2]}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Theocratic">
+			<Text>{9_Gr:textkey} {4_Religion:textkey} {12_FC:textkey} {6_Dem:textkey} {3_State:textkey} {2_Adjective:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Theocratic_2">
+			<Text>{9_Gr:textkey} {4_Religion:textkey} {12_FC:textkey} {6_Dem:textkey} {3_State:textkey} {1_ShortDesc[2]}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Master">
+			<Text>{1_Master:textkey}: {2_Vassals:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FORMAT_Puppet">
+			<Text>{1_Puppet:textkey} państwa {2_Master:textkey}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_ADJ_FORMAT">
+			<Text>
+				{@1: plural 2?{2_Adj[4]}; other?{@1: gender feminine?{2_Adj[2]}; neuter?{2_Adj[4]}; other?{2_Adj[1]};};}
+			</Text>
+		</Row>
+	</Language_PL_PL>
+</GameData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/28/2013 2:32:05 PM -->
+<GameData>
+	<Language_EN_US>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_ORDER"/>
+			<Set Text="Communism"/>
+		</Update>
+	</Language_EN_US>
+  
+</GameData>

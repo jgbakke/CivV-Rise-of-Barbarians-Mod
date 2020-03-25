@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="36e88483-48fe-4545-b85f-bafc50dde315" version="22">
+  <Properties>
+    <Name>Yet (not) Another Earth Maps Pack</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Earth maps with True Starting Location and custom options.</Teaser>
+    <Description>Earth maps with True Starting Location and custom options using an advanced setup screen.[NEWLINE][COLOR_RED]quadcore CPU and 4gb RAM on 64bit OS are recommanded to use the giant map.[/COLOR][NEWLINE][ICON_BULLET] Giant Earth (180x96): edited conversion of Genghis Kai GEM for civ4.[NEWLINE][ICON_BULLET] Huge Earth (120x80): Dale's huge map edited with Europe and Japan upscaled[NEWLINE][ICON_BULLET] Standard Earth (82x50): a Werner projection Earth map by smellymummy[NEWLINE][ICON_BULLET] Large Europe (79x73): Dieter's Europe CiV map[NEWLINE][ICON_BULLET] Standard Mediterranean (74x52): for Ambrox62's AMC mod[NEWLINE][NEWLINE]City States [ICON_CITY_STATE] with TSL for each map are available as separate mods[NEWLINE][NEWLINE]Installation: activate the mod, then choose SINGLE PLAYER and CUSTOM GAME to get the new setup menu. [COLOR_RED]You must use the custom game menu, else the mod will not be activated in game.[/COLOR]</Description>
+    <Authors>Gedemon</Authors>
+    <SpecialThanks>Genghis Kai, Dale, smellymummy, Dieter VonClam, Ambrox62</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=397387</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <Custom_Background_TXT_KEY_YNAEMP_SCENARIO_TITLE>Art/AncientWorld.dds</Custom_Background_TXT_KEY_YNAEMP_SCENARIO_TITLE>
+    <_FiraxisScenario>1</_FiraxisScenario>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="A18E568EF751FFB4FF9D4E955EB1D8DB" import="0">ANACMap_blank.Civ5Map</File>
+    <File md5="9EE073ED30866AD739FB3756C5A015FC" import="1">Art/AncientWorld.dds</File>
+    <File md5="5A08C5F61A1CD7048D0E1DA9DF60C291" import="1">Art/WorldMap.dds</File>
+    <File md5="6F12336ED6E08BCFE50001FF70E43641" import="0">Earth_Giant_blank.Civ5Map</File>
+    <File md5="40CD4544CCF90CAC027054A65C971692" import="0">Eastern_Mediterranean_Large_blank.Civ5Map</File>
+    <File md5="1FFF7390B23F317C3FC62564B75C57A6" import="0">Eastern_Mediterranean_Standard_blank.Civ5Map</File>
+    <File md5="0736F955FBE45AA4ABD13EAC5E0D56AC" import="0">Europe_Giant_blank.Civ5Map</File>
+    <File md5="C3AE19E1CB677F5BB09F05DA811FC2E9" import="0">Europe_Huge_blank.Civ5Map</File>
+    <File md5="D88D5DF6D58526C7F18B236282FD5BB0" import="0">Europe_Large_blank.Civ5Map</File>
+    <File md5="118CF0B903EC4978AB2B9180461FE200" import="1">GameSetup/ResourcesRules.lua</File>
+    <File md5="CC04C49B292E3022A047EB4ACC837F80" import="0">GameSetup/YnaemSetup.lua</File>
+    <File md5="B374C9F59828380786A84E961D32CB3E" import="0">GameSetup/YnaemSetup.xml</File>
+    <File md5="1CAC0940CC8A26A0A7B08C65C8A01D87" import="0">GreatestEarthMap.Civ5Map</File>
+    <File md5="4C209E1FBBF9C0FF8228FB4061EEAC67" import="1">LUA/ShareData.lua</File>
+    <File md5="757AF07F7753CA6284292F397CC21342" import="1">LUA/YnaemCityMap.lua</File>
+    <File md5="8F30720FB3C5EE082C4D68C5260A3EF5" import="1">LUA/YnaemFunctions.lua</File>
+    <File md5="FDEF391BE06EA7E61F0249E972B48AD5" import="1">LUA/YnaemScenario.lua</File>
+    <File md5="CBAA5CCC11AED055B4FA16500C950C97" import="1">LUA/YnaemDefines.lua</File>
+    <File md5="B58169EB02D8D3C27BF22B5494D3A23E" import="0">LUA/YnaemInGame.lua</File>
+    <File md5="594431E820BD555C2E435EA6CC9EAD0C" import="1">LUA/YnaemLoading.lua</File>
+    <File md5="2BA07B0F6E8BE5F2B5B273061EFF0B1C" import="1">LUA/YnaemUtils.lua</File>
+    <File md5="01AA227EB98AE4312F842127279FD0D9" import="0">Earth_Standard_Cordiform_blank.Civ5Map</File>
+    <File md5="58D9E5939E992D37C92EE778405A44F3" import="0">Mediterranean_Large_blank.Civ5Map</File>
+    <File md5="9E9C9AE3295A9C2CA5FC3E9D86E7B958" import="1">Override/MapGenerator.lua</File>
+    <File md5="4657D27E682810B91F0A181AA272FE83" import="1">Override/WorldBuilderRandomItems.lua</File>
+    <File md5="4E423C281DDC2A6E8F2F91B658EB7B2A" import="0">YnAEMP_readme.txt</File>
+    <File md5="9812BC8D732C6FC2DABE2225BFA178D7" import="0">South_East_Asia_Large_blank.Civ5Map</File>
+    <File md5="49B5078B285D0EA8FD395CDDEFD5D706" import="0">SQL/CleanCS.sql</File>
+    <File md5="97CCFD7C030B0BD15DA0F77301CAEEDC" import="0">SQL/RulesChange.sql</File>
+    <File md5="2851C2BC7D83B8AC3B6A01DD436F1E3F" import="0">Western_Mediterranean_Standard_blank.Civ5Map</File>
+    <File md5="8831684E976D8A044280681D49ABC338" import="0">XML/CityMap.xml</File>
+    <File md5="E95F0B754A10C5EF2C9FAD55A616B979" import="0">XML/CivilizationsRequestedResource.xml</File>
+    <File md5="36DB2F065CEFCF980BF75E3444113FCB" import="0">XML/ResourceRegionExclude.xml</File>
+    <File md5="5B4E46810E46CC9F797D1EB69419DBD2" import="0">XML/ResourceRegionPos.xml</File>
+    <File md5="0CEC480595B35D657A9BE830F1D4382F" import="0">XML/MinorCivAdded_.xml</File>
+    <File md5="D6ACF901D5E382A86DF6EE095CBEC870" import="0">XML/CivilizationsStartPos.xml</File>
+    <File md5="77581FCBB16D55185173FBA6518C3160" import="0">XML/MinorCivStartPos.xml</File>
+    <File md5="F952C9FC8AF6720A328669AA98FEB83C" import="0">XML/RulesChange.xml</File>
+    <File md5="261C9C4BDA54B35EBAD503EEC7CA12E3" import="0">Earth_Huge_blank.Civ5Map</File>
+    <File md5="870ED2428079509A912ED1E76AEA891F" import="0">XML/Texts.xml</File>
+    <File md5="80AC27F5BCA11E92D79F35AECCE965A8" import="0">XML/YnaempTables.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/YnaempTables.xml</UpdateDatabase>
+      <UpdateDatabase>XML/CivilizationsStartPos.xml</UpdateDatabase>
+      <UpdateDatabase>XML/RulesChange.xml</UpdateDatabase>
+      <UpdateDatabase>XML/MinorCivStartPos.xml</UpdateDatabase>
+      <UpdateDatabase>XML/MinorCivAdded.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ResourceRegionPos.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ResourceRegionExclude.xml</UpdateDatabase>
+      <UpdateDatabase>XML/CivilizationsRequestedResource.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/RulesChange.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Texts.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/CleanCS.sql</UpdateDatabase>
+      <UpdateDatabase>XML/CityMap.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="Custom" file="GameSetup/YnaemSetup.xml">
+      <Name>TXT_KEY_YNAEMP_SCENARIO_TITLE</Name>
+      <Description>True Sarting Location Earth Maps with custom setup menu, realistic random resources placement and more options.</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/YnaemInGame.lua">
+      <Name>YnAEMP</Name>
+      <Description>YnAEMP</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="LUA/ShareData.lua">
+      <Name>ShareData</Name>
+      <Description>ShareData</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

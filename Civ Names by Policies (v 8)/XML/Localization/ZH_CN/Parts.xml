@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_zh_CN>
+        <Row Tag="TXT_KEY_PART_Shogunate">
+           <Text>幕府</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Shogunate_SHORT">
+           <Text>幕府</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo">
+           <Text>令制国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo_SHORT">
+           <Text>令制国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj">
+           <Text>大土邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj_SHORT">
+           <Text>大土邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj">
+           <Text>土邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj_SHORT">
+           <Text>土邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate">
+           <Text>哈里发国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate_SHORT">
+           <Text>哈里发国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate">
+           <Text>酋长国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate_SHORT">
+           <Text>酋长国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates">
+           <Text>酋长国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates_SHORT">
+           <Text>酋长国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate">
+           <Text>苏丹国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate_SHORT">
+           <Text>苏丹国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate">
+           <Text>可汗国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate_SHORT">
+           <Text>可汗国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate">
+           <Text>汗国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate_SHORT">
+           <Text>汗国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom">
+           <Text>伯国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom_SHORT">
+           <Text>伯国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality">
+           <Text>大公国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality_SHORT">
+           <Text>大公国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe">
+           <Text>部落</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe_SHORT">
+           <Text>部落</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes">
+           <Text>部落</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes_SHORT">
+           <Text>部落</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union">
+           <Text>部落联盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union_SHORT">
+           <Text>部落联盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom">
+           <Text>酋邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom_SHORT">
+           <Text>酋邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan">
+           <Text>氏族</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan_SHORT">
+           <Text>氏族</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land">
+           <Text>国土</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land_SHORT">
+           <Text>国土</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union">
+           <Text>联盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union_SHORT">
+           <Text>联盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic">
+           <Text>共和国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic_SHORT">
+           <Text>共和国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation">
+           <Text>邦联</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation_SHORT">
+           <Text>邦联</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League">
+           <Text>联盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League_SHORT">
+           <Text>联盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation">
+           <Text>联邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation_SHORT">
+           <Text>联邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State">
+           <Text>邦国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State_SHORT">
+           <Text>邦国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich">
+           <Text>帝国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich_SHORT">
+           <Text>帝国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State">
+           <Text>城邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State_SHORT">
+           <Text>城邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States">
+           <Text>城邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States_SHORT">
+           <Text>城邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire">
+           <Text>帝国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire_SHORT">
+           <Text>帝国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth">
+           <Text>共同体</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth_SHORT">
+           <Text>共同体</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom">
+           <Text>联合王国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom_SHORT">
+           <Text>联合王国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate">
+           <Text>君主国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate_SHORT">
+           <Text>君主国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County">
+           <Text>郡国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County_SHORT">
+           <Text>郡国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy">
+           <Text>公国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy_SHORT">
+           <Text>公国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province">
+           <Text>行政区</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province_SHORT">
+           <Text>行政区</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom">
+           <Text>王国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom_SHORT">
+           <Text>王国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State">
+           <Text>自由邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State_SHORT">
+           <Text>自由邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States">
+           <Text>邦国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States_SHORT">
+           <Text>邦国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom">
+           <Text>祭司国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom_SHORT">
+           <Text>祭司国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order">
+           <Text>领地</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order_SHORT">
+           <Text>领地</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric">
+           <Text>主教国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric_SHORT">
+           <Text>主教国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric">
+           <Text>大主教国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric_SHORT">
+           <Text>大主教国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom">
+           <Text>酋长国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom_SHORT">
+           <Text>酋长国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat">
+           <Text>无产阶级</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat_SHORT">
+           <Text>无产阶级</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist">
+           <Text>共产主义</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist_SHORT">
+           <Text>共产主义</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist">
+           <Text>社会主义</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist_SHORT">
+           <Text>社会主义</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s">
+           <Text>人民</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s_SHORT">
+           <Text>人民</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate">
+           <Text>邦联</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate_SHORT">
+           <Text>邦联</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal">
+           <Text>联邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal_SHORT">
+           <Text>联邦</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council">
+           <Text>委员会</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council_SHORT">
+           <Text>委员会</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet">
+           <Text>苏维埃</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet_SHORT">
+           <Text>苏维埃</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic">
+           <Text>民主</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic_SHORT">
+           <Text>民主</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great">
+           <Text>大</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great_SHORT">
+           <Text>大</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand">
+           <Text>大</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand_SHORT">
+           <Text>大</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy">
+           <Text>神圣</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy_SHORT">
+           <Text>神圣</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist">
+           <Text>法西斯主义</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist_SHORT">
+           <Text>法西斯</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation">
+           <Text>民族</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation_SHORT">
+           <Text>民族</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United">
+           <Text>合众</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United_SHORT">
+           <Text>合众</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant">
+           <Text>商业</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant_SHORT">
+           <Text>商业</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppets">
+           <Text>傀儡</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppet">
+           <Text>傀儡</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated members">
+           <Text>同盟成员国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated member">
+           <Text>同盟成员国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous regions">
+           <Text>自治区</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous region">
+           <Text>自治区</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partners">
+           <Text>战略同盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partner">
+           <Text>战略同盟</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite states">
+           <Text>附庸国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite state">
+           <Text>附庸国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassals">
+           <Text>藩属国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassal">
+           <Text>藩属国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_members">
+           <Text>成员国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_member">
+           <Text>成员国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorates">
+           <Text>保护国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorate">
+           <Text>保护国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated states">
+           <Text>联系国</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated state">
+           <Text>联系国</Text>
+        </Row>
+
+    </Language_zh_CN>
+</GameData>

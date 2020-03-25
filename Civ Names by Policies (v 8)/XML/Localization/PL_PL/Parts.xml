@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_PL_PL>
+        <Row Tag="TXT_KEY_PART_Shogunate">
+           <Text>Szogunat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Shogunate_SHORT">
+           <Text>Szog.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo">
+           <Text>Daimyat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo_SHORT">
+           <Text>Dai.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj">
+           <Text>Maharadż</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj_SHORT">
+           <Text>Mah.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj">
+           <Text>Radż</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj_SHORT">
+           <Text>Radż</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate">
+           <Text>Kalifat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate_SHORT">
+           <Text>Kal.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate">
+           <Text>Emirat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate_SHORT">
+           <Text>Emir.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates">
+           <Text>Emiraty</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates_SHORT">
+           <Text>Em-y</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate">
+           <Text>Sułtanat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate_SHORT">
+           <Text>Suł.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate">
+           <Text>Kaganat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate_SHORT">
+           <Text>Kag.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate">
+           <Text>Chanat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate_SHORT">
+           <Text>Chan.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom">
+           <Text>Hrabstwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom_SHORT">
+           <Text>Hrab.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality">
+           <Text>Księstwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality_SHORT">
+           <Text>Ks.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe">
+           <Text>Plemię</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe_SHORT">
+           <Text>Plemię</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes">
+           <Text>Plemiona</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes_SHORT">
+           <Text>Plemiona</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union">
+           <Text>Związek Plemion</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union_SHORT">
+           <Text>Zw. Plem.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom">
+           <Text>Wodzostwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom_SHORT">
+           <Text>Wodz.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan">
+           <Text>Klan</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan_SHORT">
+           <Text>Klan</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land">
+           <Text>Ziemia</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land_SHORT">
+           <Text>Ziemia</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union">
+           <Text>Związek</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union_SHORT">
+           <Text>Zw.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic">
+           <Text>Republika</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic_SHORT">
+           <Text>Rep.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation">
+           <Text>Konfederacja</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation_SHORT">
+           <Text>Konf.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League">
+           <Text>Liga</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League_SHORT">
+           <Text>Liga</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation">
+           <Text>Federacja</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation_SHORT">
+           <Text>Fed.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State">
+           <Text>Stan</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State_SHORT">
+           <Text>Stan</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich">
+           <Text>Rzesza</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich_SHORT">
+           <Text>Rzesza</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State">
+           <Text>Państwo-Miasto</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State_SHORT">
+           <Text>P.-M.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States">
+           <Text>Państwa-Miasta</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States_SHORT">
+           <Text>P.-Miasta</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire">
+           <Text>Imperium</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire_SHORT">
+           <Text>Imp.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth">
+           <Text>Wspólnota</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth_SHORT">
+           <Text>Wspól.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom">
+           <Text>Zjednoczone Królestwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom_SHORT">
+           <Text>Zjedn. Król.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate">
+           <Text>Despotat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate_SHORT">
+           <Text>Desp.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County">
+           <Text>Hrabstwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County_SHORT">
+           <Text>Hrab.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy">
+           <Text>Księstwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy_SHORT">
+           <Text>Ks.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province">
+           <Text>Prowincja</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province_SHORT">
+           <Text>Prow.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom">
+           <Text>Królestwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom_SHORT">
+           <Text>Król.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State">
+           <Text>Wolne Państwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State_SHORT">
+           <Text>Wol. Państ.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States">
+           <Text>Państwa</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States_SHORT">
+           <Text>Państwa</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom">
+           <Text>Państwo Kościelne</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom_SHORT">
+           <Text>Pań. Kośc.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order">
+           <Text>Zakon</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order_SHORT">
+           <Text>Zakon</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric">
+           <Text>Biskupstwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric_SHORT">
+           <Text>Bisk.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric">
+           <Text>Arcybiskupstwo</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric_SHORT">
+           <Text>Arcybisk.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom">
+           <Text>Szejkanat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom_SHORT">
+           <Text>Szejk.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat">
+           <Text>{@1: plural 2?Proletariackie; other?{@1: gender feminine?Proletariacka; neuter?Proletariackie; other?Proletariacki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat_SHORT">
+           <Text>Prol.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist">
+           <Text>{@1: plural 2?Komunistyczne; other?{@1: gender feminine?Komunistyczna; neuter?Komunistyczne; other?Komunistyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist_SHORT">
+           <Text>Kom.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist">
+           <Text>{@1: plural 2?Socjalistyczne; other?{@1: gender feminine?Socjalistyczna; neuter?Socjalistyczne; other?Socjalistyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist_SHORT">
+           <Text>Soc.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s">
+           <Text>{@1: plural 2?Ludowe; other?{@1: gender feminine?Ludowa; neuter?Ludowe; other?Ludowy;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s_SHORT">
+           <Text>Lud.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate">
+           <Text>{@1: plural 2?Skonfederowane; other?{@1: gender feminine?Skonfederowana; neuter?Skonfederowane; other?Skonfederowany;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate_SHORT">
+           <Text>Skonf.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal">
+           <Text>{@1: plural 2?Federalne; other?{@1: gender feminine?Federalna; neuter?Federalne; other?Federalny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal_SHORT">
+           <Text>Fed.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council">
+           <Text>{@1: plural 2?Radzieckie; other?{@1: gender feminine?Radziecka; neuter?Radzieckie; other?Radziecki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council_SHORT">
+           <Text>Radz.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet">
+           <Text>{@1: plural 2?Radzieckie; other?{@1: gender feminine?Radziecka; neuter?Radzieckie; other?Radziecki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet_SHORT">
+           <Text>Radz.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic">
+           <Text>{@1: plural 2?Demokratyczne; other?{@1: gender feminine?Demokratyczna; neuter?Demokratyczne; other?Demokratyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic_SHORT">
+           <Text>Dem.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great">
+           <Text>{@1: plural 2?Wielkie; other?{@1: gender feminine?Wielka; neuter?Wielkie; other?Wielki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great_SHORT">
+           <Text>Wiel.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand">
+           <Text>{@1: plural 2?Wielkie; other?{@1: gender feminine?Wielka; neuter?Wielkie; other?Wielki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand_SHORT">
+           <Text>Wiel.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy">
+           <Text>{@1: plural 2?Święte; other?{@1: gender feminine?Święta; neuter?Święte; other?Święty;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy_SHORT">
+           <Text>Św.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist">
+           <Text>{@1: plural 2?Faszystowskie; other?{@1: gender feminine?Faszystowska; neuter?Faszystowskie; other?Faszystowski;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist_SHORT">
+           <Text>Fasz.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation">
+           <Text>Narodu</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation_SHORT">
+           <Text>Narodu</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United">
+           <Text>{@1: plural 2?Zjednoczone; other?{@1: gender feminine?Zjednoczona; neuter?Zjednoczone; other?Zjednoczony;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United_SHORT">
+           <Text>Zjedn.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant">
+           <Text>{@1: plural 2?Kupieckie; other?{@1: gender feminine?Kupiecka; neuter?Kupieckie; other?Kupiecki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant_SHORT">
+           <Text>Kup.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppets">
+           <Text>marionetki</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppet">
+           <Text>marionetka</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated members">
+           <Text>zgromadzeni członkowie</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated member">
+           <Text>zgromadzony członek</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous regions">
+           <Text>regiony autonomiczne</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous region">
+           <Text>region autonomiczny</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partners">
+           <Text>pomniejsi partnerzy</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partner">
+           <Text>pomniejszy partner</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite states">
+           <Text>państwa satelickie</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite state">
+           <Text>państwo satelicke</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassals">
+           <Text>wasale</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassal">
+           <Text>wasal</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_members">
+           <Text>członkowie</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_member">
+           <Text>członek</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorates">
+           <Text>protektoraty</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorate">
+           <Text>protektorat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated states">
+           <Text>kraje związkowe</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated state">
+           <Text>kraj związkowy</Text>
+        </Row>
+
+    </Language_PL_PL>
+</GameData>

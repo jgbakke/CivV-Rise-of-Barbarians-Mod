@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 04/16/2016 10:43:55 AM -->
+<GameData>
+	<Colors>
+		<!-- Darken existing barbs -->
+		<Update>
+			<Where Type="COLOR_PLAYER_BARBARIAN_ICON"/>
+			<Set>
+				<Red>0.5</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Set>
+		</Update>
+		<!-- Our new barbs are somewhat brighter -->
+		<Row>
+			<Type>COLOR_PLAYER_BARBARIAN_MAJOR_ICON</Type>
+			<Red>0.75</Red>
+			<Green>0</Green>
+			<Blue>0</Blue>
+			<Alpha>1</Alpha>
+		</Row>
+		<Row>
+			<Type>COLOR_PLAYER_BARBARIAN_MAJOR_BACKGROUND</Type>
+			<Red>0</Red>
+			<Green>0</Green>
+			<Blue>0</Blue>
+			<Alpha>1</Alpha>
+		</Row>
+	</Colors>
+	<PlayerColors>
+		<!-- non-placeholder -->
+		<Row>
+			<Type>PLAYERCOLOR_BARBARIAN_MAJOR</Type>
+			<PrimaryColor>COLOR_PLAYER_BARBARIAN_MAJOR_ICON</PrimaryColor>
+			<SecondaryColor>COLOR_PLAYER_BARBARIAN_MAJOR_BACKGROUND</SecondaryColor>
+			<TextColor>COLOR_PLAYER_WHITE_TEXT</TextColor>
+		</Row>
+		<Row>
+			<Type>PLAYERCOLOR_BARBARIAN_NIGHTMARE</Type>
+			<PrimaryColor>COLOR_WHITE</PrimaryColor>
+			<SecondaryColor>COLOR_BLACK</SecondaryColor>
+			<TextColor>COLOR_PLAYER_WHITE_TEXT</TextColor>
+		</Row>
+	</PlayerColors>
+</GameData>

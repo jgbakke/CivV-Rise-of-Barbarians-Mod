@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_RU_RU>
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ">
+           <Text>{@1: plural 2?Буддистские; other?{@1: gender feminine?Буддистская; neuter?Буддистское; other?Будистский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ_SHORT">
+           <Text>Буд.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ">
+           <Text>{@1: plural 2?Конфуцианские; other?{@1: gender feminine?Конфуцианская; neuter?Конфуцианское; other?Конфуцианский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ_SHORT">
+           <Text>Конф.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ">
+           <Text>{@1: plural 2?Христианские; other?{@1: gender feminine?Христианская; neuter?Христианское; other?Христианский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ_SHORT">
+           <Text>Хр.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ">
+           <Text>{@1: plural 2?Индуистские; other?{@1: gender feminine?Индуистская; neuter?Индуистское; other?Индуистский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ_SHORT">
+           <Text>Инд.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ">
+           <Text>{@1: plural 2?Исламские; other?{@1: gender feminine?Исламская; neuter?Исламское; other?Исламский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ_SHORT">
+           <Text>Исл.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ">
+           <Text>{@1: plural 2?Иудиейские; other?{@1: gender feminine?Иудейская; neuter?Иудейское; other?Иудейский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ_SHORT">
+           <Text>Иуд.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ">
+           <Text>{@1: plural 2?Синтоистские; other?{@1: gender feminine?Синтоистская; neuter?Синтоистское; other?Синтоистский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ_SHORT">
+           <Text>Синт.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ">
+           <Text>{@1: plural 2?Сикхские; other?{@1: gender feminine?Сикхская; neuter?Сикхское; other?Сикхский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ_SHORT">
+           <Text>Сикх.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ">
+           <Text>{@1: plural 2?Даоистские; other?{@1: gender feminine?Даоистская; neuter?Даоистское; other?Даоистский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ_SHORT">
+           <Text>Дао.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ">
+           <Text>{@1: plural 2?Тенгрианские; other?{@1: gender feminine?Тенгрианская; neuter?Тенгрианское; other?Тенгрианский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ_SHORT">
+           <Text>Тенг.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ">
+           <Text>{@1: plural 2?Зороастрийские; other?{@1: gender feminine?Зороастрийская; neuter?Зороастрийское; other?Зороастрийский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ_SHORT">
+           <Text>Зор.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ">
+           <Text>{@1: plural 2?Католические; other?{@1: gender feminine?Католическая; neuter?Католическое; other?Католический;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ_SHORT">
+           <Text>Кат.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ">
+           <Text>{@1: plural 2?Православные; other?{@1: gender feminine?Православная; neuter?Православное; other?Православный;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ_SHORT">
+           <Text>Прав.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ">
+           <Text>{@1: plural 2?Протестантские; other?{@1: gender feminine?Протестантская; neuter?Протестантское; other?Протестантский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ_SHORT">
+           <Text>Прот.</Text>
+        </Row>
+
+    </Language_RU_RU>
+</GameData>

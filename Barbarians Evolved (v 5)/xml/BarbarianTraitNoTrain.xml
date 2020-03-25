@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 07/27/2016 9:07:01 PM -->
+<GameData>
+	<!-- Units the trait owner(s) cannot train -->
+	<Trait_NoTrain>
+		<Row>
+			<TraitType>TRAIT_BARBARIAN_EVOLVED</TraitType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_BARBARIAN_EVOLVED</TraitType>
+			<UnitClassType>UNITCLASS_CARGO_SHIP</UnitClassType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_BARBARIAN_EVOLVED</TraitType>
+			<UnitClassType>UNITCLASS_CARAVAN</UnitClassType>
+		</Row>
+	</Trait_NoTrain>
+</GameData>

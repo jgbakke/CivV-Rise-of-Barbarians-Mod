@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_EN_US>
+        <Row Tag="TXT_KEY_PART_Shogunate">
+           <Text>Shogunate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Shogunate_SHORT">
+           <Text>Shog.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo">
+           <Text>Daimyo</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo_SHORT">
+           <Text>Dai.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj">
+           <Text>Maharaj</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj_SHORT">
+           <Text>Mah.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj">
+           <Text>Raj</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj_SHORT">
+           <Text>Raj</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate">
+           <Text>Caliphate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate_SHORT">
+           <Text>Cali.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate">
+           <Text>Emirate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate_SHORT">
+           <Text>Em.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates">
+           <Text>Emirates</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates_SHORT">
+           <Text>Ems.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate">
+           <Text>Sultanate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate_SHORT">
+           <Text>Sul.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate">
+           <Text>Khaganate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate_SHORT">
+           <Text>Khag.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate">
+           <Text>Khanate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate_SHORT">
+           <Text>Khan.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom">
+           <Text>Earldom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom_SHORT">
+           <Text>Earl.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality">
+           <Text>Principality</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality_SHORT">
+           <Text>Princ.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe">
+           <Text>Tribe</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe_SHORT">
+           <Text>Tribe</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes">
+           <Text>Tribes</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes_SHORT">
+           <Text>Tribes</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union">
+           <Text>Tribal Union</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union_SHORT">
+           <Text>Trib. Un.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom">
+           <Text>Chiefdom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom_SHORT">
+           <Text>Chiefdom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan">
+           <Text>Clan</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan_SHORT">
+           <Text>Clan</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land">
+           <Text>Land</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land_SHORT">
+           <Text>Land</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union">
+           <Text>Union</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union_SHORT">
+           <Text>Un.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic">
+           <Text>Republic</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic_SHORT">
+           <Text>Rep.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation">
+           <Text>Confederation</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation_SHORT">
+           <Text>Conf.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League">
+           <Text>League</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League_SHORT">
+           <Text>League</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation">
+           <Text>Federation</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation_SHORT">
+           <Text>Fed.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State">
+           <Text>State</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State_SHORT">
+           <Text>State</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich">
+           <Text>Reich</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich_SHORT">
+           <Text>Reich</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State">
+           <Text>City-State</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State_SHORT">
+           <Text>CS</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States">
+           <Text>City-States</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States_SHORT">
+           <Text>CSs</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire">
+           <Text>Empire</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire_SHORT">
+           <Text>Emp.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth">
+           <Text>Commonwealth</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth_SHORT">
+           <Text>CW</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom">
+           <Text>United Kingdom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom_SHORT">
+           <Text>UK</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate">
+           <Text>Despotate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate_SHORT">
+           <Text>Desp.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County">
+           <Text>County</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County_SHORT">
+           <Text>Cnt.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy">
+           <Text>Duchy</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy_SHORT">
+           <Text>Duchy</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province">
+           <Text>Province</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province_SHORT">
+           <Text>Prov.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom">
+           <Text>Kingdom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom_SHORT">
+           <Text>King.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State">
+           <Text>Free State</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State_SHORT">
+           <Text>FS</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States">
+           <Text>States</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States_SHORT">
+           <Text>Sts.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom">
+           <Text>Priestdom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom_SHORT">
+           <Text>Prdm.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order">
+           <Text>Order</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order_SHORT">
+           <Text>Ord.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric">
+           <Text>Bishopric</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric_SHORT">
+           <Text>Bish.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric">
+           <Text>Archbishopric</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric_SHORT">
+           <Text>Arch.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom">
+           <Text>Sheikhdom</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom_SHORT">
+           <Text>Shei.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat">
+           <Text>Proletariat</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat_SHORT">
+           <Text>Prol.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist">
+           <Text>Communist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist_SHORT">
+           <Text>Comm.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist">
+           <Text>Socialist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist_SHORT">
+           <Text>Soc.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s">
+           <Text>People's</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s_SHORT">
+           <Text>Ppl's.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate">
+           <Text>Confederate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate_SHORT">
+           <Text>Conf.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal">
+           <Text>Federal</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal_SHORT">
+           <Text>Fed.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council">
+           <Text>Council</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council_SHORT">
+           <Text>Coun.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet">
+           <Text>Soviet</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet_SHORT">
+           <Text>Sov.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic">
+           <Text>Democratic</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic_SHORT">
+           <Text>Dem.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great">
+           <Text>Great</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great_SHORT">
+           <Text>Gr.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand">
+           <Text>Grand</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand_SHORT">
+           <Text>Gr.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy">
+           <Text>Holy</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy_SHORT">
+           <Text>Holy</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist">
+           <Text>Fascist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist_SHORT">
+           <Text>Fasc.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation">
+           <Text>Nation</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation_SHORT">
+           <Text>Nat.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United">
+           <Text>United</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United_SHORT">
+           <Text>Un.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant">
+           <Text>Merchant</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant_SHORT">
+           <Text>Merc.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppets">
+           <Text>puppets</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppet">
+           <Text>puppet</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated members">
+           <Text>assosiated members</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated member">
+           <Text>assosiated member</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous regions">
+           <Text>autonomous regions</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous region">
+           <Text>autonomous region</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partners">
+           <Text>lesser partners</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partner">
+           <Text>lesser partner</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite states">
+           <Text>satellite states</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite state">
+           <Text>satellite state</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassals">
+           <Text>vassals</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassal">
+           <Text>vassal</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_members">
+           <Text>members</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_member">
+           <Text>member</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorates">
+           <Text>protectorates</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorate">
+           <Text>protectorate</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated states">
+           <Text>assosiated states</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated state">
+           <Text>assosiated state</Text>
+        </Row>
+
+    </Language_EN_US>
+</GameData>

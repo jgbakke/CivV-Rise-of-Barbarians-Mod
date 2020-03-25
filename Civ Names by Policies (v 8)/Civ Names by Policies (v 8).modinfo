@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c03e3fc9-5118-4868-8d99-13a175c588d1" version="8">
+  <Properties>
+    <Name>Civ Names by Policies</Name>
+    <Teaser>Dynamic state names for every civilization (BNW only)</Teaser>
+    <Description>Mod dynamically gives a name to every civilization by applied social policies, number of cities, puppets and allied City-States.
+
+Read the full description on mod's steam page.</Description>
+    <Authors>Lex</Authors>
+    <SpecialThanks>SaintDaveUK</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://steamcommunity.com/sharedfiles/filedetails/?id=163582857</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="3AC6EA1483C092E96BCE0E8787EC9B85" import="0">Lua/CivNames.lua</File>
+    <File md5="CB1BACFE17351B22CC67E935AF49F24D" import="1">Lua/DiploList.lua</File>
+    <File md5="700CFCDD34BC43786AA7465C1B23678E" import="1">Lua/EspionageOverview.lua</File>
+    <File md5="10F54C33E4C4D4C611C6E8AB4AD080B8" import="1">Lua/GameplayUtilities.lua</File>
+    <File md5="6F144AE2604D7927382F5BD56626BAE3" import="1">XML/Localization/EN_US/NameFormat.xml</File>
+    <File md5="FFC7B1B12385D5B78F41EEB00DA866C3" import="1">XML/Localization/EN_US/Notification.xml</File>
+    <File md5="E27FB19A06C773623661C79BFBF0FB02" import="1">XML/Localization/EN_US/Parts.xml</File>
+    <File md5="9E2289275D33FE43D37438133B65CD46" import="1">XML/Localization/EN_US/Religions.xml</File>
+    <File md5="D0C2634B9D40FD729D61E3B1D3B8F6F5" import="1">XML/Localization/EN_US/Renaming.xml</File>
+    <File md5="E9FF889D8439AE24CCA6AB17614BFE86" import="1">XML/Localization/EN_US/Titles.xml</File>
+    <File md5="2D103C1DAA3ED90F239CF8C6D42BC73D" import="0">XML/Localization/ES_ES/NameFormat.xml</File>
+    <File md5="5CA867C0F044794CED519BD89730CBE9" import="0">XML/Localization/ES_ES/Notification.xml</File>
+    <File md5="5032A6FA9CB653AA8F6FF33FCB86BC43" import="0">XML/Localization/ES_ES/Parts.xml</File>
+    <File md5="F2BF0ECFBFD21B9B0DCEEFEBB5E1EF52" import="0">XML/Localization/ES_ES/Religions.xml</File>
+    <File md5="C4E9458A8885D2D56DF6170872454BD2" import="0">XML/Localization/ES_ES/Renaming.xml</File>
+    <File md5="D6FCE0B2AA3DCA4C8869F990AFD22670" import="0">XML/Localization/ES_ES/Titles.xml</File>
+    <File md5="589994AAA56EA68EFCEEB529B5F806C7" import="0">XML/Localization/PL_PL/NameFormat.xml</File>
+    <File md5="FB4229876332075AC3324212264D638E" import="0">XML/Localization/PL_PL/Notification.xml</File>
+    <File md5="174B542FE4AC4C617E8F30D1FA8686A8" import="0">XML/Localization/PL_PL/Parts.xml</File>
+    <File md5="040B08D5FFC878C184B644FE843DD0DB" import="0">XML/Localization/PL_PL/Religions.xml</File>
+    <File md5="7EEEA6A910BC6BEAB2F580D7846D0BDB" import="0">XML/Localization/PL_PL/Renaming.xml</File>
+    <File md5="959ECB96C7055020158526312638582D" import="0">XML/Localization/PL_PL/Titles.xml</File>
+    <File md5="A983AC80200C90D282947CC449ACAADD" import="0">XML/Localization/RU_RU/NameFormat.xml</File>
+    <File md5="506BDE23FBF62B42FAF872BEBEFA6063" import="0">XML/Localization/RU_RU/Notification.xml</File>
+    <File md5="459A498EC31C03A4F66287D99F438596" import="0">XML/Localization/RU_RU/Parts.xml</File>
+    <File md5="D34AB0BC23C900A4B84BCB4B40298845" import="0">XML/Localization/RU_RU/Religions.xml</File>
+    <File md5="399139E549982F5194AEFADB61B18118" import="0">XML/Localization/RU_RU/Renaming.xml</File>
+    <File md5="AF6E39EAE35ECAD96F235088BBDC8E57" import="0">XML/Localization/RU_RU/Titles.xml</File>
+    <File md5="6C7D5D3059EE1B499857923E2AAAC77B" import="0">XML/Localization/ZH_CN/NameFormat.xml</File>
+    <File md5="80897D81811C723E37CE1892ACF850B1" import="0">XML/Localization/ZH_CN/Notification.xml</File>
+    <File md5="0EBDD7FF596BBCB62B1D00F63841ADEC" import="0">XML/Localization/ZH_CN/Parts.xml</File>
+    <File md5="FE054CBE434FD3584FEABC46F333E8E5" import="0">XML/Localization/ZH_CN/Religions.xml</File>
+    <File md5="5F077C6C9F08A4A0A4911905A82C6C3D" import="0">XML/Localization/ZH_CN/Renaming.xml</File>
+    <File md5="2B4320D2ED820F8EF6F7042BB70E85A4" import="0">XML/Localization/ZH_CN/Titles.xml</File>
+    <File md5="63A88AEBA5FD76E43FA22C2BCED7B0A6" import="0">XML/Localization/ZH_Hant_HK/CountryWords.xml</File>
+    <File md5="76610572D0A8B99507F926E05CD5DA25" import="0">XML/Localization/ZH_CN/CountryWords.xml</File>
+    <File md5="1F72932D07E45373293AE387E088FDEF" import="0">XML/Localization/ZH_Hant_HK/NameFormat.xml</File>
+    <File md5="ED93C830F8992F8A497044F76B6FF3A4" import="0">XML/Localization/ZH_Hant_HK/Notification.xml</File>
+    <File md5="675F43012A84F619D33EE9402AD35C06" import="0">XML/Localization/ZH_Hant_HK/Parts.xml</File>
+    <File md5="4AB06228F316E945CB5484735CFD9815" import="0">XML/Localization/ZH_Hant_HK/Religions.xml</File>
+    <File md5="D1E4F2BAD7C4C84741ACB260A1C75C5A" import="0">XML/Localization/ZH_Hant_HK/Renaming.xml</File>
+    <File md5="96A5AA5B24CA16797B1FCAF7DEF74152" import="0">XML/Localization/ZH_Hant_HK/Titles.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Localization/EN_US/Titles.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/EN_US/Parts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/EN_US/Religions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/EN_US/Renaming.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/EN_US/NameFormat.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/EN_US/Notification.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/RU_RU/NameFormat.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/RU_RU/Notification.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/RU_RU/Parts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/RU_RU/Religions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/RU_RU/Renaming.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/RU_RU/Titles.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ES_ES/NameFormat.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ES_ES/Notification.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ES_ES/Parts.xml</UpdateDatabase>
+      <UpdateUserData>XML/Localization/ES_ES/Religions.xml</UpdateUserData>
+      <UpdateDatabase>XML/Localization/ES_ES/Renaming.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ES_ES/Titles.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/CountryWords.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/NameFormat.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/Notification.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/Parts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/Religions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/Renaming.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_Hant_HK/Titles.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/CountryWords.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/NameFormat.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/Notification.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/Parts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/Religions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/Renaming.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/ZH_CN/Titles.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/PL_PL/NameFormat.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/PL_PL/Notification.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/PL_PL/Parts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/PL_PL/Religions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/PL_PL/Renaming.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Localization/PL_PL/Titles.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/CivNames.lua">
+      <Name>CivNames</Name>
+      <Description>Choose civ's name</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

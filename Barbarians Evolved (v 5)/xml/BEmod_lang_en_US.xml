@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 07/18/2015 7:38:30 PM -->
+<GameData>
+	<Language_en_US>
+		<!-- Pre-setup button labels -->
+		<Update>
+			<Where Tag="TXT_KEY_MODDING_MAPS"/>
+			<Set>
+				<Text>USE MAP SCENARIO</Text>				
+			</Set>	
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MODDING_CUSTOMGAME"/>
+			<Set>
+				<Text>NEW CUSTOM GAME</Text>
+			</Set>
+		</Update>
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_MODDING_LOADGAME"/>
+			<Set>
+				<Text>LOAD GAME</Text>
+			</Set>
+		</Update>
+		-->
+		<!-- Setup screen titles and tab labels -->
+		<Row Tag="TXT_KEY_BARBARIANS_EVOLVED_NOBODY">
+			<Text>No Civilization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BARBARIANS_EVOLVED_NOBODY_HELP">
+			<Text>No Civilization is selected for this role.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_TITLE_PRESETS_SCREEN">
+			<Text>Barbarians Evolved Settings</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_TITLE_OPTIONS_SCREEN">
+			<Text>Barbarians Evolved Settings</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_TITLE_STRINGS_SCREEN">
+			<Text>Barbarians Evolved Settings</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_BARBARIAN_PRESETS">
+			<Text>BARBARIAN PRESETS</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_BARBARIAN_OPTIONS">
+			<Text>BARBARIAN OPTIONS</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_BARBARIAN_STRINGS">
+			<Text>BARBARIAN STRINGS</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_BASIC_SETUP">
+			<Text>Basic Setup</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ADVANCED_SETUP">
+			<Text>Advanced Setup</Text>
+		</Row>
+		<!-- presets (tab 1) -->
+		<Row Tag="TXT_KEY_BE_PRESET_VANILLA">
+			<Text>Barbarians Evolved</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BE_PRESET_VANILLA_DETAIL">
+			<Text>This common preset is intended for the standard Barbarians Evolved experience.  Barbarians will evolve and capture cities, and present a serious threat to your Civilization.  You can fight off the fall of Civilization, or play as the Barbarians and bring it to pass!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BE_PRESET_CITYSTATES">
+			<Text>Barbarians Evolve Into City States</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BE_PRESET_CITYSTATES_DETAIL">
+			<Text>This preset is a twist on the Barbarians Evolved experience.  Given time, Barbarian Encampments will evolve into City States - if you let them.  City States assimilate Barbarians that invade their territory.  You cannot play as Barbarians nor have the Barbarian Civilization in your game.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BE_PRESET_DLL">
+			<Text>Custom DLL</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BE_PRESET_DLL_DETAIL">
+			<Text>This preset is intended for experienced mod-users that are using a DLL mod, such as the Community Balance Patch or Vox Populi.  Barbarian city capture, healing and upgrade are all assumed provided by the enhanced DLL.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRESET_MINIMAL">
+			<Text>Minimal Disruption</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRESET_MINIMAL_DETAIL">
+			<Text>This preset is intended for players who would like some Barbarian enhancements, but without the risk of them redefining the game.  Camp evolution, city capture and State-Sponsored Encampments are completely disabled.  Barbarians take on a harassment role.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRESET_NIGHTMARE">
+			<Text>Nightmare Mode</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRESET_NIGHTMARE_DETAIL">
+			<Text>Your worst nightmare comes alive.  Barbarians are replaced by ravenous aggressive undead.  They do all the things Barbarians used to - and worse, like ignore terrain costs.   Units they kill both heal them and join their ranks.  This threat can and will redefine your game.</Text>
+		</Row>
+		<!-- settings (tab 2) -->
+		<Row Tag="TXT_KEY_BESETTING_LABEL_CONSERVATIVE_MODE">
+			<Text>Conservative Mode</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_CONSERVATIVE_MODE_TIP">
+			<Text>Causes the mod to act conservatively, disabling a number of features if the Barbarian civilization is not present.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_HEALING">
+			<Text>Heal Barbarians in Friendly Territory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_HEALING_TIP">
+			<Text>Defines whether Tribal Barbarian units heal 10hp per turn in their own lands (which includes Encampments).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_ALL">
+			<Text>Spawn Barbarian Garrisons</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_ALL_TIP">
+			<Text>Defines whether Tribal Barbarian units spawn in defense of Tribal cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_ALLY">
+			<Text>Spawn Garrisons for Barbarian Civilization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_ALLY_TIP">
+			<Text>Defines whether Tribal Barbarian units spawn in defense of Barbarian Civilization cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_ME">
+			<Text>Spawn Barbarian Garrisons for Me</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_ME_TIP">
+			<Text>Defines whether Tribal Barbarian units spawn in defense of your cities when YOU are the Barbarian civilization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_CAMP">
+			<Text>Spawn Barbarians in State-Sponsored Encampments</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_CAMP_TIP">
+			<Text>Defines whether Barbarians spawn in State-Sponsored Encampments.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_CHANCE">
+			<Text>Spawn Chance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SPAWN_CHANCE_TIP">
+			<Text>Defines the global chance for Barbarian units to spawn in garrisons and camps.  Suggestion: use your preferred game difficulty level.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_EVOLVE">
+			<Text>Allow Camp Evolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_EVOLVE_TIP">
+			<Text>Defines whether Barbarian Encampments evolve into cities.  If you selected the City States preset, they will evolve into City States first, and Barbarian cities once no more City States can evolve.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_EVOLUTION_TIMER">
+			<Text>Evolution Timer: {1_Num} turns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_EVOLUTION_TIMER_TIP">
+			<Text>Defines the number of turns between each Encampment evolution into a city.[NEWLINE]Quick game speed uses this value as-is.[NEWLINE]Epic and Marathon multiply this value by 3.[NEWLINE]Standard and other (modified) gamespeeds multiply this value by 2.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_EVOLUTION_SETTLERS">
+			<Text>Evolve Settlers</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_EVOLUTION_SETTLERS_TIP">
+			<Text>Some mods crash when cities are spawned from nothing.  This option causes the Evolution action to spawn a Settler unit instead, which resolves the crash.  Depending on your mod setup, the Settler may wander or settle in-place.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_CAPTURE">
+			<Text>Allow City Capture</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_CAPTURE_TIP">
+			<Text>Defines whether Barbarians are allowed to capture cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_CAPTURE_MELEE">
+			<Text>Require Melee Unit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_CAPTURE_MELEE_TIP">
+			<Text>Defines whether Barbarians must have a melee unit in proximity in order to capture a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE">
+			<Text>Upgrade Obsolete Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE_TIP">
+			<Text>Defines whether two obsolete Barbarian units are upgraded into one modern unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE_ME">
+			<Text>Upgrade My Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE_ME_TIP">
+			<Text>Defines whether two obsolete Barbarian units are upgraded into one modern unit when YOU are the Barbarian civilization.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_LIBERATE">
+			<Text>Liberate Target</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_LIBERATE_TIP">
+			<Text>If valid, defines the Civilization to which Barbarian cities may be liberated.[NEWLINE]A common complaint with Barbarians Evolved was that capturing Barbarian cities incurred a Warmonger penalty.  This allows you to pre-define a 'victim' Civilization to which cities will be spawned then 'captured' by the Barbarian civilization, allowing for Barbarian cities to be Liberated.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_DISPERSE">
+			<Text>Disperse Liberated Barbarian Cities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_DISPERSE_TIP">
+			<Text>Defines whether liberated Barbarian cities (owned by the Liberation Civilization) are dispersed on the next turn.[NEWLINE][COLOR_NEGATIVE_TEXT]WARNING:[ENDCOLOR] This means whoever the liberation target is, they can never hold a city longer than one turn before it is erased from existence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ALLY">
+			<Text>Barbarian Civ ID</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ALLY_TIP">
+			<Text>Defines the Major Civilization to which the Tribal Barbarians are allied.[NEWLINE]This Civilization will be the recipient of ALL Tribal city captures and Encampment evolutions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ALLY_INGAME">
+			<Text>Add Barbarian Civilization to This Game</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ALLY_INGAME_TIP">
+			<Text>Place the specified Barbarian Civilization into the game in the first AI slot.  You can always add it or remove it in the next screen if you change your mind.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ALLY_INGAME_ASME">
+			<Text>Play as Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ALLY_INGAME_ASME_TIP">
+			<Text>Set your civilization as the Barbarian Civilization.  [NEWLINE][COLOR_NEGATIVE_TEXT]WARNING:[ENDCOLOR] Removes the Barbarian AI player, as only one player can be the Barbarian Civilization at any given time.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_BESETTING_LABEL_LAND_PROMO">
+			<Text>Land Promotions</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_LAND_PROMO_TIP">
+			<Text>Defines the set of Barbarian land unit promotions.  Promotions must be uppercase string identifiers separated by commas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SEA_PROMO">
+			<Text>Naval Promotions</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_SEA_PROMO_TIP">
+			<Text>Defines the set of Barbarian naval unit promotions.  Promotions must be uppercase string identifiers separated by commas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_AIR_PROMO">
+			<Text>Air Promotions</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_AIR_PROMO_TIP">
+			<Text>Defines the set of Barbarian sea unit promotions.  Promotions must be uppercase string identifiers separated by commas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NAMES">
+			<Text>Era-specific Names</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NAMES_TIP">
+			<Text>Defines whether Barbarians change names as the eras pass.  This causes a performance hit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NAMES_DEFER">
+			<Text>Defer Rename</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NAMES_DEFER_TIP">
+			<Text>Defines whether the name change performance hit is deferred until the Tribal Barbarian turn just before the new turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NAMES_LIST">
+			<Text>Barbarian Names</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NAMES_LIST_TIP">
+			<Text>Defines the set of Barbarian names, descriptions, phrases and camp words used in each Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_ALL">
+			<Text>Allow State-Sponsored Encampments</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_ALL_TIP">
+			<Text>Defines whether the construction of State-Sponsored Encampments is allowed at all.  If unchecked, State-Sponsored camps are instantly converted into Forts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_OTHER">
+			<Text>Allow State-Sponsored Encampments by Non-Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_OTHER_TIP">
+			<Text>Defines whether the construction of State-Sponsored Encampments is allowed for Non-Barbaric Civilizations.  If unchecked, State-Sponsored camps are instantly converted into Forts for Non-Barbarian Civilizations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NUKE_LIMIT">
+			<Text>Infiltrator Limit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_NUKE_LIMIT_TIP">
+			<Text>Defines the maximum number of Infiltrator units that can be in play or under construction at one time (for the Barbarian Civilization).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_WORKER_LIMIT">
+			<Text>Enslaved Worker Limit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_WORKER_LIMIT_TIP">
+			<Text>Defines the maximum number of Enslaved Worker units that can be in play or under construction at one time (for the Barbarian Civilization).</Text>
+		</Row>
+		<!-- strings (tab 3) -->
+		<Row Tag="TXT_KEY_BESETTING_LABEL_COLORS">
+			<Text>Tribal Barbarian Colors</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_COLORS_TIP">
+			<Text>Allows you to change or redefine the color palette used by the Tribal Barbarians.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_ERA">
+			<Text>Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_ERA_TIP">
+			<Text>The Era to which this row of strings applies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_ADJECTIVE">
+			<Text>Singular</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_ADJECTIVE_TIP">
+			<Text>The singular phrase used to describe hostile elements in this Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_DESCRIPTION">
+			<Text>Cause</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_DESCRIPTION_TIP">
+			<Text>The underlying cause of hostile elements in this Era, such as Barbarism, Rebellion, Insurgency, etc.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_SHORTDESC">
+			<Text>Plural</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_SHORTDESC_TIP">
+			<Text>The plural used to describe hostile elements in this Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_CAMP">
+			<Text>Encampment</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_STRINGS_CAMP_TIP">
+			<Text>The description of a hostile spawning point in this Era.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_COLORCOLUMN">
+			<Text>Colors</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_COLORCOLUMN_TIP">
+			<Text>The entity to which this color panel (RGBA) applies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_MINORBARB_COLOR">
+			<Text>Tribal Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_MINORBARB_COLOR_TIP">
+			<Text>The color panel for the Tribal Barbarians; these wander the map in the early game.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_MAJORBARB_COLOR">
+			<Text>Barbarian Ally</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BESETTING_LABEL_MAJORBARB_COLOR_TIP">
+			<Text>The color panel for the Barbarian Civilization; this only applies to the default Barbarian Civilization provided with Barbarians Evolved and will not override any other Civilization's colors, if selected.</Text>
+		</Row>
+		<!-- General fixes applicable to all Barbarians -->
+		<Update>
+			<Where Tag="TXT_KEY_CITY_NAME_CIMMERIAN"/>
+			<Set>
+				<Text>Cimmeria</Text>
+			</Set>
+		</Update>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_ARCHER">
+			<Text>Hunter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_SPEARMAN">
+			<Text>Spear Bearer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_SWORDSMAN">
+			<Text>Loansword</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_BARBARIAN_GALLEY">
+			<Text>The Barbarians' most basic early-game naval Unit.</Text>
+		</Row>
+		<!-- New Unit Names -->
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_WORKER">
+			<Text>Enslaved Worker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_DIRTY_BOMB">
+			<Text>Infiltrator</Text>
+		</Row>
+		<!-- New Unit Help -->
+		<Row Tag="TXT_KEY_CIV5_INDUSTRIAL_DIRTYBOMB_TEXT">
+			<Text>Infiltration tactics emerged gradually during the later years of World War I.  Infiltrators are most potent when they unleash a Dirty Bomb.  The purpose of the Dirty Bomb is to contaminate the area around the dispersal agent/conventional explosion with radioactive material.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_DIRTY_BOMB_STRATEGY">
+			<Text>An Infiltrator is an extremely powerful unit. Unlike an Atomic Bomb, the Infiltrator can move from the city in which it is built and advance towards a player-owned city. It can attack a target within its range of 2 tiles, but is not permitted to attack tiles if the subsequent fallout would catch Barbarian allies. When the Infiltrator unleashes it's "dirty" Atomic Bomb, a 2 tile blast radius is afflicted.  Units within the blast radius are damaged or possibly destroyed, and cities will be severely damaged. The Infiltrator is automatically destroyed when it attacks in this manner. See the rules on Nuclear Weapons for more details.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_DIRTY_BOMB">
+			<Text>Unleash nuclear destruction upon your foes. Does great damage to Cities and damages any Unit caught in the 2 tile blast radius.[NEWLINE][NEWLINE]Requires Manhattan Project, but unlike the Atomic Bomb which it replaces, the required Uranium can be scavenged from black market trades, meaning the resource is not required for construction.</Text>
+		</Row>
+		<!-- Minor Civ Policy (effectively blocks civ 63 from adopting other policies) -->
+		<Row Tag="TXT_KEY_POLICY_BARBARIC">
+			<Text>Barbarism</Text>
+		</Row>
+		<!-- Tribal Barbarians (new strings for Barbarians) -->
+		<Row Tag="TXT_KEY_CIV_BARBARIAN_TRIBAL_SHORT_DESC">
+			<Text>Tribal Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_BARBARIAN_TRIBAL_ADJECTIVE">
+			<Text>Tribal Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_BARBARIAN_TRIBAL_DESC">
+			<Text>Tribal Barbarians</Text>
+		</Row>
+		<!-- Barbarian Major Civ stuff starts here -->
+		<Row Tag="TXT_KEY_LEADER_BARBARIAN_EVOLVED">
+			<Text>Leader</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_BARBARIAN_MAJOR_SHORT_DESC">
+			<Text>Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_BARBARIAN_MAJOR_ADJECTIVE">
+			<Text>Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_BARBARIAN_MAJOR_DESC">
+			<Text>Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_BARBAROUS_SHORT">
+			<Text>Ashes to Ashes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_BARBAROUS">
+			<Text>Reject Settlers, wonders, trade and more, in favor of glorious WAR!  Pay no [ICON_GOLD] Unit Maintenance and suffer no [ICON_HAPPINESS_4] Unhappiness.  Inherit cities and technology from your Barbarian ally.  Undead variation can cross all terrain.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_DAWN_BARBARIAN_TEXT">
+			<Text>
+				Who are you?  It doesn't matter.  Your name is a symbol; your identity a figurehead, a rallying cry.  Your people rose from rubble and will leave rubble in their wake.[NEWLINE][NEWLINE]
+				You are the leader of those that civilized folk call "barbarians".  The Barbarians are a rabble who care not for the trappings of society.  Living day to day, they range from place to place, destroying all in their path.[NEWLINE][NEWLINE]
+				Mighty leader, your people long for a glorious tyrant to give direction to their strength.  Can you crush your enemies, see them driven before you, and hear the lamentation of the women?  Can you bring down empires that have stood the test of time?
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_BARBARIAN_EVOLVED_FIRSTGREETING_1">
+			<Text>Another actor who struts upon the world stage and dares to call themselves civilized.  Wrap yourself in the flag of nationhood and trappings of dignity while you can.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]WARNING: They will declare war on you next turn.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_BARBARIAN_EVOLVED_FIRSTGREETING_2">
+			<Text>The shadow you see on the horizon is the dust of my troops and the ashes of destruction left in their wake.  Your time shall end, soon.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]WARNING: They will declare war on you next turn.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_BARBARIAN_EVOLVED_FIRSTGREETING_3">
+			<Text>At last, we are acknowledged!  How civilized!  Now then, with the obligatory exchange of pleasantries over... get out of my sight.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]WARNING: They will declare war on you next turn.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_BARBARIAN_EVOLVED_DEFEATED_1">
+			<Text>You think you have defeated us?  You will never defeat us!  No matter how safe you believe yourself to be, one of will always emerge from the fog of war to strike back![NEWLINE][NEWLINE][COLOR_WARNING_TEXT]WARNING: They will declare war on you next turn.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_EVOLVED_CAMP">
+			<Text>State-Sponsored Encampment</Text>
+			<Gender>neuter:a</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENCAMPMENT">
+			<Text>Build a [LINK=IMPROVEMENT_EVOLVED_CAMP]State-Sponsored Encampment[/LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENCAMPMENT_DISABLED">
+			<Text>You have disabled construction of a [LINK=IMPROVEMENT_EVOLVED_CAMP]State-Sponsored Encampment[/LINK] in this game.  If you build one, a Fort will be constructed instead.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENCAMPMENT_ENABLED">
+			<Text>+50% [ICON_STRENGTH] Defensive Strength for any Unit stationed in this Tile.  Within a city's reach, these act as Forts.  Built far enough away, they act as training grounds for Barbarians.  If left alone long enough, they may evolve into a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENCAMPMENT_HELP">
+			<Text>+50% [ICON_STRENGTH] Defensive Strength for any Unit stationed in this Tile.  Within a city's reach, these act as Forts.  Built far enough away, they act as training grounds for Barbarians.  If left alone long enough, they may evolve into a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENCAMPMENT_REC">
+			<Text>It will improve the [ICON_STRENGTH] Defense of any military unit stationed in this tile, may spawn Barbarians, and may even evolve into a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EVOLVED_FORCES">
+			<Text>Motivated</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EVOLVED_FORCES_HELP">
+			<Text>Can traverse mountains and ice, and end a turn on mountainous terrain without taking damage.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

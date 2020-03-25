@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_EN_US>
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ">
+           <Text>Buddhist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ_SHORT">
+           <Text>Bud.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ">
+           <Text>Confucian</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ_SHORT">
+           <Text>Conf.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ">
+           <Text>Christian</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ_SHORT">
+           <Text>Chr.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ">
+           <Text>Hindu</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ_SHORT">
+           <Text>Hindu</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ">
+           <Text>Islamic</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ_SHORT">
+           <Text>Isl.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ">
+           <Text>Judaic</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ_SHORT">
+           <Text>Jud.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ">
+           <Text>Shintoist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ_SHORT">
+           <Text>Shin.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ">
+           <Text>Sikh</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ_SHORT">
+           <Text>Sikh</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ">
+           <Text>Taoist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ_SHORT">
+           <Text>Tao.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ">
+           <Text>Tengriist</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ_SHORT">
+           <Text>Teng.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ">
+           <Text>Zoroastrian</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ_SHORT">
+           <Text>Zor.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ">
+           <Text>Catholic</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ_SHORT">
+           <Text>Cath.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ">
+           <Text>Orthodox</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ_SHORT">
+           <Text>Orth.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ">
+           <Text>Protestant</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ_SHORT">
+           <Text>Prot.</Text>
+        </Row>
+
+    </Language_EN_US>
+</GameData>

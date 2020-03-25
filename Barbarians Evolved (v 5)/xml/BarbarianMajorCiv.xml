@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 06/26/2015 11:18:36 PM -->
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_BARBARIAN_MAJOR</Type>
+			<Civilopedia/>
+			<CivilopediaTag>TXT_KEY_CIV5_BARBARIANS_TEXT</CivilopediaTag>
+			<Strategy/>
+			<Playable>1</Playable>
+			<AiPlayable>0</AiPlayable>
+			<ShortDescription>TXT_KEY_CIV_BARBARIAN_MAJOR_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_BARBARIAN_MAJOR_ADJECTIVE</Adjective>
+			<Description>TXT_KEY_CIV_BARBARIAN_MAJOR_DESC</Description>
+			<DefaultPlayerColor>PLAYERCOLOR_BARBARIAN_MAJOR</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_BARBARIAN</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStylePrefix>EUROPEAN</ArtStylePrefix>
+			<ArtStyleSuffix>_EURO</ArtStyleSuffix>
+			<DerivativeCiv/>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>SHARED_CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>SHARED_CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>invasionmap.dds</MapImage>
+			<DawnOfManImage>ruins.dds</DawnOfManImage>
+			<DawnOfManQuote>TXT_KEY_CIV5_DAWN_BARBARIAN_TEXT</DawnOfManQuote>
+			<DawnOfManAudio></DawnOfManAudio>
+			<SoundtrackTag></SoundtrackTag>
+		</Row>
+	</Civilizations>
+	<!-- Start region priority: tundra -->
+	<Civilization_Start_Region_Priority>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+	</Civilization_Start_Region_Priority>
+	<!-- Start region avoid: everything else lol (except desert because terrorists) -->
+	<Civilization_Start_Region_Avoid>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<RegionType>REGION_FOREST</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<RegionType>REGION_JUNGLE</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<RegionType>REGION_PLAINS</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<RegionType>REGION_GRASS</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<RegionType>REGION_HILLS</RegionType>
+		</Row>
+	</Civilization_Start_Region_Avoid>
+	<!-- Set Leader -->
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<LeaderheadType>LEADER_BARBARIAN_EVOLVED</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_FreeBuildingClasses>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+		</Row>
+	</Civilization_FreeBuildingClasses>
+	<!-- Unit class overrides (in addition to inheriting all the barbarian ones) -->
+	<!--
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<UnitClassType>UNITCLASS_WORKER</UnitClassType>
+			<UnitType>UNIT_BARBARIAN_WORKER</UnitType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<UnitClassType>UNITCLASS_ATOMIC_BOMB</UnitClassType>
+			<UnitType>UNIT_DIRTY_BOMB</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	-->
+	<!-- Barbarian major civ starting units -->
+	<!--
+	<Civilization_FreeUnits>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+			<UnitAIType>UNITAI_SETTLE</UnitAIType>
+			<Count>1</Count>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+			<Count>2</Count>
+		</Row>
+	</Civilization_FreeUnits>
+	-->
+	<!-- Barbarian major civ starting tech -->
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<TechType>TECH_AGRICULTURE</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+	<!-- Barbarian major civ building override -->
+	<Civilization_BuildingClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<BuildingType>BUILDING_BARBARIAN_PRESENCE</BuildingType>
+		</Row>
+	</Civilization_BuildingClassOverrides>
+	<!-- Redefine ALL city names -->
+	<Civilization_CityNames>
+		<Delete CivilizationType="CIVILIZATION_BARBARIAN_MAJOR"/>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_CIMMERIAN</CityName>
+		</Row>
+	</Civilization_CityNames>
+</GameData>

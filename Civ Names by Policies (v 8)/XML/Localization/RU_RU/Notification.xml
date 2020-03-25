@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/6/2014 9:55:33 PM -->
+<GameData>
+	<Language_ru_RU>
+		<Row Tag="TXT_KEY_NOTIFICATION_NEW_NAME">
+			<Text>{1_OldName:textkey} теперь {@3_state: plural 2?называются; other?называется;} {2_NewName:textkey}</Text>
+		</Row>
+	</Language_ru_RU>
+</GameData>

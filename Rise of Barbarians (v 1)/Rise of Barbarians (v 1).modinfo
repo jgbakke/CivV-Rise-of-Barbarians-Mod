@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f56cd980f-0504-ec3b-02aa-20fa2465c92" version="1">
+  <Properties>
+    <Name>Rise of Barbarians</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Rise of Barbarians</Teaser>
+    <Description>Rise of Barbarians</Description>
+    <Authors>Jordan</Authors>
+    <SpecialThanks>Gedemon and Rhye</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>1</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="B7754EDDA6912BEA37E3D07C3D076EB1" import="1">Lua/HSD_Functions.lua</File>
+    <File md5="93544df1846b80a77a29f28eabae1606" import="1">Lua/HSD_Defines.lua</File>
+    <File md5="0b8290a1ffbd269d7a8f1896835fca10" import="1">Lua/ROB_Functions.lua</File>
+    <File md5="dd72a8133e4bef7cafd133b045111d17" import="0">Lua/ROB_Main.lua</File>
+    <File md5="E34A73FDB8F6BE1A35CA21A53BC4C011" import="1">Lua/HSD_Debug.lua</File>
+    <File md5="F56CD980F0504EC3B02AA20FA2465C92" import="1">Lua/HSD_Defines.lua</File>
+    <File md5="C8B9444AC5166C283C6355CB5157A1BD" import="0">Lua/HSD_Main.lua</File>
+    <File md5="43C4CAB2D93AB4C1AD2914745D82783B" import="1">Lua/HSD_Utils.lua</File>
+    <File md5="714797D78DE69907D7EBA53DBA81C3BC" import="1">Lua/PlotIterators.lua</File>
+    <File md5="761DFFE4309CC6660D2264F46B67E733" import="1">Lua/SaveUtils.lua</File>
+    <File md5="4C209E1FBBF9C0FF8228FB4061EEAC67" import="0">Lua/ShareData.lua</File>
+    <File md5="D0BB2D9D9C2E6E68A21F19C6CF43403E" import="0">HSD_readme.txt</File>
+    <File md5="6939784831B64137155839D750AA5998" import="0">SQL/HistoricalSpawnDates.sql</File>
+    <File md5="7CC735DDC72E287421646755F22F2720" import="0">SQL/Rules.sql</File>
+    <File md5="7832621258222E4E280105FCADA44CFC" import="0">XML/Texts.xml</File>
+    <File md5="A51AB7A3D39138FC3952B1A1A820C7E3" import="0">XML/Units.xml</File>
+    <File md5="068d8bd36534bd4cca4bfb3a83f4639b" import="0">XML/Civilizations.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/HistoricalSpawnDates.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Units.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Civilizations.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/ShareData.lua">
+      <Name>ShareData</Name>
+      <Description>Sharedata</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/HSD_Main.lua">
+      <Name>HSD</Name>
+      <Description>HSD</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ROB_Main.lua">
+      <Name>ROB</Name>
+      <Description>ROB</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

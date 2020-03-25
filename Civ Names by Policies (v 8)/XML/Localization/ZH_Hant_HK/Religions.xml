@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_ZH_Hant_HK>
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ">
+           <Text>佛法</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ_SHORT">
+           <Text>佛法</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ">
+           <Text>儒學</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ_SHORT">
+           <Text>儒學</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ">
+           <Text>基督</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ_SHORT">
+           <Text>基督</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ">
+           <Text>興都</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ_SHORT">
+           <Text>興都</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ">
+           <Text>伊斯蘭</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ_SHORT">
+           <Text>伊斯蘭</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ">
+           <Text>猶太</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ_SHORT">
+           <Text>猶太</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ">
+           <Text>神道</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ_SHORT">
+           <Text>神道</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ">
+           <Text>錫克</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ_SHORT">
+           <Text>錫克</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ">
+           <Text>道法</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ_SHORT">
+           <Text>道法</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ">
+           <Text>騰格裡</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ_SHORT">
+           <Text>騰格裡</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ">
+           <Text>索羅亞斯德</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ_SHORT">
+           <Text>索羅亞斯德</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ">
+           <Text>天主</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ_SHORT">
+           <Text>天主</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ">
+           <Text>正統天主</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ_SHORT">
+           <Text>正統天主</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ">
+           <Text>新基督</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ_SHORT">
+           <Text>新基督</Text>
+        </Row>
+
+    </Language_ZH_Hant_HK>
+</GameData>

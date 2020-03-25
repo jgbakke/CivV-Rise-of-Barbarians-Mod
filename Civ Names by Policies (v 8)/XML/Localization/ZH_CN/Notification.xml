@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/6/2014 9:55:33 PM -->
+<GameData>
+	<Language_zh_CN>
+		<Row Tag="TXT_KEY_NOTIFICATION_NEW_NAME">
+			<Text>{1_OldName:textkey}现在称为{2_NewName:textkey}</Text>
+		</Row>
+	</Language_zh_CN>
+</GameData>

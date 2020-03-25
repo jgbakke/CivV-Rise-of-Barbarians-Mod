@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 02/18/2016 9:47:51 PM -->
+<GameData>
+	<Improvements>
+		<Update>
+			<Where Type="IMPROVEMENT_BARBARIAN_CAMP"/>
+			<Set>
+				<DefenseModifier>50</DefenseModifier>
+<!--
+				<IgnoreOwnership>true</IgnoreOwnership>
+-->
+			</Set>
+		</Update>
+		<Row>
+			<Type>IMPROVEMENT_EVOLVED_CAMP</Type>
+			<Description>TXT_KEY_IMPROVEMENT_EVOLVED_CAMP</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_BARBARIAN_CAMP_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag>
+<!--
+			<SpecificCivRequired>1</SpecificCivRequired>
+			<CivilizationType>CIVILIZATION_BARBARIAN_MAJOR</CivilizationType>
+-->
+			<BarbarianCamp>true</BarbarianCamp>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<BuildableOnResources>true</BuildableOnResources>
+			<DefenseModifier>50</DefenseModifier>
+			<OutsideBorders>true</OutsideBorders>
+<!--
+			<IgnoreOwnership>true</IgnoreOwnership>
+-->
+			<GoldMaintenance>1</GoldMaintenance>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Builds>
+		<Row>
+			<Type>BUILD_ENCAMPMENT</Type>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
+			<Time>800</Time>
+			<ImprovementType>IMPROVEMENT_EVOLVED_CAMP</ImprovementType>
+			<Description>TXT_KEY_BUILD_ENCAMPMENT</Description>
+			<Help>TXT_KEY_BUILD_ENCAMPMENT_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_ENCAMPMENT_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_F</HotKey>
+			<OrderPriority>1</OrderPriority>
+			<CtrlDown>1</CtrlDown>
+			<IconIndex>51</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_ENCAMPMENT</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+		</Row>
+		<Row>
+			<BuildType>BUILD_ENCAMPMENT</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+		</Row>
+		<Row>
+			<BuildType>BUILD_ENCAMPMENT</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+		</Row>
+	</BuildFeatures>
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_ENCAMPMENT</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_WORKER</UnitType>
+			<BuildType>BUILD_ENCAMPMENT</BuildType>
+		</Row>
+	</Unit_Builds>
+</GameData>

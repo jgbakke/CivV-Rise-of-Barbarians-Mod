@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/6/2014 9:55:33 PM -->
+<GameData>
+	<Language_ES_ES>
+		<Row Tag="TXT_KEY_NOTIFICATION_NEW_NAME">
+			<Text>{@3_state: plural 2?Los; other?;}{@3_state: gender femenine?La; other?El;} {1_OldName:textkey} se {@3_state: plural 2?llaman; other?llama;} ahora {2_NewName:textkey}.</Text>
+		</Row>
+	</Language_ES_ES>
+</GameData>

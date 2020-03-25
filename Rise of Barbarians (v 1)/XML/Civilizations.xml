@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Civilizations>
+		<Delete Type="CIVILIZATION_AUSTRIA"/>
+		<Delete Type="CIVILIZATION_AZTEC"/>
+        <Delete Type="CIVILIZATION_BRAZIL"/>
+        <Delete Type="CIVILIZATION_PORTUGAL"/>
+        <Delete Type="CIVILIZATION_POLAND"/>
+        <Delete Type="CIVILIZATION_VENICE"/>
+		<Delete Type="CIVILIZATION_BYZANTIUM"/>
+		<Delete Type="CIVILIZATION_DENMARK"/>
+		<Delete Type="CIVILIZATION_KOREA"/>
+		<Delete Type="CIVILIZATION_POLYNESIA"/>
+		<Delete Type="CIVILIZATION_CELTS"/>
+		<Delete Type="CIVILIZATION_HUNS"/>
+		<Delete Type="CIVILIZATION_INCA"/>
+		<Delete Type="CIVILIZATION_IROQUOIS"/>
+		<Delete Type="CIVILIZATION_SHOSHONE"/>
+		<Delete Type="CIVILIZATION_MAYA"/>
+		<Delete Type="CIVILIZATION_MOROCCO"/>
+		<Delete Type="CIVILIZATION_ZULU"/>
+		<Delete Type="CIVILIZATION_ASSYRIA"/>
+		<Delete Type="CIVILIZATION_INDONESIA"/>
+		<Delete Type="CIVILIZATION_NETHERLANDS"/>
+	</Civilizations>
+</GameData>

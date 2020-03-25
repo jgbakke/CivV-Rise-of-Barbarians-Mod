@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 04/03/2016 1:42:52 PM -->
+<Context ID="BESetupScreen">
+	<!-- Barbarians Evolved Strings - dynamic instance -->
+	<Instance Name="BEStringsInstance" >
+		<Container Anchor="L,T"  Offset="0,0"   Size="971,30" >
+			<Box Anchor="L,C" Offset="50,0" Size="154,24" Color="0,0,0,0" >
+				<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+					<EditBox EditMode="0" Size="150,18" Anchor="C,C" ID="EraVal" />
+				</Box>
+			</Box>
+			<Box Anchor="L,C" Offset="225,0" Size="154,24" Color="255,255,200,255" >
+				<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="AdjVal" />
+				</Box>
+			</Box>
+			<Box Anchor="L,C" Offset="400,0" Size="154,24" Color="255,255,200,255" >
+				<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="DescrVal" />
+				</Box>
+			</Box>
+			<Box Anchor="L,C" Offset="575,0" Size="154,24" Color="255,255,200,255" >
+				<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="ShortVal" />
+				</Box>
+			</Box>
+			<Box Anchor="L,C" Offset="750,0" Size="154,24" Color="255,255,200,255" >
+				<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="CampVal" />
+				</Box>
+			</Box>
+		</Container>
+	</Instance>
+	<Grid Size="960,658" Anchor="C,C" Style="Grid9DetailFive140" ConsumeMouse="1">
+		<Label Style="MenuTitleCaption" ID="BEScreenTitle" String="TXT_KEY_BESETTING_TITLE_OPTIONS_SCREEN" />
+		<!-- Top Panel  GridSquareHL8-->
+		<Box Anchor="C,T" Size="926,29" Offset="0,44" Color="0.0.0.128" >
+			<Stack Anchor="L,T" Size="926,32" Offset="20,3" Padding="0" StackGrowth="Right">
+				<Button  Anchor="L,T" Size="308,24" Font="TwCenMT18" Offset="0,0"  String="TXT_KEY_BESETTING_LABEL_BARBARIAN_PRESETS" ID="BEPresetButton" >
+					<ShowOnMouseOver>
+						<AlphaAnim Anchor="L,T" Size="160,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+							<Grid   Size="308,27" Offset="0,-1" Padding="0,0" Style="Grid9FrameTurnsHL" />
+						</AlphaAnim>
+					</ShowOnMouseOver>
+					<Grid Anchor="C,C" Offset="0,0" Size="160,26"  Style="Grid9FrameTurns" Hidden="1" ID="BEPresetHighlight" />
+				</Button>
+				<Button  Anchor="L,T" Size="308,24" Font="TwCenMT18" Offset="0,0"   String="TXT_KEY_BESETTING_LABEL_BARBARIAN_OPTIONS" ID="BEOptionButton" Hidden="1" >
+					<ShowOnMouseOver>
+						<AlphaAnim Anchor="L,T" Size="160,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+							<Grid   Size="308,27" Offset="0,-1" Padding="0,0" Style="Grid9FrameTurnsHL" />
+						</AlphaAnim>
+					</ShowOnMouseOver>
+					<Grid Anchor="C,C" Offset="0,0" Size="160,26"  Style="Grid9FrameTurns" Hidden="1" ID="BEOptionHighlight" />
+				</Button>
+				<Button  Anchor="L,T" Size="308,24" Font="TwCenMT18" Offset="0,0"  String="TXT_KEY_BESETTING_LABEL_BARBARIAN_STRINGS" ID="BEStringButton" Hidden="1" >
+					<ShowOnMouseOver>
+						<AlphaAnim Anchor="L,T" Size="160,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+							<Grid   Size="308,27" Offset="0,-1" Padding="0,0" Style="Grid9FrameTurnsHL" />
+						</AlphaAnim>
+					</ShowOnMouseOver>
+					<Grid Anchor="C,C" Offset="0,0" Size="160,26"  Style="Grid9FrameTurns" Hidden="1" ID="BEStringHighlight" />
+				</Button>
+			</Stack>
+			<Image Anchor="C,B" Offset="1,-6" Texture="HorizontalTrim.dds" Size="926.5" />
+		</Box>
+		<!-- Barbarians Evolved Presets -->
+		<Container Size="922,470" Offset="0,84" ID="BEPresetPanel" Hidden="1">
+			<ScrollPanel ID="PresetStackScroll" Offset="0,0" Anchor="L,T" Size="922,470" Vertical="1">
+				<Stack ID="PresetStack" Anchor="L,T" Offset="30,0" Padding="0" StackGrowth="Bottom">
+					<!-- Vanilla -->
+					<Button Anchor="L,T"  Offset="0,0"   Size="902,75" Color="255,255,255,0"  ID="PresetVanilla" >
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,T" Size="922,77" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd="1">
+								<Grid   Size="902,89" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Image Anchor="L,C" Offset="20,0" Size="64,64" Texture="IconFrame64.dds" >
+							<Image Anchor="C,C" Offset="0,0" Size="64,64" Texture="Assets/UI/Art/Icons/UnitPortraitsAncientMedieval512.dds" ID="PortraitVanilla" />
+						</Image>						
+						<Stack Anchor="L,T" Size="665,128" Offset="116,4"   StackGrowth="Bottom" Padding="6" >
+							<Box Offset="-12,0"  Anchor="L,T" Size="424,28"  Color="White.0" >
+								<Label Anchor="L,T" Offset="12,4" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="Title" String="TXT_KEY_BE_PRESET_VANILLA" />
+							</Box>
+							<Label Anchor="L,T" Offset="0,0"  WrapWidth="665" LeadingOffset="-5" FontStyle="Base" ID="BonusDescription" String="TXT_KEY_BE_PRESET_VANILLA_DETAIL"/>
+						</Stack>
+						<Image Anchor="C,B" Offset="0,-10" Texture="bar900x2.dds" Size="900.1" />
+					</Button>
+					<!-- City States -->
+					<Button Anchor="L,T"  Offset="0,10"   Size="902,75" Color="255,255,255,0"  ID="PresetCityStates" >
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,T" Size="922,77" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd="1">
+								<Grid   Size="902,89" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Image Anchor="L,C" Offset="20,0" Size="64,64"   Texture="IconFrame64.dds"  >
+							<Image Anchor="C,C" Offset="0,0" Size="64,64"   Texture="Assets/UI/Art/Icons/UnitPortraitsAncientMedieval512.dds"  ID="PortraitCityStates"/>
+						</Image>
+						<Stack Anchor="L,T" Size="665,128" Offset="116,4"   StackGrowth="Bottom" Padding="6" >
+							<Box Offset="-12,0"  Anchor="L,T" Size="424,28"  Color="White.0" >
+								<Label Anchor="L,T" Offset="12,4" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="Title" String="TXT_KEY_BE_PRESET_CITYSTATES" />
+							</Box>
+							<Label Anchor="L,T" Offset="0,0"  WrapWidth="665" LeadingOffset="-5" FontStyle="Base" ID="BonusDescription" String="TXT_KEY_BE_PRESET_CITYSTATES_DETAIL"/>
+						</Stack>
+						<Image Anchor="C,B" Offset="0,-10" Texture="bar900x2.dds" Size="900.1" />
+					</Button>
+					<!-- DLL (formerly CBP) -->
+					<Button Anchor="L,T"  Offset="0,10"   Size="902,75" Color="255,255,255,0"  ID="PresetDLL" >
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,T" Size="922,77" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd="1">
+								<Grid   Size="902,89" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Image Anchor="L,C" Offset="20,0" Size="64,64"   Texture="IconFrame64.dds"  >
+							<Image Anchor="C,C" Offset="0,0" Size="64,64"   Texture="Assets/UI/Art/Icons/UnitPortraitsAncientMedieval512.dds"  ID="PortraitDLL"/>
+						</Image>
+						<Stack Anchor="L,T" Size="665,128" Offset="116,4"   StackGrowth="Bottom" Padding="6" >
+							<Box Offset="-12,0"  Anchor="L,T" Size="424,28"  Color="White.0" >
+								<Label Anchor="L,T" Offset="12,4" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="Title" String="TXT_KEY_BE_PRESET_DLL" />
+							</Box>
+							<Label Anchor="L,T" Offset="0,0"  WrapWidth="665" LeadingOffset="-5" FontStyle="Base" ID="BonusDescription" String="TXT_KEY_BE_PRESET_DLL_DETAIL"/>
+						</Stack>
+						<Image Anchor="C,B" Offset="0,-10" Texture="bar900x2.dds" Size="900.1" />
+					</Button>
+					<!-- Minimal -->
+					<Button Anchor="L,T"  Offset="0,10"   Size="902,75" Color="255,255,255,0"  ID="PresetMinimal" >
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,T" Size="922,77" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd="1">
+								<Grid   Size="902,89" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Image Anchor="L,C" Offset="20,0" Size="64,64"   Texture="IconFrame64.dds"  >
+							<Image Anchor="C,C" Offset="0,0" Size="64,64"   Texture="Assets/UI/Art/Icons/UnitPortraitsAncientMedieval512.dds"  ID="PortraitMinimal"/>
+						</Image>
+						<Stack Anchor="L,T" Size="665,128" Offset="116,4"   StackGrowth="Bottom" Padding="6" >
+							<Box Offset="-12,0"  Anchor="L,T" Size="424,28"  Color="White.0" >
+								<Label Anchor="L,T" Offset="12,4" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="Title" String="TXT_KEY_PRESET_MINIMAL" />
+							</Box>
+							<Label Anchor="L,T" Offset="0,0"  WrapWidth="665" LeadingOffset="-5" FontStyle="Base" ID="BonusDescription" String="TXT_KEY_PRESET_MINIMAL_DETAIL"/>
+						</Stack>
+						<Image Anchor="C,B" Offset="0,-10" Texture="bar900x2.dds" Size="900.1" />
+					</Button>
+					<!-- Nightmare (white walkers) -->
+					<Button Anchor="L,T"  Offset="0,10"   Size="902,75" Color="255,255,255,0"  ID="PresetNightmare" >
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,T" Size="922,77" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd="1">
+								<Grid   Size="902,89" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Image Anchor="L,C" Offset="20,0" Size="64,64"   Texture="IconFrame64.dds"  >
+							<Image Anchor="C,C" Offset="0,0" Size="64,64"   Texture="Assets/UI/Art/Icons/UnitPortraitsAncientMedieval512.dds"  ID="PortraitNightmare"/>
+						</Image>
+						<Stack Anchor="L,T" Size="665,128" Offset="116,4"   StackGrowth="Bottom" Padding="6" >
+							<Box Offset="-12,0"  Anchor="L,T" Size="424,28"  Color="White.0" >
+								<Label Anchor="L,T" Offset="12,4" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="Title" String="TXT_KEY_PRESET_NIGHTMARE" />
+							</Box>
+							<Label Anchor="L,T" Offset="0,0"  WrapWidth="665" LeadingOffset="-5" FontStyle="Base" ID="BonusDescription" String="TXT_KEY_PRESET_NIGHTMARE_DETAIL"/>
+						</Stack>
+						<Image Anchor="C,B" Offset="0,-10" Texture="bar900x2.dds" Size="900.1" />
+					</Button>
+				</Stack>
+				<ScrollBar Offset="0,18" Anchor="R,T" AnchorSide="O,I" Style="VertSlider" Length="434" />
+				<UpButton Offset="0,0" Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp" />
+				<DownButton Offset="0,1" Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown" />
+			</ScrollPanel>
+		</Container>
+		<!-- Barbarians Evolved Options -->
+		<Container Size="971,500" Offset="0,44" ID="BEOptionPanel" Hidden="1">
+			<Stack ID="LeftOptionsStack" Anchor="L,T" Offset="30,50" Padding="0" StackGrowth="Bottom">
+				<!-- ally civ dropdown list -->
+				<Container Anchor="L,T" Size="350,32">
+					<Label Anchor="L,C" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_ALLY" />
+					<PullDown Style="GenericPullDown" ScrollThreshold="400" Offset="150,0" Size="200,27" SpaceForScroll="0" ID="AllyCivPulldown" Font="TwCenMT18" FontStyle="Shadow" Tooltip="TXT_KEY_BESETTING_LABEL_ALLY_TIP"/>
+				</Container>
+				<!-- additional ally option -->
+				<CheckBox Offset="0,10" ID="AllyOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_ALLY_INGAME" ToolTip="TXT_KEY_BESETTING_LABEL_ALLY_INGAME_TIP" />
+				<CheckBox Offset="40,0" ID="AllyMeOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_ALLY_INGAME_ASME" ToolTip="TXT_KEY_BESETTING_LABEL_ALLY_INGAME_ASME_TIP" />
+				<!-- era name options -->
+				<CheckBox Offset="0,10" ID="EraOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_NAMES" ToolTip="TXT_KEY_BESETTING_LABEL_NAMES_TIP" />
+				<CheckBox Offset="40,0" ID="EraDefer" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_NAMES_DEFER" ToolTip="TXT_KEY_BESETTING_LABEL_NAMES_DEFER_TIP" />
+				<!-- upgrade options -->
+				<CheckBox Offset="0,10" ID="UpgradeOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE" ToolTip="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE_TIP" />
+				<CheckBox Offset="40,0" ID="UpgradeMe" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE_ME" ToolTip="TXT_KEY_BESETTING_LABEL_UNIT_UPGRADE_ME_TIP" />
+				<!-- capture options -->
+				<CheckBox Offset="0,10" ID="CaptureOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_CAPTURE" ToolTip="TXT_KEY_BESETTING_LABEL_CAPTURE_TIP" />
+				<CheckBox Offset="40,0" ID="CaptureMelee" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_CAPTURE_MELEE" ToolTip="TXT_KEY_BESETTING_LABEL_CAPTURE_MELEE_TIP" />
+				<!-- evolution options -->
+				<CheckBox Offset="0,10" ID="EvolveOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_EVOLVE" ToolTip="TXT_KEY_BESETTING_LABEL_EVOLVE_TIP" />
+				<CheckBox Offset="40,0" ID="EvolveSettlers" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_EVOLUTION_SETTLERS" ToolTip="TXT_KEY_BESETTING_LABEL_EVOLUTION_SETTLERS_TIP" />
+				<!-- evolution timer -->
+				<Slider Offset="0,20" Length="300" Anchor="L,C" Font="TwCenMT20" ID="EvolutionTimerSlider" Style="Slider" WheelSteps="10" >
+					<Label String="" Anchor="C,T" AnchorSide="i,o" ID="EvolutionTimerLength" ToolTip="TXT_KEY_BESETTING_LABEL_EVOLUTION_TIMER_TIP" />
+				</Slider>
+			</Stack>
+			<Stack ID="RightOptionsStack" Anchor="C,T" Offset="150,50" Padding="0" StackGrowth="Bottom">
+				<!-- liberate civ dropdown list -->
+				<Container Anchor="L,T" Size="350,32">
+					<Label Anchor="L,C" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_LIBERATE" />
+					<PullDown Style="GenericPullDown" ScrollThreshold="400" Offset="150,0" Size="200,27" SpaceForScroll="0" ID="LiberateCivPulldown" Font="TwCenMT18" FontStyle="Shadow" Tooltip="TXT_KEY_BESETTING_LABEL_LIBERATE_TIP"/>
+				</Container>
+				<!-- liberate options -->
+				<CheckBox Offset="0,10" ID="LiberateOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_DISPERSE" ToolTip="TXT_KEY_BESETTING_LABEL_DISPERSE_TIP" />
+				<!-- healing options -->
+				<CheckBox Offset="0,10" ID="HealingOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0"  Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_HEALING" ToolTip="TXT_KEY_BESETTING_LABEL_HEALING_TIP" />
+				<!-- spawning options -->
+				<CheckBox Offset="0,10" ID="SpawningOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_SPAWN_ALL" ToolTip="TXT_KEY_BESETTING_LABEL_SPAWN_ALL_TIP" />
+				<CheckBox Offset="40,0" ID="SpawningAllyOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_SPAWN_ALLY" ToolTip="TXT_KEY_BESETTING_LABEL_SPAWN_ALLY_TIP" />
+				<CheckBox Offset="40,0" ID="SpawningMeOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" String="TXT_KEY_BESETTING_LABEL_SPAWN_ME" ToolTip="TXT_KEY_BESETTING_LABEL_SPAWN_ME_TIP" />
+				<!-- spawning chance -->
+				<Container Anchor="L,T" Size="350,32" Offset="0,20">
+					<Label Anchor="L,C" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_SPAWN_CHANCE" />
+					<PullDown Style="GenericPullDown" ScrollThreshold="400" Offset="150,0" Size="200,27" SpaceForScroll="0" ID="HandicapPullDown" Font="TwCenMT18" FontStyle="Shadow" Tooltip="TXT_KEY_BESETTING_LABEL_SPAWN_CHANCE_TIP"/>
+				</Container>
+				<!-- encampment options -->
+				<CheckBox Offset="0,10" ID="EncampmentOption" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_ALL" ToolTip="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_ALL_TIP" />
+				<CheckBox Offset="40,0" ID="EncampmentOther" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="1" String="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_OTHER" ToolTip="TXT_KEY_BESETTING_LABEL_ENCAMPMENTS_OTHER_TIP" />
+				<!--
+				<CheckBox Offset="40,0" ID="EncampmentSpawn" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="1" String="TXT_KEY_BESETTING_LABEL_SPAWN_CAMP" ToolTip="TXT_KEY_BESETTING_LABEL_SPAWN_CAMP_TIP" />
+				-->
+				<!-- infiltrator limit -->
+				<Label Anchor="L,T" Offset="0,20" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_NUKE_LIMIT" ToolTip="TXT_KEY_BESETTING_LABEL_NUKE_LIMIT_TIP" >
+					<Box Anchor="R,C" AnchorSide="o,i" Offset="83,0" Size="34,24" Color="255,255,200,255" >
+						<Box Anchor="C,C"  Offset="0,0" Size="32,22" Color="0,0,0,255" >
+							<EditBox CallOnChar="1" EditMode="1" Size="30,18" Anchor="C,C" ID="InfiltratorLimitEdit" NumberInput="1" MaxLength="3" />
+						</Box>
+					</Box>
+				</Label>
+				<!-- enslaved worker limit -->
+				<Label Anchor="L,T" Offset="0,20" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_WORKER_LIMIT" ToolTip="TXT_KEY_BESETTING_LABEL_WORKER_LIMIT_TIP" >
+					<Box Anchor="R,C" AnchorSide="o,i" Offset="20,0" Size="34,24" Color="255,255,200,255" >
+						<Box Anchor="C,C"  Offset="0,0" Size="32,22" Color="0,0,0,255" >
+							<EditBox CallOnChar="1" EditMode="1" Size="30,18" Anchor="C,C" ID="EnslavedLimitEdit" NumberInput="1" MaxLength="3" />
+						</Box>
+					</Box>
+				</Label>
+			</Stack>
+		</Container>
+		<!-- Barbarians Evolved Strings -->
+		<Container Size="971,500" Offset="0,44" ID="BEStringPanel" Hidden="1">
+			<Label Anchor="L,T" Offset="50,50" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_STRINGS_ERA" ToolTip="TXT_KEY_BESETTING_LABEL_STRINGS_ERA_TIP" />
+			<Label Anchor="L,T" Offset="225,50" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_STRINGS_ADJECTIVE" ToolTip="TXT_KEY_BESETTING_LABEL_STRINGS_ADJECTIVE_TIP" />
+			<Label Anchor="L,T" Offset="400,50" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_STRINGS_DESCRIPTION" ToolTip="TXT_KEY_BESETTING_LABEL_STRINGS_DESCRIPTION_TIP" />
+			<Label Anchor="L,T" Offset="575,50" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_STRINGS_SHORTDESC" ToolTip="TXT_KEY_BESETTING_LABEL_STRINGS_SHORTDESC_TIP" />
+			<Label Anchor="L,T" Offset="750,50" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_STRINGS_CAMP" ToolTip="TXT_KEY_BESETTING_LABEL_STRINGS_CAMP_TIP" />
+			<!-- default row -->
+			<Container Anchor="L,T"  Offset="0,70"   Size="971,30" ID="BEDefaultEraStrings" >
+				<Box Anchor="L,C" Offset="50,0" Size="154,24" Color="0,0,0,0" >
+					<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+						<EditBox EditMode="0" Size="150,18" Anchor="C,C" ID="EraDefault" />
+					</Box>
+				</Box>
+				<Box Anchor="L,C" Offset="225,0" Size="154,24" Color="255,255,200,255" >
+					<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+						<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="AdjDefault" />
+					</Box>
+				</Box>
+				<Box Anchor="L,C" Offset="400,0" Size="154,24" Color="255,255,200,255" >
+					<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+						<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="DescrDefault" />
+					</Box>
+				</Box>
+				<Box Anchor="L,C" Offset="575,0" Size="154,24" Color="255,255,200,255" >
+					<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+						<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="ShortDefault" />
+					</Box>
+				</Box>
+				<Box Anchor="L,C" Offset="750,0" Size="154,24" Color="255,255,200,255" >
+					<Box Anchor="C,C" Offset="0,0" Size="152,22" Color="0,0,0,255" >
+						<EditBox CallOnChar="1" EditMode="1" Size="150,18" Anchor="C,C" ID="CampDefault" />
+					</Box>
+				</Box>
+			</Container>
+			<!-- instance spawn point -->
+			<ScrollPanel ID="BEStringScroll" Offset="0,70" Anchor="L,T" Size="925,240" Vertical="1">
+				<Stack ID="BEStringRows" Anchor="L,T" Offset="0,0" StackGrowth="Bottom" Padding="0" />
+				<ScrollBar Offset="0,18" Anchor="R,T" AnchorSide="O,I" Style="VertSlider" Length="204" />
+				<UpButton Offset="0,0" Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp" />
+				<DownButton Offset="0,1" Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown" />
+			</ScrollPanel>
+			<!-- NOTE: the below are positioned using absolute not relative reckoning -->
+			<!-- divider -->
+			<Image Anchor="C,T" Offset="1,312" Texture="HorizontalTrim.dds" Size="926.5" />
+			<!-- land promotions -->
+			<Label Anchor="L,T" Offset="50,330" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_LAND_PROMO" ToolTip="TXT_KEY_BESETTING_LABEL_LAND_PROMO_TIP" />
+			<Box Anchor="L,T" Offset="225,320" Size="634,24" Color="255,255,200,255" >
+				<Box Anchor="C,C"  Offset="0,0" Size="632,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="600,18" Anchor="C,C" ID="LandPromoEdit" />
+				</Box>
+			</Box>
+			<!-- sea promotions -->
+			<Label Anchor="L,T" Offset="50,360" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_SEA_PROMO" ToolTip="TXT_KEY_BESETTING_LABEL_SEA_PROMO_TIP" />
+			<Box Anchor="L,T" Offset="225,350" Size="634,24" Color="255,255,200,255" >
+				<Box Anchor="C,C"  Offset="0,0" Size="632,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="600,18" Anchor="C,C" ID="SeaPromoEdit" />
+				</Box>
+			</Box>
+			<!-- air promotions -->
+			<Label Anchor="L,T" Offset="50,390" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_AIR_PROMO" ToolTip="TXT_KEY_BESETTING_LABEL_AIR_PROMO_TIP" />
+			<Box Anchor="L,T" Offset="225,380" Size="634,24" Color="255,255,200,255" >
+				<Box Anchor="C,C"  Offset="0,0" Size="632,22" Color="0,0,0,255" >
+					<EditBox CallOnChar="1" EditMode="1" Size="600,18" Anchor="C,C" ID="AirPromoEdit" />
+				</Box>
+			</Box>
+			<!-- divider -->
+			<Image Anchor="C,T" Offset="1,410" Texture="HorizontalTrim.dds" Size="926.5" />
+			<!-- colors hdrs -->
+			<Label Anchor="L,T" Offset="50,420" WrapWidth="300" Font="TwCenMT20" String="TXT_KEY_BESETTING_LABEL_COLORCOLUMN" ToolTip="TXT_KEY_BESETTING_LABEL_COLORCOLUMN_TIP" />
+			<!-- color row minor -->
+			<Container Anchor="L,T" Size="450,32" Offset="50,440">
+				<Label Anchor="L,C" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_MINORBARB_COLOR" />
+				<PullDown Style="GenericPullDown" ScrollThreshold="250" Offset="150,0" Size="300,27" SpaceForScroll="0" ID="MinorColorPullDown" Font="TwCenMT18" FontStyle="Shadow" Tooltip="TXT_KEY_BESETTING_LABEL_MINORBARB_COLOR_TIP"/>
+			</Container>
+			<!-- color row major -->
+			<Container Anchor="L,T" Size="450,32" Offset="50,470">
+				<Label Anchor="L,C" ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_MAJORBARB_COLOR" />
+				<PullDown Style="GenericPullDown" ScrollThreshold="250" Offset="150,0" Size="300,27" SpaceForScroll="0" ID="MajorColorPullDown" Font="TwCenMT18" FontStyle="Shadow" Tooltip="TXT_KEY_BESETTING_LABEL_MAJORBARB_COLOR_TIP"/>
+			</Container>
+			<!-- icon row minor -->
+			<Container Anchor="L,T" Offset="345,490" Size="64,64" ToolTip="TXT_KEY_BESETTING_LABEL_MINORBARB_COLOR_TIP" >
+				<Image ID="MinorIconBG" Size="64,64" Offset="0,0" Anchor="C,C" Texture="CivIconBGSizes.dds" TextureOffset="77,0" />
+				<Image ID="MinorIconFG" Size="64,64" Offset="0,0" Anchor="C,C" Texture="CivSymbols_White64_Shared.dds" TextureOffset="0,0" />
+				<Label ID="MinorIconText" Offset="0,32" Anchor="C,C" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_MINORBARB_COLOR" />
+			</Container>
+			<!-- icon row major -->
+			<Container Anchor="L,T" Offset="520,490" Size="64,64" ToolTip="TXT_KEY_BESETTING_LABEL_MAJORBARB_COLOR_TIP" >
+				<Image ID="MajorIconBG" Size="64,64" Offset="0,0" Anchor="C,C" Texture="CivIconBGSizes.dds" TextureOffset="77,0" />
+				<Image ID="MajorIconFG" Size="64,64" Offset="0,0"   Anchor="C,C" Texture="CivSymbols_White64_Shared.dds" TextureOffset="0,0" />
+				<Label ID="MajorIconText" Offset="0,32" Anchor="C,C" Font="TwCenMT20" FontStyle="Shadow" String="TXT_KEY_BESETTING_LABEL_MAJORBARB_COLOR" />
+			</Container>
+		</Container>
+		<!-- Back Button -->
+		<GridButton Anchor="L,B"  Style="SmallButton" Size="150,32"  Offset="38,54" StateOffsetIncrement="0,0" ID="BackButton"  >
+			<Label Anchor="C,C"  Offset="0,0"  String="TXT_KEY_BACK_BUTTON" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+		</GridButton>
+		<!-- Setup Button -->
+		<!--
+		<GridButton Anchor="C,B"  Style="SmallButton" Size="170,32"  Offset="38,54" StateOffsetIncrement="0,0" ID="BasicButton" Hidden="1" >
+			<Label Anchor="C,C"  Offset="0,0"  ID="SmallButton2Label" String="TXT_KEY_BESETTING_LABEL_BASIC_SETUP" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
+		</GridButton>
+		-->
+		<!-- Advanced Button -->
+		<GridButton Anchor="R,B" ID="AdvancedButton"   Font="TwCenMT22"  Offset="38,54"     Size="260,45"    Style="BaseButton" String="TXT_KEY_BESETTING_LABEL_ADVANCED_SETUP" Hidden="1" />
+	</Grid>
+	<!--
+	<LuaContext FileName="Assets/UI/FrontEnd/GameSetup/GameSetupScreen" ID="GameSetupScreen" Hidden="1" />
+	-->
+	<LuaContext FileName="Assets/UI/FrontEnd/GameSetup/AdvancedSetup" ID="AdvancedSetup" Hidden="1" />
+</Context>

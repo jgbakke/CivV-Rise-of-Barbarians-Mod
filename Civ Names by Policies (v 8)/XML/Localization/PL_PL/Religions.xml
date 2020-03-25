@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_PL_PL>
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ">
+           <Text>{@1: plural 2?Buddyjskie; other?{@1: gender feminine?Buddyjska; neuter?Buddyjskie; other?Buddyjski;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_BUDDHISM_ADJ_SHORT">
+           <Text>Bud.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ">
+           <Text>{@1: plural 2?Konfucjańskie; other?{@1: gender feminine?Konfucjańska; neuter?Konfucjańskie; other?Konfucjański;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CONFUCIANISM_ADJ_SHORT">
+           <Text>Konf.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ">
+           <Text>{@1: plural 2?Chrześcijańskie; other?{@1: gender feminine?Chrześcijańska; neuter?Chrześcijańskie; other?Chrześcijański;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CHRISTIANITY_ADJ_SHORT">
+           <Text>Chrz.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ">
+           <Text>{@1: plural 2?Hinduistyczne; other?{@1: gender feminine?Hinduistyczna; neuter?Hinduistyczne; other?Hinduistyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_HINDUISM_ADJ_SHORT">
+           <Text>Hindu.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ">
+           <Text>{@1: plural 2?Islamskie; other?{@1: gender feminine?Islamska; neuter?Islamskie; other?Islamski;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ISLAM_ADJ_SHORT">
+           <Text>Islam.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ">
+           <Text>{@1: plural 2?Judaistyczne; other?{@1: gender feminine?Judaistyczna; neuter?Judaistyczne; other?Judaistyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_JUDAISM_ADJ_SHORT">
+           <Text>Jud.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ">
+           <Text>{@1: plural 2?Szintoistyczne; other?{@1: gender feminine?Szintoistyczna; neuter?Szintoistyczne; other?Szintoistyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SHINTO_ADJ_SHORT">
+           <Text>Szint.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ">
+           <Text>{@1: plural 2?Sikhijskie; other?{@1: gender feminine?Sikhijska; neuter?Sikhijskie; other?Sikhijski;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_SIKHISM_ADJ_SHORT">
+           <Text>Sikh.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ">
+           <Text>{@1: plural 2?Taoistyczne; other?{@1: gender feminine?Taoistyczna; neuter?Taoistyczne; other?Taoistyczny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TAOISM_ADJ_SHORT">
+           <Text>Tao.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ">
+           <Text>{@1: plural 2?Tengriańskie; other?{@1: gender feminine?Tengriańska; neuter?Tengriańskie; other?Tengraiński;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_TENGRIISM_ADJ_SHORT">
+           <Text>Tengr.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ">
+           <Text>{@1: plural 2?Zoroastriańskie; other?{@1: gender feminine?Zoroastriańska; neuter?Zoroastriańskie; other?Zoroastriański;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ZOROASTRIANISM_ADJ_SHORT">
+           <Text>Zor.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ">
+           <Text>{@1: plural 2?Katolickie; other?{@1: gender feminine?Katolicka; neuter?Katolickie; other?Katolicki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_CATHOLICISM_ADJ_SHORT">
+           <Text>Kat.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ">
+           <Text>{@1: plural 2?Prawosławne; other?{@1: gender feminine?Prawosławna; neuter?Prawosławne; other?Prawosławny;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_ORTHODOXY_ADJ_SHORT">
+           <Text>Praw.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ">
+           <Text>{@1: plural 2?Protestanckie; other?{@1: gender feminine?Protestancka; neuter?Protestanckie; other?Protestancki;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_RELIGION_PROTESTANTISM_ADJ_SHORT">
+           <Text>Prot.</Text>
+        </Row>
+
+    </Language_PL_PL>
+</GameData>

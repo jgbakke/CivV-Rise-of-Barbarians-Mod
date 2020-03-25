@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+<!-- English / US -->
+	<Language_en_US>
+		
+		<Row Tag="TXT_KEY_HSD_FREE_TECH">
+			<Text>You can select {1_num} free tech(s).</Text>
+		</Row>
+		
+	</Language_en_US>
+	
+<!-- German -->
+	<Language_DE_DE>
+	</Language_DE_DE>
+<!-- Spanish -->
+	<Language_ES_ES>
+	</Language_ES_ES>
+<!-- French -->
+	<Language_FR_FR>
+	</Language_FR_FR>
+<!-- Italian -->
+	<Language_IT_IT>
+	</Language_IT_IT>  
+</GameData>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 07/18/2015 8:09:16 PM -->
+<GameData>
+	<!-- Barbarian related game definitions -->
+	<Defines>
+		<!-- AI Tactical Barbarian Settings -->
+		<!-- ORIGINAL VALUES DO NOT ERASE
+		AI_TACTICAL_BARBARIAN_PRIORITY_ESCORT_CIVILIAN		30
+		AI_TACTICAL_BARBARIAN_PRIORITY_PLUNDER_TRADE_UNIT	20
+		AI_TACTICAL_BARBARIAN_PRIORITY_DESTROY_HIGH_UNIT	16
+		AI_TACTICAL_BARBARIAN_PRIORITY_DESTROY_MEDIUM_UNIT	15
+		AI_TACTICAL_BARBARIAN_PRIORITY_DESTROY_LOW_UNIT		14
+		AI_TACTICAL_BARBARIAN_PRIORITY_PILLAGE_CITADEL		14
+		AI_TACTICAL_BARBARIAN_PRIORITY_CAMP_DEFENSE			13
+		AI_TACTICAL_BARBARIAN_PRIORITY_CIVILIAN_ATTACK		13
+		AI_TACTICAL_BARBARIAN_PRIORITY_PILLAGE				12
+		AI_TACTICAL_BARBARIAN_PRIORITY_BLOCKADE_RESOURCE	10
+		AI_TACTICAL_BARBARIAN_PRIORITY_TO_SAFETY			10
+		AI_TACTICAL_BARBARIAN_PRIORITY_ATTRIT_HIGH_UNIT		10
+		AI_TACTICAL_BARBARIAN_PRIORITY_CAPTURE_CITY			9
+		AI_TACTICAL_BARBARIAN_PRIORITY_CAPTURE_CITY			9
+		AI_TACTICAL_BARBARIAN_PRIORITY_ATTRIT_LOW_UNIT		6
+		AI_TACTICAL_BARBARIAN_PRIORITY_ATTRIT_MEDIUM_UNIT	7
+		AI_TACTICAL_BARBARIAN_PRIORITY_DAMAGE_CITY			5
+		AI_TACTICAL_BARBARIAN_PRIORITY_PILLAGE_NEXT_TURN	4
+		AI_TACTICAL_BARBARIAN_PRIORITY_AGGRESSIVE_MOVE		3
+		AI_TACTICAL_BARBARIAN_PRIORITY_DESPERATE_ATTACK		0
+		AI_TACTICAL_BARBARIAN_PRIORITY_PASSIVE_MOVE			-1
+		-->
+		<!-- New AI priorities (planned):
+		 1. escort civillian (30)
+		 2. plunder trade units (20)
+		 3. suicidal attack (18)
+		 4. kill units (16-15-14) / damage units (16-15-14)
+		 5. pillage citadels (14)
+		 6. defend the camp (13) / capture civillians (13)
+		 7. pillage in general (12)
+		 8. damage cities (12)
+		 9. capture cities (11)
+		10. move to safety (10) / move to blockade resources (10)
+		11. position oneself to pillage next turn (4)
+		12. move agressively (3)
+		-->
+		<!-- Changes to original values: -->
+		<!-- Bring tendency to attrition (damage) units in-line with killing those units -->
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_PRIORITY_ATTRIT_HIGH_UNIT"/>
+			<Set Value="16"/>
+		</Update>
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_PRIORITY_ATTRIT_MEDIUM_UNIT"/>
+			<Set Value="15"/>
+		</Update>
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_PRIORITY_ATTRIT_LOW_UNIT"/>
+			<Set Value="14"/>
+		</Update>
+		<!-- Allow for desperate attacks -->
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_PRIORITY_DESPERATE_ATTACK"/>
+			<Set Value="18"/>
+		</Update>
+		<!-- Increase tendency to attack cities (was 5 to damage, 9 to capture), prioritize slightly above attrition of units -->
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_PRIORITY_DAMAGE_CITY"/>
+			<Set Value="12"/>
+		</Update>
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_PRIORITY_CAPTURE_CITY"/>
+			<Set Value="11"/>
+		</Update>
+		<!-- Increase density from a single camp (was 2 barbs within 4 tiles of camp) -->
+		<Update>
+			<Where Name="MAX_BARBARIANS_FROM_CAMP_NEARBY"/>
+			<Set Value="6"/>
+		</Update>
+		<Update>
+			<Where Name="MAX_BARBARIANS_FROM_CAMP_NEARBY_RANGE"/>
+			<Set Value="2"/>
+		</Update>
+		<!-- Eliminate AI variation (was 15) -->
+		<Update>
+			<Where Name="AI_TACTICAL_BARBARIAN_RELEASE_VARIATION"/>
+			<Set Value="0"/>
+		</Update>
+		<!-- Remove XP cap (was 30) -->
+		<Update>
+			<Where Name="BARBARIAN_MAX_XP_VALUE"/>
+			<Set Value="-1"/>
+		</Update>
+	</Defines>
+</GameData>

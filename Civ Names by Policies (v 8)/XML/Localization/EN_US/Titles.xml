@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_EN_US>
+        <Row Tag="TXT_KEY_TITLE_Shogun">
+           <Text>Shogun {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Daimyo">
+           <Text>Daimyo {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Kinsei">
+           <Text>Kinsei {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Maharaja">
+           <Text>{@1: gender feminine?Maharani; other?Maharaja;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Raja">
+           <Text>{@1: gender feminine?Rani; other?Raja;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Caliph">
+           <Text>Caliph {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Emir">
+           <Text>Emir {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Sultan">
+           <Text>Sultan {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Khagan">
+           <Text>Khagan {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Khan">
+           <Text>Khan {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Earl">
+           <Text>Earl {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Prince">
+           <Text>{@1: gender feminine?Princess; other?Prince;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Grand Prince">
+           <Text>{@1: gender feminine?Grand Princess; other?Grand Prince;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chief">
+           <Text>{@1: gender feminine?Chieftess; other?Chief;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Chief">
+           <Text>{@1: gender feminine?High Chieftess; other?High Chief;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Comrade">
+           <Text>Comrade {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Soviet">
+           <Text>Chairman of Supreme Soviet {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Council">
+           <Text>Chairman of Supreme Council {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Assembly">
+           <Text>Chairman of Supreme Assembly {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Representative">
+           <Text>Representative {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Prime Minister">
+           <Text>Prime Minister {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_President">
+           <Text>President {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_People_s Commissar">
+           <Text>People's Commissar {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Head of Government">
+           <Text>Head of Government {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Emperor">
+           <Text>{@1: gender feminine?Empress; other?Emperor;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_King">
+           <Text>{@1: gender feminine?Queen; other?King;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Despot">
+           <Text>{@1: gender feminine?Despotess; other?Despot;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Count">
+           <Text>{@1: gender feminine?Countess; other?Count;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Duke">
+           <Text>{@1: gender feminine?Duchess; other?Duke;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Fuehrer">
+           <Text>Fuehrer {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Federal Assembly">
+           <Text>Chairman of Federal Assembly {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Federal Counsil">
+           <Text>Chairman of Federal Counsil {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Doge">
+           <Text>Doge {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Consul">
+           <Text>Consul {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Priest">
+           <Text>{@1: gender feminine?High Priestess; other?High Priest;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Holy Emperor">
+           <Text>{@1: gender feminine?Holy Empress; other?Holy Emperor;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Supreme Leader">
+           <Text>Supreme Leader {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Grand Master">
+           <Text>Grand Master {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_His Holiness">
+           <Text>{@1: gender feminine?Her Holiness; other?His Holiness;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Bishop">
+           <Text>Bishop {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Archbishop">
+           <Text>Archbishop {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Sheikh">
+           <Text>Sheikh {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Lord">
+           <Text>{@1: gender feminine?Lady; other?Lord;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Lord Protector">
+           <Text>{@1: gender feminine?Lady-Protector; other?Lord Protector;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Elder">
+           <Text>{@1: gender feminine?Eldress; other?Elder;} {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Shaman">
+           <Text>High Shaman {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Clan Chief">
+           <Text>Clan Chief {1_PlayerName:textkey} of {2_CivName:textkey}</Text>
+        </Row>
+
+    </Language_EN_US>
+</GameData>

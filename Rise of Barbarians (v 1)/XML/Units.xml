@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/6/2011 1:43:27 AM -->
+<GameData>
+  <!-- Waiting unit for human player -->
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SETTLER</Class>
+			<Type>UNIT_WAIT</Type>
+			<Moves>-2</Moves>
+			<Combat>30</Combat>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>WAIT</Description>
+			<Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SETTLER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_SETTLER</Help>
+			<Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+			<Food>true</Food>
+			<Found>true</Found>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT_SUBMARINE</UnitArtInfo>
+			<UnitFlagIconOffset>69</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>22</PortraitIndex>
+		</Row>
+	</Units>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_WAIT</UnitType>
+			<PromotionType>PROMOTION_INVISIBLE_SUBMARINE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WAIT</UnitType>
+			<PromotionType>PROMOTION_SIGHT_PENALTY_WAIT</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WAIT</UnitType>
+			<PromotionType>PROMOTION_CAN_MOVE_IMPASSABLE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_SIGHT_PENALTY_WAIT</Type>
+			<Description>TXT_KEY_PROMOTION_SIGHT_PENALTY</Description>
+			<Help>TXT_KEY_PROMOTION_SIGHT_PENALTY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<NoRevealMap>true</NoRevealMap>
+			<VisibilityChange>-2</VisibilityChange>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_SIGHT_PENALTY</PediaEntry>
+		</Row>
+	</UnitPromotions>
+</GameData>

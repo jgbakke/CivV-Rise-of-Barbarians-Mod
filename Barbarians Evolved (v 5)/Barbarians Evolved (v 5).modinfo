@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="09f11249-de39-4884-975d-9d8f01c241d7" version="5">
+  <Properties>
+    <Name>Barbarians Evolved</Name>
+    <Teaser>The Barbarians have evolved...</Teaser>
+    <Description>Barbarians have evolved...</Description>
+    <Authors>Charsi</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>4</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="84dc210e-0bdd-440a-b1cd-a0a886064863" minversion="0" maxversion="999" title="(BNW) Leugi's Barbarian Inmersion Enhancements" />
+    <Mod id="fabf38f3-2bb1-497e-af87-6dcbeb0bba92" minversion="0" maxversion="999" title="JFD's The Germans" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="Community Balance Patch" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch - Core" />
+    <Mod id="eead0050-1e3f-4178-a91f-26cf1881ac39" minversion="0" maxversion="999" title="City-State Diplomacy Mod for CBP" />
+    <Mod id="47dd6204-89ab-4cf6-af4f-1327d2ce584c" minversion="0" maxversion="999" title="Civ IV Diplomatic Features - CBP" />
+    <Mod id="0e3482c6-f74a-4fca-ab3c-fb97036b08af" minversion="0" maxversion="999" title="Superpowers Complete Edition" />
+    <Mod id="438a9930-1967-474f-a6b4-2be57c7deae0" minversion="0" maxversion="999" title="Components - Dummy Civilization" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="2D11A641665B9CD0C9547F1C0FA97F1E" import="1">art/conan.dds</File>
+    <File md5="892769008E117E762B71918B926267C0" import="1">art/invasionmap.dds</File>
+    <File md5="027AFD5F9913FFDB654464B3A9F7C73B" import="1">art/ruins.dds</File>
+    <File md5="1654BFA628EA936DB57F3DDAEE3D5452" import="1">BEsetCityStates.lua</File>
+    <File md5="DB0E9B49514689394A9141989C26EA84" import="1">BEsetMinimal.lua</File>
+    <File md5="FB98AE3389B913B684512A86E8B1E5D9" import="1">BEsettings.lua</File>
+    <File md5="EAB5A9A9020474173D979F99B0441AB0" import="1">BEsetCBP.lua</File>
+    <File md5="90D6641F237EA69E8298AB340EF251E5" import="1">BEsetPersonalized.lua</File>
+    <File md5="FFE16E78CB71307EEB4D8DE63931659A" import="1">BEsetVanilla.lua</File>
+    <File md5="2D035FA5DD9726A98A5FC2B55432DB72" import="1">BEsetWhiteWalkers.lua</File>
+    <File md5="6D61DE372FD48D71337C9138BFC4E64D" import="1">include/BarbariansEvolvedSharedFunctions.lua</File>
+    <File md5="17E01D81A784682825D844CB483B4965" import="1">lua/BarbariansEvolved.lua</File>
+    <File md5="56D743F1316F88DBA3772BEADDE9D60C" import="1">sql/BarbariansEvolved.sql</File>
+    <File md5="8303021CBFB2A98B276C4AACC700E107" import="1">ui/BarbariansEvolvedSetupScreen.lua</File>
+    <File md5="E8F0FCF22B254CE000BB220E69EAA3BD" import="1">ui/BarbariansEvolvedSetupScreen.xml</File>
+    <File md5="DE8A7590E1AF57ABE57DCB1DE8436AA7" import="1">xml/BarbarianBuildings.xml</File>
+    <File md5="2D6D69DF3F1A5213A8853FF67D7F2310" import="1">xml/BarbarianCities.xml</File>
+    <File md5="3750E874E7ED278A3AA2590913485D46" import="1">xml/BarbarianColors.xml</File>
+    <File md5="8AB3D5326AA2D20E9313430130FA5162" import="1">xml/BarbarianDefines.xml</File>
+    <File md5="AFE6FC8EA8473C2E109622C8E114AED7" import="1">xml/BarbarianImprovements.xml</File>
+    <File md5="4F5C4CE0BBA82FF2881CE19BC3A5BF4E" import="1">xml/BarbarianLeader.xml</File>
+    <File md5="D6E97DE9931890CC4042E5B47BDE2A09" import="1">xml/BarbarianMajorUnits.xml</File>
+    <File md5="1233B031B3691C5326A38C4A9F0412D6" import="1">xml/BarbarianPolicies.xml</File>
+    <File md5="3F5EA64972A7C0424669957B4A0E1CC0" import="1">xml/BarbarianPromotions.xml</File>
+    <File md5="7C96C2CC1FD2ADF99B044DEC62CEB3F7" import="1">xml/BarbarianTrait.xml</File>
+    <File md5="8D7A98A11F9067C4A6136903CD32F752" import="1">xml/BarbarianTraitNoTrain.xml</File>
+    <File md5="F90F9E389D0FFAD6B7E4945C9352F32F" import="1">xml/BarbarianUnits.xml</File>
+    <File md5="C312D4C123BBDEFFB3709E6619D9942B" import="1">xml/BarbarianMajorCiv.xml</File>
+    <File md5="3DA0D202F0DD93E86D25D09BC43CD186" import="1">xml/BEmod_lang_en_US.xml</File>
+    <File md5="9F9D681311DCBB88D9CFEE4BA1A8D5B5" import="1">xml/conan.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>xml/BEmod_lang_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>sql/BarbariansEvolved.sql</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianColors.xml</UpdateDatabase>
+      <UpdateDatabase>ui/BarbariansEvolvedSetupScreen.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianPolicies.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianBuildings.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianCities.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianDefines.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianLeader.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianTrait.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianTraitNoTrain.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianImprovements.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianPromotions.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianUnits.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianMajorCiv.xml</UpdateDatabase>
+      <UpdateDatabase>xml/BarbarianMajorUnits.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="lua/BarbariansEvolved.lua">
+      <Name>BarbariansEvolved.lua</Name>
+      <Description>Barbarians Evolved</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="ui/BarbariansEvolvedSetupScreen.lua">
+      <Name>Barbarians Evolved Setup</Name>
+      <Description>Select your Barbarian options before proceeding.</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

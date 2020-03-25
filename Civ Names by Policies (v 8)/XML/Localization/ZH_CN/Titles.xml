@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_zh_CN>
+        <Row Tag="TXT_KEY_TITLE_Shogun">
+           <Text>{@2_CivName}幕府将军{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Daimyo">
+           <Text>{@2_CivName}大名{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Kinsei">
+           <Text>{@2_CivName}近世大名{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Maharaja">
+           <Text>{@2_CivName}{@1: gender feminine?摩诃拉妮; other?摩诃拉者;}{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Raja">
+           <Text>{@2_CivName}{@1: gender feminine?拉妮; other?拉者;}{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Caliph">
+           <Text>{@2_CivName}哈里发{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Emir">
+           <Text>{@2_CivName}埃米尔{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Sultan">
+           <Text>{@2_CivName}{@1: gender feminine?苏丹娜; other?苏丹;}{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Khagan">
+           <Text>{@2_CivName}可汗{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Khan">
+           <Text>{@2_CivName}大汗{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Earl">
+           <Text>{@2_CivName}伯爵{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Prince">
+           <Text>{@2_CivName}王爵{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Grand Prince">
+           <Text>{@2_CivName}大公{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chief">
+           <Text>{@2_CivName}首领{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Chief">
+           <Text>{@2_CivName}最高首领{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Comrade">
+           <Text>{@2_CivName}革命同志{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Soviet">
+           <Text>{@2_CivName}最高苏维埃主席{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Council">
+           <Text>{@2_CivName}最高委员会主席{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Assembly">
+           <Text>{@2_CivName}最高会议主席{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Representative">
+           <Text>{@2_CivName}议员{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Prime Minister">
+           <Text>{@2_CivName}总理{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_President">
+           <Text>{@2_CivName}总统{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_People_s Commissar">
+           <Text>{@2_CivName}人民委员{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Head of Government">
+           <Text>{@2_CivName}政府首脑{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Emperor">
+           <Text>{@2_CivName}皇帝{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_King">
+           <Text>{@2_CivName}国王{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Despot">
+           <Text>{@2_CivName}君主{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Count">
+           <Text>{@2_CivName}伯爵{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Duke">
+           <Text>{@2_CivName}公爵{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Fuehrer">
+           <Text>{@2_CivName}元首{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Federal Assembly">
+           <Text>{@2_CivName}联邦议会主席{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Federal Counsil">
+           <Text>{@2_CivName}联邦委员会主席{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Doge">
+           <Text>{@2_CivName}总督{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Consul">
+           <Text>{@2_CivName}领事{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Priest">
+           <Text>{@2_CivName}大祭司{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Holy Emperor">
+           <Text>{@2_CivName}教皇{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Supreme Leader">
+           <Text>{@2_CivName}最高领袖{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Grand Master">
+           <Text>{@2_CivName}大导师{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_His Holiness">
+           <Text>{@2_CivName}法王{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Bishop">
+           <Text>{@2_CivName}主教{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Archbishop">
+           <Text>{@2_CivName}总主教{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Sheikh">
+           <Text>{@2_CivName}谢赫{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Lord">
+           <Text>{@2_CivName}领主{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Lord Protector">
+           <Text>{@2_CivName}护国公{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Elder">
+           <Text>{@2_CivName}长老{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Shaman">
+           <Text>{@2_CivName}大萨满{1_PlayerName:textkey}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Clan Chief">
+           <Text>{@2_CivName}部落酋长{1_PlayerName:textkey}</Text>
+        </Row>
+
+    </Language_zh_CN>
+</GameData>

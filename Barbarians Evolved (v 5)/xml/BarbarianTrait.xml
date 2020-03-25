@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 07/18/2015 7:47:44 PM -->
+<GameData>
+	<!-- 
+	CONAN! WHAT IS BEST IN LIFE?
+	To crush your enemies, to see them driven before you, and to hear the lamentation of the women!
+
+	Buffs: no unhappiness, no unit maintenance, +500% production modifier
+	-->
+	<Traits>
+		<Row>
+			<Type>TRAIT_BARBARIAN_EVOLVED</Type>
+			<Description>TXT_KEY_TRAIT_BARBAROUS</Description>
+			<ShortDescription>TXT_KEY_TRAIT_BARBAROUS_SHORT</ShortDescription>
+			<CityUnhappinessModifier>-100</CityUnhappinessModifier>
+			<PopulationUnhappinessModifier>-100</PopulationUnhappinessModifier>
+			<LandUnitMaintenanceModifier>-100</LandUnitMaintenanceModifier>
+			<NavalUnitMaintenanceModifier>-100</NavalUnitMaintenanceModifier>
+			<ImprovementMaintenanceModifier>-100</ImprovementMaintenanceModifier>
+			<StaysAliveZeroCities>1</StaysAliveZeroCities>
+		</Row>
+	</Traits>
+</GameData>

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_RU_RU>
+        <Row Tag="TXT_KEY_PART_Shogunate">
+           <Text>Сегунат</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Shogunate_SHORT">
+           <Text>Сег.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo">
+           <Text>Дайме</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Daimyo_SHORT">
+           <Text>Дайме</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj">
+           <Text>Махарадж</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Maharaj_SHORT">
+           <Text>Мах.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj">
+           <Text>Радж</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Raj_SHORT">
+           <Text>Радж</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate">
+           <Text>Халифат</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Caliphate_SHORT">
+           <Text>Хал.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate">
+           <Text>Эмират</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirate_SHORT">
+           <Text>Эм.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates">
+           <Text>Эмираты</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Emirates_SHORT">
+           <Text>Эм-ты</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate">
+           <Text>Султанат</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sultanate_SHORT">
+           <Text>Сул.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate">
+           <Text>Каганат</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khaganate_SHORT">
+           <Text>Каг.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate">
+           <Text>Ханство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Khanate_SHORT">
+           <Text>Хан.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom">
+           <Text>Графство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Earldom_SHORT">
+           <Text>Граф.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality">
+           <Text>Княжество</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Principality_SHORT">
+           <Text>Княж.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe">
+           <Text>Племя</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribe_SHORT">
+           <Text>Племя</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes">
+           <Text>Племена</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribes_SHORT">
+           <Text>Племена</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union">
+           <Text>Племенной Союз</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Tribal Union_SHORT">
+           <Text>Плем. Союз</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom">
+           <Text>Вождество</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Chiefdom_SHORT">
+           <Text>Вожд.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan">
+           <Text>Клан</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Clan_SHORT">
+           <Text>Клан</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land">
+           <Text>Земля</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Land_SHORT">
+           <Text>Земля</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union">
+           <Text>Союз</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Union_SHORT">
+           <Text>Союз</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic">
+           <Text>Республика</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Republic_SHORT">
+           <Text>Респ.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation">
+           <Text>Конфедерация</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederation_SHORT">
+           <Text>Конф.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League">
+           <Text>Лига</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_League_SHORT">
+           <Text>Лига</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation">
+           <Text>Федерация</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federation_SHORT">
+           <Text>Фед.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State">
+           <Text>Государство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_State_SHORT">
+           <Text>Гос.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich">
+           <Text>Рейх</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Reich_SHORT">
+           <Text>Рейх</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State">
+           <Text>Город-Государство</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-State_SHORT">
+           <Text>ГГ</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States">
+           <Text>Города-Государства</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_City-States_SHORT">
+           <Text>ГГ-а</Text>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire">
+           <Text>Империя</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Empire_SHORT">
+           <Text>Имп.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth">
+           <Text>Содружество</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Commonwealth_SHORT">
+           <Text>Содр.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom">
+           <Text>Соединенное Королевство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United Kingdom_SHORT">
+           <Text>СК</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate">
+           <Text>Деспотат</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Despotate_SHORT">
+           <Text>Десп.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County">
+           <Text>Графство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_County_SHORT">
+           <Text>Граф.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy">
+           <Text>Герцогство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Duchy_SHORT">
+           <Text>Герц.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province">
+           <Text>Провинция</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Province_SHORT">
+           <Text>Пров.</Text>
+           <Gender>feminine</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom">
+           <Text>Королевство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Kingdom_SHORT">
+           <Text>Кор.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State">
+           <Text>Свободное Государство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Free State_SHORT">
+           <Text>Св.Гос.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States">
+           <Text>Штаты</Text>
+           <Gender>neuter</Gender>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_States_SHORT">
+           <Text>Шт.</Text>
+           <Gender>neuter</Gender>
+           <Plurality>2</Plurality>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom">
+           <Text>Жречество</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Priestdom_SHORT">
+           <Text>Жреч.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order">
+           <Text>Орден</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Order_SHORT">
+           <Text>Орд.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric">
+           <Text>Епископство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Bishopric_SHORT">
+           <Text>Еписк.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric">
+           <Text>Архиепископство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Archbishopric_SHORT">
+           <Text>Архиеп.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom">
+           <Text>Шейхство</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Sheikhdom_SHORT">
+           <Text>Шей.</Text>
+           <Gender>neuter</Gender>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat">
+           <Text>{@1: plural 2?Пролетарские; other?{@1: gender feminine?Пролетарская; neuter?Пролетарское; other?Пролетарский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Proletariat_SHORT">
+           <Text>Прол.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist">
+           <Text>{@1: plural 2?Коммунистические; other?{@1: gender feminine?Коммунистическая; neuter?Коммунистическое; other?Коммунистический;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Communist_SHORT">
+           <Text>Комм.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist">
+           <Text>{@1: plural 2?Социалистические; other?{@1: gender feminine?Социалистическая; neuter?Социалистическое; other?Социалистический;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Socialist_SHORT">
+           <Text>Соц.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s">
+           <Text>{@1: plural 2?Народные; other?{@1: gender feminine?Народная; neuter?Народное; other?Народный;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_People_s_SHORT">
+           <Text>Нар.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate">
+           <Text>{@1: plural 2?Конфедеративные; other?{@1: gender feminine?Конфедеративная; neuter?Конфедеративное; other?Конфедеративный;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Confederate_SHORT">
+           <Text>Конф.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal">
+           <Text>{@1: plural 2?Федеративные; other?{@1: gender feminine?Федеративная; neuter?Федеративное; other?Федеративный;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Federal_SHORT">
+           <Text>Фед.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council">
+           <Text>{@1: plural 2?Советские; other?{@1: gender feminine?Советская; neuter?Советское; other?Советский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Council_SHORT">
+           <Text>Сов.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet">
+           <Text>{@1: plural 2?Советские; other?{@1: gender feminine?Советская; neuter?Советское; other?Советский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Soviet_SHORT">
+           <Text>Сов.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic">
+           <Text>{@1: plural 2?Демократические; other?{@1: gender feminine?Демократическая; neuter?Демократическое; other?Демократический;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Democratic_SHORT">
+           <Text>Дем.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great">
+           <Text>{@1: plural 2?Великие; other?{@1: gender feminine?Великая; neuter?Великое; other?Великий;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Great_SHORT">
+           <Text>Вел.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand">
+           <Text>{@1: plural 2?Великие; other?{@1: gender feminine?Великая; neuter?Великое; other?Великий;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Grand_SHORT">
+           <Text>Вел.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy">
+           <Text>{@1: plural 2?Священные; other?{@1: gender feminine?Священная; neuter?Священное; other?Священный;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Holy_SHORT">
+           <Text>Св.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist">
+           <Text>{@1: plural 2?Фашистские; other?{@1: gender feminine?Фашистская; neuter?Фашистское; other?Фашистский;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Fascist_SHORT">
+           <Text>Фаш.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation">
+           <Text>Нации</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Nation_SHORT">
+           <Text>Нат.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United">
+           <Text>{@1: plural 2?Соединенные; other?{@1: gender feminine?Соединенная; neuter?Соединенное; other?Соединенный;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_United_SHORT">
+           <Text>Соед.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant">
+           <Text>{@1: plural 2?Торговые; other?{@1: gender feminine?Торговая; neuter?Торговое; other?Торговый;};}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_Merchant_SHORT">
+           <Text>Торг.</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppets">
+           <Text>марионеточные государства</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_puppet">
+           <Text>марионетка</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated members">
+           <Text>ассоциированные члены</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated member">
+           <Text>ассоциированный член</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous regions">
+           <Text>автономные регионы</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_autonomous region">
+           <Text>автономный регион</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partners">
+           <Text>младшие партнеры</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_lesser partner">
+           <Text>младший партнер</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite states">
+           <Text>государства-сателлиты</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_satellite state">
+           <Text>государство-сателлит</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassals">
+           <Text>вассалы</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_vassal">
+           <Text>вассал</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_members">
+           <Text>члены</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_member">
+           <Text>член</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorates">
+           <Text>протектораты</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_protectorate">
+           <Text>протекторат</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated states">
+           <Text>ассоциированные государства</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_PART_assosiated state">
+           <Text>ассоциированное государство</Text>
+        </Row>
+
+    </Language_RU_RU>
+</GameData>

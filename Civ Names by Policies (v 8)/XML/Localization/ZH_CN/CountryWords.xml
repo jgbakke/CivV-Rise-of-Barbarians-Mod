@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/17/2014 8:18:58 PM -->
+<GameData>
+	<Language_ZH_CN>
+		<Row Tag="TXT_KEY_CIV_GERMANY_ADJECTIVE_WORD">
+			<Text>德意志</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_RUSSIA_ADJECTIVE_WORD">
+			<Text>俄罗斯</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_FRANCE_ADJECTIVE_WORD">
+			<Text>法兰西</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_AMERICA_ADJECTIVE_WORD">
+			<Text>美利坚</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_ENGLAND_ADJECTIVE_WORD">
+			<Text>英格兰</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_CHINA_ADJECTIVE_WORD">
+			<Text>中华</Text>
+		</Row>
+	</Language_ZH_CN>
+  </GameData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 10/6/2014 9:55:33 PM -->
+<GameData>
+	<Language_ZH_Hant_HK>
+		<Row Tag="TXT_KEY_NOTIFICATION_NEW_NAME">
+			<Text>{1_OldName:textkey}現在稱為{2_NewName:textkey}</Text>
+		</Row>
+	</Language_ZH_Hant_HK>
+</GameData>

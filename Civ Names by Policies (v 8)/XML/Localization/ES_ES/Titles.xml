@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <Language_ES_ES>
+        <Row Tag="TXT_KEY_TITLE_Shogun">
+           <Text>Shōgun {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Daimyo">
+           <Text>Daimio {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Kinsei">
+           <Text>Kinsei {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Maharaja">
+           <Text>{@1: gender feminine?Marajaní; other?Marajá;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Raja">
+           <Text>{@1: gender feminine?Raní; other?Rajá;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Caliph">
+           <Text>Califa {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Emir">
+           <Text>{@1: gender feminine?Emiresa; other?Emir;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Sultan">
+           <Text>{@1: gender feminine?Sultana; other?Sultán;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Khagan">
+           <Text>{@1: gender feminine?Gran Katún; other?Gran Kan;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Khan">
+           <Text>{@1: gender feminine?Katún; other?Kan;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Earl">
+           <Text>{@1: gender feminine?Condesa; other?Conde;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Prince">
+           <Text>{@1: gender feminine?Princesa; other?Príncipe;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Grand Prince">
+           <Text>{@1: gender feminine?Gran Princesa; other?Gran Príncipe;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chief">
+           <Text>{@1: gender feminine?Jefa; other?Jefe;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Chief">
+           <Text>{@1: gender feminine?Gran Jefa; other?Gran Jefe;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Comrade">
+           <Text>Camarada {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Soviet">
+           <Text>{@1: gender feminine?Presidenta del Sóviet Supremo; other?Presidente del Sóviet Supremo;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Council">
+           <Text>{@1: gender feminine?Presidenta del Consejo Supremo; other?Presidente del Consejo Supremo;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Supreme Assembly">
+           <Text>{@1: gender feminine?Presidenta de la Asamblea Suprema; other?Presidente de la Asamblea Suprema;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Representative">
+           <Text>Representante {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Prime Minister">
+           <Text>{@1: gender feminine?Primera Ministra; other?Primer Ministro;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_President">
+           <Text>{@1: gender feminine?Presidenta; other?Presidente;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_People_s Commissar">
+           <Text>{@1: gender feminine?Comisaria Popular; other?Comisario Popular;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Head of Government">
+           <Text>{@1: gender feminine?Jefa de Gobierno; other?Jefe de Gobierno;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Emperor">
+           <Text>{@1: gender feminine?Emperatriz; other?Emperador;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_King">
+           <Text>{@1: gender feminine?Reina; other?Rey;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Despot">
+           <Text>{@1: gender feminine?Despotina; other?Déspota;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Count">
+           <Text>{@1: gender feminine?Condesa; other?Conde;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Duke">
+           <Text>{@1: gender feminine?Duquesa; other?Duque;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Fuehrer">
+           <Text>{@1: gender feminine?Caudilla; other?Caudillo;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Federal Assembly">
+           <Text>{@1: gender feminine?Presidenta de la Asamblea Federal; other?Presidente de la Asamblea Federal;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Chairman of Federal Counsil">
+           <Text>{@1: gender feminine?Presidenta del Consejo Federal; other?Presidente del Consejo Federal;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Doge">
+           <Text>{@1: gender feminine?Dogaresa; other?Dogo;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Consul">
+           <Text>Cónsul {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Priest">
+           <Text>{@1: gender feminine?Suma Sacerdotisa; other?Sumo Sacerdote;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Holy Emperor">
+           <Text>{@1: gender feminine?Sacra Emperatriz; other?Sacro Emperador;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Supreme Leader">
+           <Text>{@1: gender feminine?Lideresa Suprema; other?Líder Supremo;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Grand Master">
+           <Text>Gran Maestre {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_His Holiness">
+           <Text>Su Santidad {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Bishop">
+           <Text>{@1: gender feminine?Obispa; other?Obispo;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Archbishop">
+           <Text>{@1: gender feminine?Arzobispa; other?Archbishop;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Sheikh">
+           <Text>{@1: gender feminine?Jequesa; other?Jeque;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Lord">
+           <Text>{@1: gender feminine?Lady; other?Lord;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Lord Protector">
+           <Text>{@1: gender feminine?Lady Protectora; other?Lord Protector;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Elder">
+           <Text>{@1: gender feminine?Anciana; other?Anciano;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_High Shaman">
+           <Text>Gran Chamán {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+        <Row Tag="TXT_KEY_TITLE_Clan Chief">
+           <Text>{@1: gender feminine?Jefa de Clan; other?Jefe de Clan;} {1_PlayerName:textkey} de {@2_CivName}</Text>
+        </Row>
+
+    </Language_ES_ES>
+</GameData>
