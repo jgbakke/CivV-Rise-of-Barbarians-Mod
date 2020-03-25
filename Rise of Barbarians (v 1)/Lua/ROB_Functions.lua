@@ -61,18 +61,6 @@ function SpawnCityStateFromCity(cCity)
         InGameDebug("Initial Units spawned")
 
         SpawnInitialCity(cCity)
-        InGameDebug("Start bonuses given")
-
-        InGameDebug("Naming stuff")
-        local minorCivType = pCityStatePlayer:GetMinorCivType();
-
-        InGameDebug("The city state type: " .. minorCivType)
-
-        local cityStateGameInfo = GameInfo.MinorCivilizations[minorCivType]
-        cityStateGameInfo.ShortDescription = "Test"
-        cityStateGameInfo.Description = "Test City"
-
-        InGameDebug(cityStateGameInfo.ShortDescription)
     end
 
     InGameDebug("Success!")
