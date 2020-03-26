@@ -61,7 +61,13 @@ function SpawnCityStateFromCity(cCity)
         InGameDebug("Initial Units spawned")
 
         SpawnInitialCity(cCity)
+
+        -- TODO: Test this
+        InGameDebug("Building a courthouse")
+        cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
+        InGameDebug("Courthouse built")
     end
+    cCity:SetPuppet(false)
 
     InGameDebug("Success!")
 end

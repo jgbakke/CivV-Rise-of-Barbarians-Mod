@@ -8,6 +8,11 @@
 
 include("ROB_Functions")
 
+ContextPtr:SetUpdate(function()
+	Controls.StabilityLabel:SetText("Stability: 0");
+	Controls.Grid:DoAutoSize();
+end)
+
 function OnMinimapClicked(iX, iY)
     Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "sMessage", "sMessage")
 	local pActivePlayer = Players[Game.GetActivePlayer()]
@@ -52,6 +57,21 @@ function OnMinimapClicked(iX, iY)
 
 
 end
-
 Events.MinimapClickedEvent.Add(OnMinimapClicked)
+
+function HidePopupIfNotSpawned(popupInfo)
+    InGameDebug("Popup received")
+
+    -- You should hide if the Civ is hibernating
+    local bShouldHide = LoadCivHibernating()[Players[Game.GetActivePlayer()]]
+
+    -- TODO: Test this, not sure if it works
+    if bShouldHide then
+        InGameDebug("Hiding...")
+        ContextPtr:SetHide( true )
+        InGameDebug("Hidden!")
+    end
+
+end
+Events.SerialEventGameMessagePopup.Add(HidePopupIfNotSpawned);
 

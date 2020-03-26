@@ -6,5 +6,3 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-include("ROB_Defines")
-
