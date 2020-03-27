@@ -3,6 +3,7 @@
 -- DateCreated: 3/11/2012 2:02:42 AM
 --------------------------------------------------------------
 include("HSD_Debug")
+include ("PlotIterators") -- by whoward69
 print("Loading Historical Spawn Dates Functions...")
 print("-------------------------------------")
 

@@ -8,11 +8,6 @@
 
 include("ROB_Functions")
 
-ContextPtr:SetUpdate(function()
-	Controls.StabilityLabel:SetText("Stability: 0");
-	Controls.Grid:DoAutoSize();
-end)
-
 function OnMinimapClicked(iX, iY)
     Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "sMessage", "sMessage")
 	local pActivePlayer = Players[Game.GetActivePlayer()]
@@ -48,7 +43,7 @@ function OnMinimapClicked(iX, iY)
 --				end
 --
 --
---				local newbarb = Players[BARBARIAN_PLAYER]:InitUnit(iUnitId, pPlot:GetX() + i, pPlot:GetY() + j, UNITAI_ATTACK)
+--				local newbarb = Players[BARB3ARIAN_PLAYER]:InitUnit(iUnitId, pPlot:GetX() + i, pPlot:GetY() + j, UNITAI_ATTACK)
 --			end
 --		end
 --	end

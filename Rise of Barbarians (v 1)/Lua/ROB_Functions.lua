@@ -67,7 +67,8 @@ function SpawnCityStateFromCity(cCity)
         cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
         InGameDebug("Courthouse built")
     end
-    cCity:SetPuppet(false)
 
+    --InGameDebug("Set Puppet False...")
+    cCity:SetPuppet(false)
     InGameDebug("Success!")
 end

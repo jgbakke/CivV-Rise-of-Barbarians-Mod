@@ -684,23 +684,23 @@ function BarbEvolvedCivStartTurn(iPlayer)
 		return
 	end
 
-	print("-------------------- " .. pPlayer:GetName() .. " [" .. iPlayer .. "] Turn [" .. Game.GetElapsedGameTurns() .. "] BEGIN --------------------")
+--	print("-------------------- " .. pPlayer:GetName() .. " [" .. iPlayer .. "] Turn [" .. Game.GetElapsedGameTurns() .. "] BEGIN --------------------")
 
 	local iTeamTechs = Teams[pPlayer:GetTeam()]:GetTeamTechs():GetNumTechsKnown()
 
-	print("Units [" .. pPlayer:GetNumUnits() .. "]")
-	print("Cities [" .. pPlayer:GetNumCities() .. "]")
-	print("Techs Known [" .. iTeamTechs .. "]")
-	print("Happiness [" .. pPlayer:GetHappiness() .. "]")
-	print("Gold [" .. pPlayer:CalculateGrossGold() .. "] Gold Per Turn [" .. pPlayer:CalculateGoldRate() .. "]")
-	print("Culture [" .. pPlayer:GetJONSCulture() .."] Culture Per Turn [" .. pPlayer:GetTotalJONSCulturePerTurn() .. "]")
-	print("Policies [" .. pPlayer:GetNumPolicies() .. "] Branches [" .. pPlayer:GetNumPolicyBranchesUnlocked() .. "] Complete [" .. pPlayer:GetNumPolicyBranchesFinished() .. "]")
-	if isUsingBNW or isUsingGNK then
-		print("Faith [" .. pPlayer:GetFaith() .. "] Faith Per Turn [" .. pPlayer:GetTotalFaithPerTurn() .. "]")
-	end
-	if isUsingBNW then
-		print("Tourism [" .. pPlayer:GetTourism() .. "]")
-	end
+--	print("Units [" .. pPlayer:GetNumUnits() .. "]")
+--	print("Cities [" .. pPlayer:GetNumCities() .. "]")
+--	print("Techs Known [" .. iTeamTechs .. "]")
+--	print("Happiness [" .. pPlayer:GetHappiness() .. "]")
+--	print("Gold [" .. pPlayer:CalculateGrossGold() .. "] Gold Per Turn [" .. pPlayer:CalculateGoldRate() .. "]")
+--	print("Culture [" .. pPlayer:GetJONSCulture() .."] Culture Per Turn [" .. pPlayer:GetTotalJONSCulturePerTurn() .. "]")
+--	print("Policies [" .. pPlayer:GetNumPolicies() .. "] Branches [" .. pPlayer:GetNumPolicyBranchesUnlocked() .. "] Complete [" .. pPlayer:GetNumPolicyBranchesFinished() .. "]")
+--	if isUsingBNW or isUsingGNK then
+--		print("Faith [" .. pPlayer:GetFaith() .. "] Faith Per Turn [" .. pPlayer:GetTotalFaithPerTurn() .. "]")
+--	end
+--	if isUsingBNW then
+--		print("Tourism [" .. pPlayer:GetTourism() .. "]")
+--	end
 
 	-- CALLED ON EACH PLAYER'S TURN - zero Barbarian faith in case the Barbarians somehow get faith on turn 0 by spawning on top of a ruin
 	if isUsingBarbarianCiv and IsDefaultBarbMajorCiv() then
@@ -988,7 +988,7 @@ function BarbEvolvedCivStartTurn(iPlayer)
 		end
 	end
 
-	print("-------------------- " .. pPlayer:GetName() .. " [" .. iPlayer .. "] Turn [" .. Game.GetElapsedGameTurns() .. "] END --------------------")
+--	print("-------------------- " .. pPlayer:GetName() .. " [" .. iPlayer .. "] Turn [" .. Game.GetElapsedGameTurns() .. "] END --------------------")
 	-- print("BarbEvolvedCivStartTurn exit")
 end
 
