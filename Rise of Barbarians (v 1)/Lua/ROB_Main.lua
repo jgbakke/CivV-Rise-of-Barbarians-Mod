@@ -10,7 +10,8 @@ include("ROB_Functions")
 
 function OnMinimapClicked(iX, iY)
 
-    NotifyStability(iX, iY)
+
+    --NotifyStability(iX, iY)
 	local pActivePlayer = Players[Game.GetActivePlayer()]
     SpawnCityStateFromCity(pActivePlayer:GetCapitalCity())
 
@@ -54,8 +55,6 @@ end
 Events.MinimapClickedEvent.Add(OnMinimapClicked)
 
 function HidePopupIfNotSpawned(popupInfo)
-    InGameDebug("Popup received")
-
     -- You should hide if the Civ is hibernating
     local bShouldHide = LoadCivHibernating()[Players[Game.GetActivePlayer()]]
 
@@ -69,3 +68,15 @@ function HidePopupIfNotSpawned(popupInfo)
 end
 Events.SerialEventGameMessagePopup.Add(HidePopupIfNotSpawned);
 
+
+function InputHandler(uiMsg, wParam, lParam)
+    if (uiMsg == KeyEvents.KeyDown) then
+        if (wParam == Keys.X) then
+            if (UIManager:GetShift()) then
+                NotifyStability()
+                return true
+            end
+        end
+    end
+end
+ContextPtr:SetInputHandler(InputHandler)

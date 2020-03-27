@@ -57,9 +57,6 @@ function OnNewTurn()
 	ResetGoldenAgeMeter()
 	SetStartingBonus()
 	SetValidVictories()
-
-	local pActivePlayer = Players[Game.GetActivePlayer()];
-    pActivePlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "Player taking turn", "Player " .. Game.GetActivePlayer())
 end
 
 Events.ActivePlayerTurnStart.Add( OnNewTurn )

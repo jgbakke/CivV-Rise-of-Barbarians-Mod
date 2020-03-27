@@ -22,6 +22,25 @@ function InGameDebug(sMessage)
     end
 end
 
+function CreateCivStabilityTable()
+	local tStabilityTable = {}
+	for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
+		tStabilityTable[i] = 1
+	end
+	return tStabilityTable
+end
+
+function LoadCivStability()
+	--local pPlayer = Players[LOCAL_PLAYER]
+	local tStabilityTable = LoadData("CivStability", CreateCivStabilityTable() )
+	return tStabilityTable
+end
+
+function SaveCivStability( tStabilityTable )
+	--local pPlayer = Players[LOCAL_PLAYER]
+	SaveData( "CivStability", tStabilityTable )
+end
+
 function FindEmptyCityStateID()
     InGameDebug("Start FECSID")
     local civHibernating = LoadCivHibernating()
@@ -52,6 +71,10 @@ function SpawnCityStateFromCity(cCity)
     InGameDebug("Acquiring City...")
 	pCityStatePlayer:AcquireCity(cCity, false, true)
 
+    if cCity:GetPopulation() < 1 then
+        cCity:SetPopulation(1, true)
+    end
+
     -- TODO: The check to determine if it is ready to spawn
     if iCityState ~= BARBARIAN_PLAYER then
         InGameDebug("Not a barbarian")
@@ -78,19 +101,16 @@ function SpawnCityStateFromCity(cCity)
 end
 
 
-function NotifyStability(iX, iY)
-	InGameDebug("Notify Stability called")
-	if UIManager:GetShift() then
-        local pPlot = Map.GetPlot(iX, iY)
-        local iOwner = pPlot:GetOwner()
-        local iStability = 0
+function NotifyStability()
+    local tStability = LoadCivStability()
+    for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
+        local bIsPlayer = Game.GetActivePlayer() == i
+        local bHasMet = Teams[Players[Game.GetActivePlayer()]:GetTeam()]:IsHasMet(Players[i]:GetTeam())
+        local bHasCities = Players[i]:GetNumCities() > 0
 
-        if Teams[player:GetTeam()]:IsHasMet(Players[iOwner]:GetTeam()) then
-            GiveNotification("Stability for " .. Players[iOwner]:GetName() .. " is " .. iStability, "Stability Report")
-        else
-            InGameDebug("You have not met player " .. iOwner)
+        if bIsPlayer or (bHasMet and bHasCities) then
+            local iStability = tStability[i]
+            GiveNotification("Stability for " .. Players[i]:GetName() .. " is " .. iStability, "Stability Report")
         end
-    else
-        InGameDebug("Shift was not pressed")
-    end
+	end
 end
