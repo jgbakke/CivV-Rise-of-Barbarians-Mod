@@ -115,18 +115,42 @@ function ColorStabilityNumber(iStabilityValue)
     end
 end
 
+function CheckCityStability(cCity)
+    local iCityStability = 0
+    if cCity:FoodDifference() < 0 then
+        iCityStability = iCityStability + STARVATION_PENALTY
+    end
+
+    if (cCity:GetGarrisonedUnit() ~= nil) then
+        iCityStability = iCityStability + GARRISON_BONUS
+    end
+
+    return iCityStability
+end
+
 function CalculateStability(iPlayer)
     local pPlayer = Players[iPlayer]
     local tTeam = Teams[pPlayer:GetTeam()]
+
+    local gptPenalty = 0
+    if pPlayer:GetGold() < GOLD_THRESHOLD then
+        gptPenalty = math.floor(GPT_LOSS_MODIFIER * pPlayer:CalculateGoldRate())
+    end
 
     local iStability = HAPPINESS_MODIFIER * pPlayer:GetExcessHappiness() +
                         SOCIAL_POLICY_MODIFIER * pPlayer:GetNumPolicies() +
                         POLICY_BRANCH_MODIFIER * pPlayer:GetNumPolicyBranchesFinished() +
                         WONDER_MODIFIER        * pPlayer:GetNumWorldWonders() +
-                        WAR_PER_CIV_MODIFIER   * tTeam:GetAtWarCount()
+                        WAR_PER_CIV_MODIFIER   * tTeam:GetAtWarCount() +
+                        gptPenalty
+
 
     if pPlayer:IsGoldenAge() then
         iStability = iStability + GOLDEN_AGE_BONUS
+    end
+
+    for cCity in pPlayer:Cities() do
+        iStability = iStability + CheckCityStability(cCity)
     end
 
     -- TODO: The more cities you lose, the faster you should go down
