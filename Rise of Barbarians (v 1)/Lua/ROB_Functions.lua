@@ -25,7 +25,7 @@ end
 function CreateCivStabilityTable()
 	local tStabilityTable = {}
 	for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
-		tStabilityTable[i] = 1
+		tStabilityTable[i] = 0
 	end
 	return tStabilityTable
 end
@@ -71,9 +71,9 @@ function SpawnCityStateFromCity(cCity)
     InGameDebug("Acquiring City...")
 	pCityStatePlayer:AcquireCity(cCity, false, true)
 
-    if cCity:GetPopulation() < 1 then
-        cCity:SetPopulation(1, true)
-    end
+--    if cCity:GetPopulation() < 1 then
+--        cCity:SetPopulation(1, true)
+--    end
 
     -- TODO: The check to determine if it is ready to spawn
     if iCityState ~= BARBARIAN_PLAYER then
@@ -113,7 +113,37 @@ function ColorStabilityNumber(iStabilityValue)
 
         return sColor .. iStabilityValue .. "[ENDCOLOR]"
     end
+end
 
+function CalculateStability(iPlayer)
+    local pPlayer = Players[iPlayer]
+    local tTeam = Teams[pPlayer:GetTeam()]
+
+    local iStability = HAPPINESS_MODIFIER * pPlayer:GetExcessHappiness() +
+                        SOCIAL_POLICY_MODIFIER * pPlayer:GetNumPolicies() +
+                        POLICY_BRANCH_MODIFIER * pPlayer:GetNumPolicyBranchesFinished() +
+                        WONDER_MODIFIER        * pPlayer:GetNumWorldWonders() +
+                        WAR_PER_CIV_MODIFIER   * tTeam:GetAtWarCount()
+
+    if pPlayer:IsGoldenAge() then
+        iStability = iStability + GOLDEN_AGE_BONUS
+    end
+
+    -- TODO: The more cities you lose, the faster you should go down
+
+    return iStability
+end
+
+function CheckStability(iPlayer)
+    local iStability = CalculateStability(iPlayer)
+
+    -- TODO: Revolt if low enough
+
+    if iPlayer == Game.GetActivePlayer() then
+        if iStability < 1 then
+            Players[iPlayer]:AddNotification(NotificationTypes.NOTIFICATION_REBELS, "You are at risk of Civil War. Increase your stability soon!", "Your empire is unstable!")
+        end
+    end
 end
 
 function NotifyStability()
@@ -126,7 +156,8 @@ function NotifyStability()
         local bHasCities = Players[i]:GetNumCities() > 0
 
         if bIsPlayer or (bHasMet and bHasCities) then
-            local iStability = tStability[i]
+            -- TODO: Do we need to record tStability?
+            local iStability = CalculateStability(i) --+ tStability[i]
             popupText = popupText .. Players[i]:GetName() .. " : " .. ColorStabilityNumber(iStability) .. "[NEWLINE]"
         end
     end

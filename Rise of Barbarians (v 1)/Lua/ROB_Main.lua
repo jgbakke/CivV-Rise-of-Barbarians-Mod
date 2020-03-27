@@ -80,3 +80,5 @@ function InputHandler(uiMsg, wParam, lParam)
     end
 end
 ContextPtr:SetInputHandler(InputHandler)
+
+GameEvents.PlayerDoTurn.Add(CheckStability)
