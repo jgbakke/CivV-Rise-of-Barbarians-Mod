@@ -100,9 +100,26 @@ function SpawnCityStateFromCity(cCity)
     InGameDebug("Success!")
 end
 
+function ColorStabilityNumber(iStabilityValue)
+    if iStabilityValue > 3 and iStabilityValue < 10 then
+        return iStabilityValue
+    else
+        local sColor = "[COLOR_NEGATIVE_TEXT]"
+        if iStabilityValue >= 10 then
+            sColor = "[COLOR_POSITIVE_TEXT]"
+        elseif iStabilityValue >= 0 then
+            sColor = "[COLOR_ADVISOR_HIGHLIGHT_TEXT]"
+        end
+
+        return sColor .. iStabilityValue .. "[ENDCOLOR]"
+    end
+
+end
 
 function NotifyStability()
     local tStability = LoadCivStability()
+    local popupText = ""
+
     for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
         local bIsPlayer = Game.GetActivePlayer() == i
         local bHasMet = Teams[Players[Game.GetActivePlayer()]:GetTeam()]:IsHasMet(Players[i]:GetTeam())
@@ -110,7 +127,18 @@ function NotifyStability()
 
         if bIsPlayer or (bHasMet and bHasCities) then
             local iStability = tStability[i]
-            GiveNotification("Stability for " .. Players[i]:GetName() .. " is " .. iStability, "Stability Report")
+            popupText = popupText .. Players[i]:GetName() .. " : " .. ColorStabilityNumber(iStability) .. "[NEWLINE]"
         end
-	end
+    end
+
+    local AdvisorDisplayShowData = {
+		IDName = "FOREIGN",
+		Advisor = AdvisorTypes.ADVISOR_FOREIGN,
+		TitleText = "Stability Report",
+		BodyText = popupText,
+		Modal = true
+	};
+
+	--print("Showing Tutorial - " .. tutorial.ID);
+	Events.AdvisorDisplayShow(AdvisorDisplayShowData);
 end
