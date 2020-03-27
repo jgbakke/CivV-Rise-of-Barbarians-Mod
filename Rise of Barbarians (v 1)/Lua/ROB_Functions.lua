@@ -12,9 +12,13 @@ include("HSD_Functions")
 
 ROB_DEBUG = true
 
+function GiveNotification(sDescription, sTitle)
+    Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, sDescription, sTitle)
+end
+
 function InGameDebug(sMessage)
     if ROB_DEBUG then
-        Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, sMessage, sMessage)
+        GiveNotification(sMessage, sMessage)
     end
 end
 
@@ -71,4 +75,22 @@ function SpawnCityStateFromCity(cCity)
     --InGameDebug("Set Puppet False...")
     cCity:SetPuppet(false)
     InGameDebug("Success!")
+end
+
+
+function NotifyStability(iX, iY)
+	InGameDebug("Notify Stability called")
+	if UIManager:GetShift() then
+        local pPlot = Map.GetPlot(iX, iY)
+        local iOwner = pPlot:GetOwner()
+        local iStability = 0
+
+        if Teams[player:GetTeam()]:IsHasMet(Players[iOwner]:GetTeam()) then
+            GiveNotification("Stability for " .. Players[iOwner]:GetName() .. " is " .. iStability, "Stability Report")
+        else
+            InGameDebug("You have not met player " .. iOwner)
+        end
+    else
+        InGameDebug("Shift was not pressed")
+    end
 end

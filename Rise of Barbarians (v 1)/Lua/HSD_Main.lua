@@ -24,9 +24,6 @@ local endTurnTime = 0
 local startTurnTime = 0
 
 function NewTurnSummary()
-	local pActivePlayer = Players[Game.GetActivePlayer()];
-    pActivePlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "updated right here", "Player " .. Game.GetActivePlayer())
-
 	local year = Game.GetGameTurnYear()
 	local turn = Game.GetGameTurn()
 	startTurnTime = os.clock()

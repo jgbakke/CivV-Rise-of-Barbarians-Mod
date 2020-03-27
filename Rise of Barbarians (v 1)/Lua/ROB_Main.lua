@@ -9,11 +9,10 @@
 include("ROB_Functions")
 
 function OnMinimapClicked(iX, iY)
-    Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "sMessage", "sMessage")
+
+    NotifyStability(iX, iY)
 	local pActivePlayer = Players[Game.GetActivePlayer()]
-    InGameDebug("Active played received")
     SpawnCityStateFromCity(pActivePlayer:GetCapitalCity())
-    InGameDebug("Success")
 
 
 --	local pAztecPlot = pActivePlayer:GetCapitalCity():Plot()
