@@ -115,20 +115,43 @@ function ColorStabilityNumber(iStabilityValue)
     end
 end
 
+function GetToleratedReligions(iPlayer)
+    -- TODO: Return a set of tolerated religions
+    -- Majority religions are ones where you own the Holy City or are the founder
+    -- If no majority, then it is biggest throughout the empire
+    return {}
+end
+
+function GetMinorityReligionFollowers(cCity, tToleratedReligions)
+    -- TODO: Return an int representing the number of followers not following a tolerated religion
+    return 0
+end
+
+function GetReligionStability(cCity, tToleratedReligions)
+    -- TODO: Return x * Number of followers for any religion NOT tolerated
+    -- If religion is ALSO the majority, then multiply majority count * y
+    return 0
+end
+
 function CheckCityStability(cCity)
     local iCityStability = 0
     if cCity:FoodDifference() < 0 then
-        iCityStability = iCityStability + STARVATION_PENALTY
+        iCityStability = iCityStability * STARVATION_PENALTY
     end
 
     if (cCity:GetGarrisonedUnit() ~= nil) then
         iCityStability = iCityStability + GARRISON_BONUS
     end
 
+    -- TODO: Puppets should give 1 instability
+
+    -- TODO: Religion
     return iCityStability
 end
 
 function CalculateStability(iPlayer)
+    -- TODO: Validate that iPlayer is a Major Civilization
+
     local pPlayer = Players[iPlayer]
     local tTeam = Teams[pPlayer:GetTeam()]
 
