@@ -42,14 +42,11 @@ function SaveCivStability( tStabilityTable )
 end
 
 function FindEmptyCityStateID()
-    InGameDebug("Start FECSID")
     local civHibernating = LoadCivHibernating()
-    InGameDebug("Loaded civs hibernating")
 
     -- Pick a random to spawn
     for i = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_CIV_PLAYERS - 1, 1 do
         if civHibernating[i] then
-            InGameDebug("Found one: " .. i)
             civHibernating[i] = false
             SaveCivHibernating( civHibernating )
             return i
@@ -71,9 +68,9 @@ function SpawnCityStateFromCity(cCity)
     InGameDebug("Acquiring City...")
 	pCityStatePlayer:AcquireCity(cCity, false, true)
 
---    if cCity:GetPopulation() < 1 then
---        cCity:SetPopulation(1, true)
---    end
+    if cCity:GetPopulation() < 1 then
+        cCity:SetPopulation(1, true)
+    end
 
     -- TODO: The check to determine if it is ready to spawn
     if iCityState ~= BARBARIAN_PLAYER then
@@ -95,7 +92,6 @@ function SpawnCityStateFromCity(cCity)
         InGameDebug("Courthouse built")
     end
 
-    --InGameDebug("Set Puppet False...")
     cCity:SetPuppet(false)
     InGameDebug("Success!")
 end
@@ -115,45 +111,116 @@ function ColorStabilityNumber(iStabilityValue)
     end
 end
 
-function GetToleratedReligions(iPlayer)
-    -- TODO: Return a set of tolerated religions
+function GetToleratedReligions(pPlayer)
+    -- Returns a set of tolerated religions
     -- Majority religions are ones where you own the Holy City or are the founder
     -- If no majority, then it is biggest throughout the empire
-    return {}
+    local tToleratedReligions = {size=0 }
+    local iReligionInMostCities = -1
+
+    local religionCreated = pPlayer:GetReligionCreatedByPlayer()
+    if religionCreated ~= nil then
+        tToleratedReligions[religionCreated] = true
+        tToleratedReligions.size = 1 + tToleratedReligions.size
+    end
+
+    for i = GameInfo.Religions.RELIGION_BUDDHISM.ID, GameInfo.Religions.RELIGION_ZOROASTRIANISM.ID do
+        local cHolyCity = Game.GetHolyCityForReligion(i, -1)
+
+        if cHolyCity ~= nil then
+            if cHolyCity:GetOwner() == pPlayer:GetID() then
+                -- check to make sure we don't double-add the size
+                if tToleratedReligions[i] then
+                    tToleratedReligions.size = 1 + tToleratedReligions.size
+                    tToleratedReligions[i] = true
+                end
+            end
+        end
+
+        if pPlayer:HasReligionInMostCities(i) then
+            iReligionInMostCities = i
+        end
+    end
+
+    if tToleratedReligions.size == 0 then
+        -- If we do not have a state religion, make it the one with the most cities
+        tToleratedReligions.size = 1
+        tToleratedReligions[iReligionInMostCities] = true
+    end
+
+    for k, v in pairs(tToleratedReligions) do
+        if k ~= "size" then
+            InGameDebug("Tolerate Religion" .. k)
+        end
+    end
+
+    if tToleratedReligions.size == 0 then
+        InGameDebug("No majority religion in the civilization")
+    end
+
+    return tToleratedReligions
 end
 
 function GetMinorityReligionFollowers(cCity, tToleratedReligions)
-    -- TODO: Return an int representing the number of followers not following a tolerated religion
-    return 0
+    local iFollowers = 0
+    for i=GameInfo.Religions.RELIGION_BUDDHISM.ID, GameInfo.Religions.RELIGION_ZOROASTRIANISM.ID do
+        if tToleratedReligions[i] == nil then
+            iFollowers = iFollowers + cCity:GetNumFollowers(i)
+        end
+    end
+    return iFollowers
 end
 
 function GetReligionStability(cCity, tToleratedReligions)
-    -- TODO: Return x * Number of followers for any religion NOT tolerated
+    -- Returns x * Number of followers for any religion NOT tolerated
     -- If religion is ALSO the majority, then multiply majority count * y
-    return 0
+    local iReligiousInstability = GetMinorityReligionFollowers(cCity, tToleratedReligions) * RELIGION_MODIFIER
+
+    local iReligiousMajority = cCity:GetReligiousMajority()
+    if iReligiousMajority ~= nil then
+        -- If we have a religious minority, it is not a pantheon, and it is not tolerated
+        if iReligiousMajority > 0 and tToleratedReligions[iReligiousMajority] == nil then
+            iReligiousInstability = iReligiousInstability + cCity:GetNumFollowers(iReligiousMajority) *
+                    RELIGION_MODIFIER * REL_MAJORITY_MODIFIER
+        end
+    end
+    return iReligiousInstability
 end
 
-function CheckCityStability(cCity)
+function CheckCityStability(cCity, tToleratedReligions)
     local iCityStability = 0
     if cCity:FoodDifference() < 0 then
         iCityStability = iCityStability * STARVATION_PENALTY
     end
 
-    if (cCity:GetGarrisonedUnit() ~= nil) then
+    -- TODO: Puppets should give 1 instability
+    if cCity:IsPuppet() then
+        iCityStability = iCityStability + PUPPET_PENALTY
+    end
+
+    -- If size is 0 then that means we have no religions yet, let's not waste time searching
+    if tToleratedReligions.size ~= 0 then
+        iCityStability = iCityStability + GetReligionStability(cCity, tToleratedReligions)
+    end
+
+    if iCityStability < 0 and cCity:GetGarrisonedUnit() ~= nil then
         iCityStability = iCityStability + GARRISON_BONUS
     end
 
-    -- TODO: Puppets should give 1 instability
-
-    -- TODO: Religion
     return iCityStability
 end
 
 function CalculateStability(iPlayer)
-    -- TODO: Validate that iPlayer is a Major Civilization
+    -- Validate that iPlayer is a Major Civilization, if not then just return
+    if iPlayer >= GameDefines.MAX_MAJOR_CIVS then
+        return 1
+    end
+
+    InGameDebug(Players[iPlayer]:GetCapitalCity():GetName() .. " Majority: " .. Players[iPlayer]:GetCapitalCity():GetReligiousMajority())
 
     local pPlayer = Players[iPlayer]
     local tTeam = Teams[pPlayer:GetTeam()]
+    local tToleratedReligions = GetToleratedReligions(pPlayer)
 
     local gptPenalty = 0
     if pPlayer:GetGold() < GOLD_THRESHOLD then
@@ -167,18 +234,18 @@ function CalculateStability(iPlayer)
                         WAR_PER_CIV_MODIFIER   * tTeam:GetAtWarCount() +
                         gptPenalty
 
-
     if pPlayer:IsGoldenAge() then
         iStability = iStability + GOLDEN_AGE_BONUS
     end
 
     for cCity in pPlayer:Cities() do
-        iStability = iStability + CheckCityStability(cCity)
+        iStability = iStability + CheckCityStability(cCity, tToleratedReligions)
     end
 
     -- TODO: The more cities you lose, the faster you should go down
 
-    return iStability
+    -- For some unknown reason Lua has math.floor and math.ceil but no math.round
+    return math.floor(iStability + 0.5)
 end
 
 function CheckStability(iPlayer)
@@ -204,7 +271,7 @@ function NotifyStability()
 
         if bIsPlayer or (bHasMet and bHasCities) then
             -- TODO: Do we need to record tStability?
-            local iStability = CalculateStability(i) --+ tStability[i]
+            local iStability = CalculateStability(i) + tStability[i]
             popupText = popupText .. Players[i]:GetName() .. " : " .. ColorStabilityNumber(iStability) .. "[NEWLINE]"
         end
     end
