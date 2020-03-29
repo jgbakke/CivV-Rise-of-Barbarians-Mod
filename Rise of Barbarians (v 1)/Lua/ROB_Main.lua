@@ -14,8 +14,8 @@ function OnMinimapClicked(iX, iY)
 
 
     --NotifyStability(iX, iY)
-	local pActivePlayer = Players[Game.GetActivePlayer()]
-    SpawnCityStateFromCity(pActivePlayer:GetCapitalCity())
+	--local pActivePlayer = Players[Game.GetActivePlayer()]
+    --SpawnCityStateFromCity(pActivePlayer:GetCapitalCity())
 
 
 --	local pAztecPlot = pActivePlayer:GetCapitalCity():Plot()

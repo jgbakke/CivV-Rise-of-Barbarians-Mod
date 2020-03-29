@@ -136,7 +136,7 @@ function WakeUp ()
 			
 			if ( civHibernating[iPlayer] ) then -- wakup now Sleeping Beauty !
 				Dprint ("- trying to wake up " .. tostring(civType))
-				Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, tostring(civType), "Waking up!")
+				Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "The " .. Players[iPlayer]:GetCivilizationAdjective() .. " peoples have developed into a civilization!", "A new civilization is born")
 				local startPlot = player:GetStartingPlot()
 				local startX = startPlot:GetX()
 				local startY = startPlot:GetY()
