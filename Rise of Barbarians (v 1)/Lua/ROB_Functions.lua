@@ -23,14 +23,6 @@ function InGameDebug(sMessage)
     end
 end
 
-function CreateEmptyCivTable()
-	local tStabilityTable = {}
-	for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
-		tStabilityTable[i] = 0
-	end
-	return tStabilityTable
-end
-
 function BuildStabilityString(iPlayer)
     return "ROB_Stability" .. iPlayer
 end
@@ -39,8 +31,8 @@ function LoadCivStability(iPlayer)
 	return GetPersistentProperty(BuildStabilityString(iPlayer)) or 0
 end
 
-function SaveCivStability(iPlayer)
-	SetPersistentProperty(BuildStabilityString(iPlayer))
+function SaveCivStability(iPlayer, iStability)
+	SetPersistentProperty(BuildStabilityString(iPlayer), iStability)
 end
 
 function BuildCitiesLostString(iPlayer)
@@ -51,8 +43,8 @@ function LoadCivCitiesLost(iPlayer)
     return GetPersistentProperty(BuildCitiesLostString(iPlayer)) or 0
 end
 
-function SaveCivCitiesLost(iPlayer)
-	SetPersistentProperty(BuildCitiesLostString(iPlayer))
+function SaveCivCitiesLost(iPlayer, iLost)
+	SetPersistentProperty(BuildCitiesLostString(iPlayer), iLost)
 end
 
 function FindEmptyCityStateID()
@@ -262,7 +254,7 @@ function CalculateStability(iPlayer)
 
     local iCitiesLostBitString = LoadCivCitiesLost(iPlayer)
     local iNumCitiesLost = CountBits(iCitiesLostBitString)
-    InGameDebug(iNumCitiesLost .. " cities lost")
+    InGameDebug(iNumCitiesLost .. " cities lost from CalculateStability")
     iStability = iStability + iNumCitiesLost * CITIES_LOST_MODIFIER
 
     -- For some unknown reason Lua has math.floor and math.ceil but no math.round
@@ -291,13 +283,14 @@ function CheckStability(iPlayer)
     -- Now that we calculated, we can shift over the cities
     local iCitiesLostQueue = LoadCivCitiesLost(iPlayer)
     local iMask = 2^TURNS_TO_TRACK - 1
-    InGameDebug("Before Lshift")
+    --InGameDebug("Before Lshift: " .. iCitiesLostQueue)
     iCitiesLostQueue = Lshift(iCitiesLostQueue, 1)
-    InGameDebug("After Lshift")
+    --InGameDebug("After Lshift: " .. iCitiesLostQueue)
+    --InGameDebug("Mask: " .. iMask)
     iCitiesLostQueue = bitoper(iCitiesLostQueue, iMask, BIT_OPERATIONS.AND)
-    SaveCivCitiesLost(iCitiesLostQueue)
+    SaveCivCitiesLost(iPlayer, iCitiesLostQueue)
 
-    InGameDebug("Save successful!")
+    InGameDebug("CheckStability Save successful!")
 end
 
 function NotifyStability()
@@ -328,13 +321,16 @@ end
 function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
     InGameDebug("Starting CivLostCity")
     local iCitiesLostQueue = LoadCivCitiesLost(playerID)
+    InGameDebug(iCitiesLostQueue .. " cities lost from CivLostCity")
 
     -- Check that least significant bit is 0
     if math.fmod(iCitiesLostQueue, 2) == 0 then
+        InGameDebug("Least significant bit is 0")
         -- We had to make the check because if it is 1, and we add 1, then we get 0 here
         iCitiesLostQueue = iCitiesLostQueue + 1
     end
 
-    SaveCivCitiesLost(iCitiesLostQueue)
-    InGameDebug("Success")
+    InGameDebug(iCitiesLostQueue .. " cities lost from CivLostCity")
+    SaveCivCitiesLost(playerID, iCitiesLostQueue)
+    InGameDebug("Success from CivLostCity: " .. LoadCivCitiesLost(playerID))
 end
