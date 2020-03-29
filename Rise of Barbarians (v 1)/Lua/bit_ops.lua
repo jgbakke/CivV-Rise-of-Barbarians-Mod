@@ -33,7 +33,7 @@ function CountBits(i)
     local iBits = 0
     -- Count the number of bits in i
     while i ~= 0 do
-        if bitoper(i, 1, BITOPERATIONS.AND) == 1 then
+        if bitoper(i, 1, BIT_OPERATIONS.AND) == 1 then
             iBits = iBits + 1
         end
 

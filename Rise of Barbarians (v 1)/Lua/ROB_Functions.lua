@@ -159,7 +159,7 @@ function GetToleratedReligions(pPlayer)
         end
     end
 
-    if tToleratedReligions.size == 0 then
+    if tToleratedReligions.size == 0 and iReligionInMostCities ~= -1 then
         -- If we do not have a state religion, make it the one with the most cities
         tToleratedReligions.size = 1
         tToleratedReligions[iReligionInMostCities] = true
@@ -232,8 +232,6 @@ function CalculateStability(iPlayer)
     if iPlayer >= GameDefines.MAX_MAJOR_CIVS then
         return 1
     end
-
-    InGameDebug(Players[iPlayer]:GetCapitalCity():GetName() .. " Majority: " .. Players[iPlayer]:GetCapitalCity():GetReligiousMajority())
 
     local pPlayer = Players[iPlayer]
     local tTeam = Teams[pPlayer:GetTeam()]
