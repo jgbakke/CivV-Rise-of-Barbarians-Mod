@@ -28,4 +28,8 @@ PUPPET_PENALTY =           -1
 -- THRESHOLDS FOR CONDITIONS
 GOLD_THRESHOLD =            2
 
+-- CITIES LOST
+TURNS_TO_TRACK =            8
+CITIES_LOST_MODIFIER =     -5
+
 -- At 22, not counting garrison

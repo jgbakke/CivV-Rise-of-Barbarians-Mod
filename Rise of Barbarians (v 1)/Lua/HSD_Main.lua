@@ -13,6 +13,7 @@ include ("HSD_Defines")
 include ("HSD_Debug")
 include ("PlotIterators") -- by whoward69
 include ("HSD_Utils")
+include("bit_ops")
 include ("HSD_Functions")
 
 --------------------------------------------------------------

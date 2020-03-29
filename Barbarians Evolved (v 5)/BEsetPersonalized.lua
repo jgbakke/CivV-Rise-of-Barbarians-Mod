@@ -99,7 +99,7 @@ bRequireMeleeCapture = true
 -- Every turn any two obsolete Barbarian (63) units in existence are deleted in favor of one technologically relevant one.
 -- This could be an option your computer can't handle.  Or maybe you can't handle swarms of laggy outdated units.  Pick your poison.
 -- If this option is TRUE, the upgrade pass is SKIPPED.
-bDisableGlobalUpgrade = false
+bDisableGlobalUpgrade = true
 
 -- This option controls whether Barbarian units upgraed when the human player IS the Barbarian Major Civ.
 -- If this option is TRUE, you have to look after yourself -- no freebies.
@@ -245,7 +245,7 @@ iBarbWorkerLimit = 4
 -- Allows you to set icon/background colors without XML editing.
 -- If you like you can change this to some other predefined PLAYERCOLOR_* string.
 
-sMinorPlayerColor = "PLAYERCOLOR_BARBARIAN"
+sMinorPlayerColor = "PLAYERCOLOR_BLACK"
 
 sMajorPlayerColor = "PLAYERCOLOR_BARBARIAN_MAJOR"
 

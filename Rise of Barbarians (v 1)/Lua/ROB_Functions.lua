@@ -9,6 +9,7 @@ include("ROB_Defines")
 include("HSD_Defines")
 include("HSD_Utils")
 include("HSD_Functions")
+include("bit_ops")
 
 ROB_DEBUG = true
 
@@ -22,7 +23,7 @@ function InGameDebug(sMessage)
     end
 end
 
-function CreateCivStabilityTable()
+function CreateEmptyCivTable()
 	local tStabilityTable = {}
 	for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
 		tStabilityTable[i] = 0
@@ -32,7 +33,7 @@ end
 
 function LoadCivStability()
 	--local pPlayer = Players[LOCAL_PLAYER]
-	local tStabilityTable = LoadData("CivStability", CreateCivStabilityTable() )
+	local tStabilityTable = LoadData("CivStability", CreateEmptyCivTable() )
 	return tStabilityTable
 end
 
@@ -41,7 +42,24 @@ function SaveCivStability( tStabilityTable )
 	SaveData( "CivStability", tStabilityTable )
 end
 
+function LoadCivCitiesLost()
+    local tCitiesLostTable = LoadData("CitiesLost", CreateEmptyCivTable() )
+	return tCitiesLostTable
+end
+
+function SaveCivCitiesLost( tCitiesLostTable )
+	--local pPlayer = Players[LOCAL_PLAYER]
+	SaveData( "CitiesLost", tCitiesLostTable )
+end
+
 function FindEmptyCityStateID()
+    local fPercentToSpawnCS = (Game.GetGameTurnYear() + 4000) / 60
+    local fCityStateSpawnRoll = Game.Rand(100, "Determining whether to spawn barbarian or city state")
+
+    if fCityStateSpawnRoll > fPercentToSpawnCS then
+        return BARBARIAN_PLAYER
+    end
+
     local civHibernating = LoadCivHibernating()
 
     -- Pick a random to spawn
@@ -86,7 +104,6 @@ function SpawnCityStateFromCity(cCity)
 
         SpawnInitialCity(cCity)
 
-        -- TODO: Test this
         InGameDebug("Building a courthouse")
         cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
         InGameDebug("Courthouse built")
@@ -193,7 +210,6 @@ function CheckCityStability(cCity, tToleratedReligions)
         iCityStability = iCityStability * STARVATION_PENALTY
     end
 
-    -- TODO: Puppets should give 1 instability
     if cCity:IsPuppet() then
         iCityStability = iCityStability + PUPPET_PENALTY
     end
@@ -204,6 +220,7 @@ function CheckCityStability(cCity, tToleratedReligions)
     end
 
     if iCityStability < 0 and cCity:GetGarrisonedUnit() ~= nil then
+        -- You only get the garrison bonus if you are below 0
         iCityStability = iCityStability + GARRISON_BONUS
     end
 
@@ -243,6 +260,16 @@ function CalculateStability(iPlayer)
     end
 
     -- TODO: The more cities you lose, the faster you should go down
+    local iCitiesLostBitString = LoadCivCitiesLost()[iPlayer]
+    -- TODO: Actual implementation
+    local iNumCitiesLost = CountBits(iCitiesLostBitString)
+
+    InGameDebug("Actual Lost: " .. iNumCitiesLost)
+    local iRandomLost = Game.Rand(20, "Testing bit ops.")
+    InGameDebug("Test Number: " .. iRandomLost)
+    InGameDebug("Test Lost: " .. CountBits(iRandomLost))
+
+    iStability = iStability + iNumCitiesLost * CITIES_LOST_MODIFIER
 
     -- For some unknown reason Lua has math.floor and math.ceil but no math.round
     return math.floor(iStability + 0.5)

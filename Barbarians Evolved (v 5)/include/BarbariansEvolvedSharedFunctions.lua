@@ -96,9 +96,9 @@ end
 function BEReportRead(dataobj, datastring)
 	retval = dataobj.GetValue(datastring)
 	if (retval == nil) then
-		print("READ: " .. datastring .. " [ERROR: NULL VALUE]")
+		--print("READ: " .. datastring .. " [ERROR: NULL VALUE]")
 	else
-		print("READ: " .. datastring .. " [" .. dataobj.GetValue(datastring) .. "]")
+		--print("READ: " .. datastring .. " [" .. dataobj.GetValue(datastring) .. "]")
 	end
 
 	-- what we return depends on what type it is, fortunately I use Hungarian out of habit, saved my ass here

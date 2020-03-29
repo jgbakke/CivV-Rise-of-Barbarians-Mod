@@ -6,6 +6,7 @@
 -- To change this template use File | Settings | File Templates.
 --
 
+include("bit_ops")
 include("ROB_Functions")
 
 function OnMinimapClicked(iX, iY)
