@@ -7,6 +7,7 @@
 --
 
 include("bit_ops")
+include("SaveLib")
 include("ROB_Functions")
 
 function OnMinimapClicked(iX, iY)

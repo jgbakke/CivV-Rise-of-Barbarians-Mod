@@ -31,25 +31,28 @@ function CreateEmptyCivTable()
 	return tStabilityTable
 end
 
-function LoadCivStability()
-	--local pPlayer = Players[LOCAL_PLAYER]
-	local tStabilityTable = LoadData("CivStability", CreateEmptyCivTable() )
-	return tStabilityTable
+function BuildStabilityString(iPlayer)
+    return "ROB_Stability" .. iPlayer
 end
 
-function SaveCivStability( tStabilityTable )
-	--local pPlayer = Players[LOCAL_PLAYER]
-	SaveData( "CivStability", tStabilityTable )
+function LoadCivStability(iPlayer)
+	return GetPersistentProperty(BuildStabilityString(iPlayer)) or 0
 end
 
-function LoadCivCitiesLost()
-    local tCitiesLostTable = LoadData("CitiesLost", CreateEmptyCivTable() )
-	return tCitiesLostTable
+function SaveCivStability(iPlayer)
+	SetPersistentProperty(BuildStabilityString(iPlayer))
 end
 
-function SaveCivCitiesLost( tCitiesLostTable )
-	--local pPlayer = Players[LOCAL_PLAYER]
-	SaveData( "CitiesLost", tCitiesLostTable )
+function BuildCitiesLostString(iPlayer)
+    return "ROB_CitiesLost" .. iPlayer
+end
+
+function LoadCivCitiesLost(iPlayer)
+    return GetPersistentProperty(BuildCitiesLostString(iPlayer)) or 0
+end
+
+function SaveCivCitiesLost(iPlayer)
+	SetPersistentProperty(BuildCitiesLostString(iPlayer))
 end
 
 function FindEmptyCityStateID()
@@ -165,15 +168,15 @@ function GetToleratedReligions(pPlayer)
         tToleratedReligions[iReligionInMostCities] = true
     end
 
-    for k, v in pairs(tToleratedReligions) do
-        if k ~= "size" then
-            InGameDebug("Tolerate Religion" .. k)
-        end
-    end
+--    for k, v in pairs(tToleratedReligions) do
+--        if k ~= "size" then
+--            InGameDebug("Tolerate Religion" .. k)
+--        end
+--    end
 
-    if tToleratedReligions.size == 0 then
-        InGameDebug("No majority religion in the civilization")
-    end
+--    if tToleratedReligions.size == 0 then
+--        InGameDebug("No majority religion in the civilization")
+--    end
 
     return tToleratedReligions
 end
@@ -257,9 +260,9 @@ function CalculateStability(iPlayer)
         iStability = iStability + CheckCityStability(cCity, tToleratedReligions)
     end
 
-    -- TODO: Track the cities lost
-    local iCitiesLostBitString = LoadCivCitiesLost()[iPlayer]
+    local iCitiesLostBitString = LoadCivCitiesLost(iPlayer)
     local iNumCitiesLost = CountBits(iCitiesLostBitString)
+    InGameDebug(iNumCitiesLost .. " cities lost")
     iStability = iStability + iNumCitiesLost * CITIES_LOST_MODIFIER
 
     -- For some unknown reason Lua has math.floor and math.ceil but no math.round
@@ -269,26 +272,35 @@ end
 function CheckStability(iPlayer)
     local iStability = CalculateStability(iPlayer)
 
-    -- TODO: Revolt if low enough
     if Game.Rand(100, "Determining whether to start a revolution") < -iStability then
-        -- TODO: REVOOOLT!!!
+        for cCity in Players[iPlayer]:Cities() do
+            -- TODO: take out true
+            if true or cCity ~= Players[iPlayer]:GetCapitalCity() then
+                if Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) < iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
+                    SpawnCityStateFromCity(cCity)
+                end
+            end
+        end
     elseif iPlayer == Game.GetActivePlayer() then
         if iStability < 1 then
             Players[iPlayer]:AddNotification(NotificationTypes.NOTIFICATION_REBELS, "You are at risk of Civil War. Increase your stability soon!", "Your empire is unstable!")
         end
     end
 
+    -- TODO: Saving is weird
     -- Now that we calculated, we can shift over the cities
-    local tCitiesLost = LoadCivCitiesLost()
-    local iCitiesLostQueue = tCitiesLost[iPlayer]
+    local iCitiesLostQueue = LoadCivCitiesLost(iPlayer)
     local iMask = 2^TURNS_TO_TRACK - 1
-    iCitiesLostQueue = LShift(iCitiesLostQueue)
-    tCitiesLost[iPlayer] = bitoper(iCitiesLostQueue, iMask, BIT_OPERATIONS.AND)
-    SaveCivCitiesLost(tCitiesLost)
+    InGameDebug("Before Lshift")
+    iCitiesLostQueue = Lshift(iCitiesLostQueue, 1)
+    InGameDebug("After Lshift")
+    iCitiesLostQueue = bitoper(iCitiesLostQueue, iMask, BIT_OPERATIONS.AND)
+    SaveCivCitiesLost(iCitiesLostQueue)
+
+    InGameDebug("Save successful!")
 end
 
 function NotifyStability()
-    local tStability = LoadCivStability()
     local popupText = ""
 
     for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
@@ -297,7 +309,7 @@ function NotifyStability()
         local bHasCities = Players[i]:GetNumCities() > 0
 
         if bIsPlayer or (bHasMet and bHasCities) then
-            local iStability = CalculateStability(i) + tStability[i]
+            local iStability = CalculateStability(i) + LoadCivStability(i)
             popupText = popupText .. Players[i]:GetName() .. " : " .. ColorStabilityNumber(iStability) .. "[NEWLINE]"
         end
     end
@@ -310,14 +322,12 @@ function NotifyStability()
 		Modal = true
 	};
 
-	--print("Showing Tutorial - " .. tutorial.ID);
 	Events.AdvisorDisplayShow(AdvisorDisplayShowData);
 end
 
 function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
     InGameDebug("Starting CivLostCity")
-    local tCitiesLost = LoadCivCitiesLost()
-    local iCitiesLostQueue = tCitiesLost[playerID]
+    local iCitiesLostQueue = LoadCivCitiesLost(playerID)
 
     -- Check that least significant bit is 0
     if math.fmod(iCitiesLostQueue, 2) == 0 then
@@ -325,7 +335,6 @@ function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
         iCitiesLostQueue = iCitiesLostQueue + 1
     end
 
-    tCitiesLost[playerID] = iCitiesLostQueue
-    SaveCivCitiesLost(tCitiesLost)
+    SaveCivCitiesLost(iCitiesLostQueue)
     InGameDebug("Success")
 end

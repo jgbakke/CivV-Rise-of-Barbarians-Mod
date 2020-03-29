@@ -135,7 +135,8 @@ function WakeUp ()
 		if civType and GameInfo.Civilization_HistoricalSpawnDates[civType] and ( GameInfo.Civilization_HistoricalSpawnDates[civType].StartYear <= Game.GetGameTurnYear() ) then
 			
 			if ( civHibernating[iPlayer] ) then -- wakup now Sleeping Beauty !
-				Dprint ("- trying to wake up " .. tostring(civType)) 	
+				Dprint ("- trying to wake up " .. tostring(civType))
+				Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, tostring(civType), "Waking up!")
 				local startPlot = player:GetStartingPlot()
 				local startX = startPlot:GetX()
 				local startY = startPlot:GetY()
@@ -508,7 +509,7 @@ function ConvertNearbyBarbarians(iPlayer, startX, startY)
 	local bIncludeCenter = true
 	local range = Round(CONVERT_BARBARIAN_RANGE * math.max(((g_Era + 1) * CONVERT_ERA_RANGE_MOD / 100), 1) * GetConvertionRangePercent(iPlayer) / 100)
 	for pAreaPlot in PlotAreaSpiralIterator(plot, range, SECTOR_NORTH, DIRECTION_CLOCKWISE, DIRECTION_OUTWARDS, bIncludeCenter) do
-    
+    	-- TODO: If there is a city, convert it
 		for i = 0, pAreaPlot:GetNumUnits() - 1, 1 do
     		local unit = pAreaPlot:GetUnit(i);
 			if unit and (unit:GetOwner() == BARBARIAN_PLAYER) then
