@@ -256,23 +256,31 @@ end
 
 function CheckStability(iPlayer)
     local iStability = CalculateStability(iPlayer)
+    local tToleratedReligions = GetToleratedReligions(Players[iPlayer])
 
     InGameDebug("Check stability: " .. iStability)
-    if Game.Rand(100, "Determining whether to start a revolution") < -iStability then
+    iStability = -101
+    if -Game.Rand(100, "Determining whether to start a revolution") > iStability then
         InGameDebug("Revolution roll success")
 
         for cCity in Players[iPlayer]:Cities() do
+            InGameDebug("City: " .. cCity:GetName())
+
             -- TODO: test this
-            if true or cCity ~= Players[iPlayer]:GetCapitalCity() then
+            if cCity ~= Players[iPlayer]:GetCapitalCity() then
+
+                InGameDebug(cCity:GetName() .. " is not the capital")
+
                 -- By default it will be barbarian
                 local iNewOwner = BARBARIAN_PLAYER
 
                 -- If a city state makes a valid roll they will spawn
-                if Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) < iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
+                if -Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) > iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
                     iNewOwner = nil
                 end
 
-                SpawnCityStateFromCity(cCity, iNewOwner)
+                -- TODO: Investigate the crash. It might be coming from the other mod
+                SpawnCityStateFromCity(cCity, GameDefines.MAX_MAJOR_CIVS + 1)
             end
         end
     elseif iPlayer == Game.GetActivePlayer() then

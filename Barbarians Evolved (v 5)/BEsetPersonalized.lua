@@ -247,7 +247,7 @@ iBarbWorkerLimit = 4
 
 sMinorPlayerColor = "PLAYERCOLOR_BLACK"
 
-sMajorPlayerColor = "PLAYERCOLOR_BARBARIAN_MAJOR"
+sMajorPlayerColor = "PLAYERCOLOR_BLACK"
 
 -- newer params
 -- these are used in the setup screen only, except for bBarbEvolveCityStates.  You probably shouldn't mess with these, ever.
