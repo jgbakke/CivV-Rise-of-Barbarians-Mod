@@ -259,16 +259,9 @@ function CalculateStability(iPlayer)
         iStability = iStability + CheckCityStability(cCity, tToleratedReligions)
     end
 
-    -- TODO: The more cities you lose, the faster you should go down
+    -- TODO: Track the cities lost
     local iCitiesLostBitString = LoadCivCitiesLost()[iPlayer]
-    -- TODO: Actual implementation
     local iNumCitiesLost = CountBits(iCitiesLostBitString)
-
-    InGameDebug("Actual Lost: " .. iNumCitiesLost)
-    local iRandomLost = Game.Rand(20, "Testing bit ops.")
-    InGameDebug("Test Number: " .. iRandomLost)
-    InGameDebug("Test Lost: " .. CountBits(iRandomLost))
-
     iStability = iStability + iNumCitiesLost * CITIES_LOST_MODIFIER
 
     -- For some unknown reason Lua has math.floor and math.ceil but no math.round
@@ -279,12 +272,21 @@ function CheckStability(iPlayer)
     local iStability = CalculateStability(iPlayer)
 
     -- TODO: Revolt if low enough
-
-    if iPlayer == Game.GetActivePlayer() then
+    if Game.Rand(100, "Determining whether to start a revolution") < -iStability then
+        -- TODO: REVOOOLT!!!
+    elseif iPlayer == Game.GetActivePlayer() then
         if iStability < 1 then
             Players[iPlayer]:AddNotification(NotificationTypes.NOTIFICATION_REBELS, "You are at risk of Civil War. Increase your stability soon!", "Your empire is unstable!")
         end
     end
+
+    -- Now that we calculated, we can shift over the cities
+    local tCitiesLost = LoadCivCitiesLost()
+    local iCitiesLostQueue = tCitiesLost[iPlayer]
+    local iMask = 2^TURNS_TO_TRACK - 1
+    iCitiesLostQueue = LShift(iCitiesLostQueue)
+    tCitiesLost[iPlayer] = bitoper(iCitiesLostQueue, iMask, BIT_OPERATIONS.AND)
+    SaveCivCitiesLost(tCitiesLost)
 end
 
 function NotifyStability()
@@ -297,7 +299,6 @@ function NotifyStability()
         local bHasCities = Players[i]:GetNumCities() > 0
 
         if bIsPlayer or (bHasMet and bHasCities) then
-            -- TODO: Do we need to record tStability?
             local iStability = CalculateStability(i) + tStability[i]
             popupText = popupText .. Players[i]:GetName() .. " : " .. ColorStabilityNumber(iStability) .. "[NEWLINE]"
         end
@@ -313,4 +314,20 @@ function NotifyStability()
 
 	--print("Showing Tutorial - " .. tutorial.ID);
 	Events.AdvisorDisplayShow(AdvisorDisplayShowData);
+end
+
+function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
+    InGameDebug("Starting CivLostCity")
+    local tCitiesLost = LoadCivCitiesLost()
+    local iCitiesLostQueue = tCitiesLost[playerID]
+
+    -- Check that least significant bit is 0
+    if math.fmod(iCitiesLostQueue, 2) == 0 then
+        -- We had to make the check because if it is 1, and we add 1, then we get 0 here
+        iCitiesLostQueue = iCitiesLostQueue + 1
+    end
+
+    tCitiesLost[playerID] = iCitiesLostQueue
+    SaveCivCitiesLost(tCitiesLost)
+    InGameDebug("Success")
 end
