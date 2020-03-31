@@ -121,6 +121,7 @@ function OnEnterGame()
 	GameEvents.PlayerCityFounded.Add(OnFirstCity)
 	InitializeKnownTechTable()
 	SetStartingBonus()
+	Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, Players[Game.GetActivePlayer()]:GetCivilizationDescriptionKey(), "HSD_Main.lua")
 	--
 end
 

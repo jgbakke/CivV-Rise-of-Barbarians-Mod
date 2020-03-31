@@ -40,7 +40,6 @@ function BuildCitiesLostString(iPlayer)
 end
 
 function LoadCivCitiesLost(iPlayer)
-    -- TODO: Remove the two
     return GetPersistentProperty(BuildCitiesLostString(iPlayer)) or 0
 end
 
@@ -60,10 +59,12 @@ function FindEmptyCityStateID()
 
     -- Pick a random to spawn
     for i = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_CIV_PLAYERS - 1, 1 do
-        if civHibernating[i] then
-            civHibernating[i] = false
-            SaveCivHibernating( civHibernating )
-            return i
+        if Players[i] ~= nil then
+            if civHibernating[i] and Players[i]:GetNumCities() == 0 then
+                civHibernating[i] = false
+                SaveCivHibernating( civHibernating )
+                return i
+            end
         end
     end
 
@@ -75,14 +76,12 @@ end
 function SpawnCityStateFromCity(cCity, iPlayerID)
     -- Check if a city state is available
     -- We can override the AI choice by providing a parameter
+    -- TODO: Find if this causes a bug
     local iCityState = iPlayerID or FindEmptyCityStateID()
-    local pCityStatePlayer = Players[iCityState]
+    local pCityStatePlayer = Players[iCityState] --Players[iCityState]
+    pCityStatePlayer:AcquireCity(cCity, false, true)
 
-	pCityStatePlayer:AcquireCity(cCity, false, true)
-
-    if cCity:GetPopulation() < 1 then
-        cCity:SetPopulation(1, true)
-    end
+    InGameDebug("End of func")
 
     -- TODO: The check to determine if it is ready to spawn
     if iCityState ~= BARBARIAN_PLAYER then
@@ -93,9 +92,6 @@ function SpawnCityStateFromCity(cCity, iPlayerID)
         ConvertNearbyBarbarians(iCityState, pCityPlot:GetX(), pCityPlot:GetY())
         InGameDebug("Converted Barbarians")
 
-        SpawnInitialUnits(iCityState, pCityPlot:GetX(), pCityPlot:GetY())
-        InGameDebug("Initial Units spawned")
-
         SpawnInitialCity(cCity)
 
         InGameDebug("Building a courthouse")
@@ -103,6 +99,7 @@ function SpawnCityStateFromCity(cCity, iPlayerID)
         InGameDebug("Courthouse built")
     end
 
+    -- This might be causing a bug
     cCity:SetPuppet(false)
     InGameDebug("City acquired")
 end
@@ -191,7 +188,7 @@ end
 function CheckCityStability(cCity, tToleratedReligions)
     local iCityStability = 0
     if cCity:FoodDifference() < 0 then
-        iCityStability = iCityStability * STARVATION_PENALTY
+        iCityStability = iCityStability * STARVATION_MODIFIER
     end
 
     if cCity:IsPuppet() then
@@ -259,30 +256,29 @@ function CheckStability(iPlayer)
     local tToleratedReligions = GetToleratedReligions(Players[iPlayer])
 
     InGameDebug("Check stability: " .. iStability)
-    iStability = -101
     if -Game.Rand(100, "Determining whether to start a revolution") > iStability then
-        InGameDebug("Revolution roll success")
-
-        for cCity in Players[iPlayer]:Cities() do
-            InGameDebug("City: " .. cCity:GetName())
-
-            -- TODO: test this
-            if cCity ~= Players[iPlayer]:GetCapitalCity() then
-
-                InGameDebug(cCity:GetName() .. " is not the capital")
-
-                -- By default it will be barbarian
-                local iNewOwner = BARBARIAN_PLAYER
-
-                -- If a city state makes a valid roll they will spawn
-                if -Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) > iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
-                    iNewOwner = nil
-                end
-
-                -- TODO: Investigate the crash. It might be coming from the other mod
-                SpawnCityStateFromCity(cCity, GameDefines.MAX_MAJOR_CIVS + 1)
-            end
-        end
+        print("Revolution for " .. Players[iPlayer]:GetName() .. " from Stability " .. iStability)
+--        InGameDebug("Revolution roll success")
+--
+--        for cCity in Players[iPlayer]:Cities() do
+--            InGameDebug("City: " .. cCity:GetName())
+--
+--            -- TODO: test this
+--            if cCity ~= Players[iPlayer]:GetCapitalCity() then
+--                InGameDebug(cCity:GetName() .. " is not the capital")
+--
+--                -- By default it will be barbarian
+--                local iNewOwner = BARBARIAN_PLAYER
+--
+--                -- If a city state makes a valid roll they will spawn
+--                if -Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) > iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
+--                    iNewOwner = nil
+--                end
+--
+--                -- TODO: Investigate the crash. It might be coming from the other mod
+--                SpawnCityStateFromCity(cCity)
+--            end
+--        end
     elseif iPlayer == Game.GetActivePlayer() then
         if iStability < 1 then
             Players[iPlayer]:AddNotification(NotificationTypes.NOTIFICATION_REBELS, "You are at risk of Civil War. Increase your stability soon!", "Your empire is unstable!")
@@ -297,6 +293,14 @@ function CheckStability(iPlayer)
 end
 
 function NotifyStability()
+    -- TODO: Remove
+    local p = Players[Game.GetActivePlayer()]
+    for cCity in p:Cities() do
+        cCity:ChangePopulation(5, true)
+        p:ChangeGold(200)
+    end
+
+
     local popupText = ""
 
     for i = 0, GameDefines.MAX_MAJOR_CIVS-1 do
@@ -304,7 +308,7 @@ function NotifyStability()
         local bHasMet = Teams[Players[Game.GetActivePlayer()]:GetTeam()]:IsHasMet(Players[i]:GetTeam())
         local bHasCities = Players[i]:GetNumCities() > 0
 
-        if bIsPlayer or (bHasMet and bHasCities) then
+        if bIsPlayer or (bHasMet and bHasCities) or ROB_DEBUG then
             local iStability = CalculateStability(i) + LoadCivStability(i)
             popupText = popupText .. Players[i]:GetName() .. " : " .. ColorStabilityNumber(iStability) .. "[NEWLINE]"
         end
@@ -322,6 +326,7 @@ function NotifyStability()
 end
 
 function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
+    InGameDebug("Lost city")
     local iCitiesLostQueue = LoadCivCitiesLost(playerID)
 
     -- Check that least significant bit is 0

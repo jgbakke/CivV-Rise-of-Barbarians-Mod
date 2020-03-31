@@ -485,10 +485,18 @@ function BarbEvolvedCityUpdate(player, cityID, updateType)
 						pNewCityOwner = Players[iBarbMajorCiv]
 					end
 
+					-- TODO: Finish this
 					if (pNewCityOwner ~= nil) then
 						ClearCityPlot(pCity)
-
-						pNewCityOwner:AcquireCity(pCity, true, false)
+						if pCity == pPlayer:GetCapitalCity() then
+							pCity:SetPopulation(1, true)
+							pCity:SetFood(1)
+							print("[ROB] " .. pCity:GetName() .. " was sacked by barbarians!")
+						else
+							print("[ROB] " .. pCity:GetName() .. " was razed by barbarians!")
+							pCity:SetPopulation(1, true)
+							pCity:SetFood(1)
+						end
 					end
 				end
 				if (iCityBarbUnits == 0) and(iCityNonBarbUnits > 0) then
