@@ -78,6 +78,7 @@ function SpawnCityStateFromCity(cCity)
     -- We can override the AI choice by providing a parameter
     -- TODO: Find if this causes a bug
     local iCityState = FindEmptyCityStateID()
+    InGameDebug("City state ID: " .. iCityState)
 
     if not iCityState then
         InGameDebug("No Empty City-State found! Giving to a nearby civ!")
@@ -85,24 +86,42 @@ function SpawnCityStateFromCity(cCity)
         return
     end
 
+    local iX = cCity:GetX()
+    local iY = cCity:GetY()
+    local name = cCity:GetName()
+
+    InGameDebug("Coordinates retrieved")
+
+    Players[cCity:GetOwner()]:Disband(cCity)
+
+    InGameDebug("Disband " .. name)
+
+    -- TODO: Why is this crashing?
     local pCityStatePlayer = Players[iCityState]
-    pCityStatePlayer:AcquireCity(cCity, false, true)
-
-    InGameDebug("City acquired")
-    local pCityPlot = cCity:Plot()
-
-    InGameDebug("Got city plot")
-    ConvertNearbyBarbarians(iCityState, pCityPlot:GetX(), pCityPlot:GetY())
-    InGameDebug("Converted Barbarians")
-
-    SpawnInitialCity(cCity)
-
-    InGameDebug("Building a courthouse")
-    cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
-    InGameDebug("Courthouse built")
-
-    cCity:SetPuppet(false)
-    InGameDebug("City acquired")
+    local unit = pCityStatePlayer:InitUnit(GameInfoTypes["UNIT_WORKER"], iX, iY, UNITAI_WORKER)
+    unit:JumpToNearestValidPlot();
+    local unit2 = pCityStatePlayer:InitUnit(GameInfoTypes["UNIT_SETTLER"], iX, iY, UNITAI_SETTLER)
+    unit2:JumpToNearestValidPlot();
+    --    pCityStatePlayer:InitCity(iX, iY)
+--
+--    InGameDebug("Initialized")
+--    pCityStatePlayer:AcquireCity(cCity, false, true)
+--
+--    InGameDebug("City acquired")
+--    local pCityPlot = cCity:Plot()
+--
+--    InGameDebug("Got city plot")
+--    ConvertNearbyBarbarians(iCityState, pCityPlot:GetX(), pCityPlot:GetY())
+--    InGameDebug("Converted Barbarians")
+--
+--    SpawnInitialCity(cCity)
+--
+--    InGameDebug("Building a courthouse")
+--    cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
+--    InGameDebug("Courthouse built")
+--
+--    cCity:SetPuppet(false)
+--    InGameDebug("City acquired")
 end
 
 function ColorStabilityNumber(iStabilityValue)
@@ -265,14 +284,14 @@ function CheckStability(iPlayer)
             InGameDebug("City: " .. cCity:GetName())
 
             -- TODO: test this
---            if cCity ~= Players[iPlayer]:GetCapitalCity() then
---                InGameDebug(cCity:GetName() .. " is not the capital")
---
---                -- If a city state makes a valid roll they will spawn
---                if -Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) > iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
---                    SpawnCityStateFromCity(cCity)
---                end
---            end
+            if cCity ~= Players[iPlayer]:GetCapitalCity() then
+                InGameDebug(cCity:GetName() .. " is not the capital")
+
+                -- If a city state makes a valid roll they will spawn
+                if -Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) > iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
+                    SpawnCityStateFromCity(cCity)
+                end
+            end
         end
     elseif iPlayer == Game.GetActivePlayer() then
         if iStability < 1 then
