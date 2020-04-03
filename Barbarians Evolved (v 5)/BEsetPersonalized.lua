@@ -70,7 +70,7 @@ iSpawnChance = 4
 --
 -- Barbarians evolve encampments into cities.
 -- If this option is TRUE, Barbarian camps will NEVER evolve.  Some mods crash if Barbarians hold cities.
-bDisableBarbEvolution = true
+bDisableBarbEvolution = false
 
 -- Barbarians either evolve cities instantly on a tile, or pop settlers on the tile with orders to found a city.
 -- If this option is TRUE, Barbarians will pop settlers.  False means they pop cities instantly.  Some mods crash if cities are popped instantly.

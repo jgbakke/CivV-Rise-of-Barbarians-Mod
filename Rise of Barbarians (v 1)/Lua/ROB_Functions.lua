@@ -48,19 +48,19 @@ function SaveCivCitiesLost(iPlayer, iLost)
 end
 
 function FindEmptyCityStateID()
-    local fPercentToSpawnCS = (Game.GetGameTurnYear() + 4000) / 60
-    local fCityStateSpawnRoll = Game.Rand(100, "Determining whether to spawn barbarian or city state")
-
-    if fCityStateSpawnRoll > fPercentToSpawnCS then
-        return BARBARIAN_PLAYER
-    end
+--    local fPercentToSpawnCS = (Game.GetGameTurnYear() + 4000) / 60
+--    local fCityStateSpawnRoll = Game.Rand(100, "Determining whether to spawn barbarian or city state")
+--
+--    if fCityStateSpawnRoll > fPercentToSpawnCS then
+--        return BARBARIAN_PLAYER
+--    end
 
     local civHibernating = LoadCivHibernating()
 
     -- Pick a random to spawn
     for i = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_CIV_PLAYERS - 1, 1 do
         if Players[i] ~= nil then
-            if civHibernating[i] and Players[i]:GetNumCities() == 0 then
+            if Players[i]:GetNumCities() == 0 then
                 civHibernating[i] = false
                 SaveCivHibernating( civHibernating )
                 return i
@@ -68,38 +68,39 @@ function FindEmptyCityStateID()
         end
     end
 
-    -- Return barbarian if we did not find one
-    return BARBARIAN_PLAYER
+    -- Return nil if we did not find one
+    return nil
 
 end
 
-function SpawnCityStateFromCity(cCity, iPlayerID)
+function SpawnCityStateFromCity(cCity)
     -- Check if a city state is available
     -- We can override the AI choice by providing a parameter
     -- TODO: Find if this causes a bug
-    local iCityState = iPlayerID or FindEmptyCityStateID()
-    local pCityStatePlayer = Players[iCityState] --Players[iCityState]
-    pCityStatePlayer:AcquireCity(cCity, false, true)
+    local iCityState = FindEmptyCityStateID()
 
-    InGameDebug("End of func")
-
-    -- TODO: The check to determine if it is ready to spawn
-    if iCityState ~= BARBARIAN_PLAYER then
-        InGameDebug("Not a barbarian")
-        local pCityPlot = cCity:Plot()
-
-        InGameDebug("Got city plot")
-        ConvertNearbyBarbarians(iCityState, pCityPlot:GetX(), pCityPlot:GetY())
-        InGameDebug("Converted Barbarians")
-
-        SpawnInitialCity(cCity)
-
-        InGameDebug("Building a courthouse")
-        cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
-        InGameDebug("Courthouse built")
+    if not iCityState then
+        InGameDebug("No Empty City-State found! Giving to a nearby civ!")
+        -- TODO: Give to nearby civ
+        return
     end
 
-    -- This might be causing a bug
+    local pCityStatePlayer = Players[iCityState]
+    pCityStatePlayer:AcquireCity(cCity, false, true)
+
+    InGameDebug("City acquired")
+    local pCityPlot = cCity:Plot()
+
+    InGameDebug("Got city plot")
+    ConvertNearbyBarbarians(iCityState, pCityPlot:GetX(), pCityPlot:GetY())
+    InGameDebug("Converted Barbarians")
+
+    SpawnInitialCity(cCity)
+
+    InGameDebug("Building a courthouse")
+    cCity:SetNumRealBuilding(GameInfoTypes["BUILDING_COURTHOUSE"], 1)
+    InGameDebug("Courthouse built")
+
     cCity:SetPuppet(false)
     InGameDebug("City acquired")
 end
@@ -247,38 +248,32 @@ function CalculateStability(iPlayer)
     local iNumCitiesLost = CountBits(iCitiesLostBitString)
     iStability = iStability + CalculateLostCitiesPenalty(iNumCitiesLost, CITIES_LOST_MODIFIER)
 
+    -- TODO: Take away the minus
     -- For some unknown reason Lua has math.floor and math.ceil but no math.round
-    return math.floor(iStability + 0.5)
+    return -100 + math.floor(iStability + 0.5)
 end
 
 function CheckStability(iPlayer)
     local iStability = CalculateStability(iPlayer)
     local tToleratedReligions = GetToleratedReligions(Players[iPlayer])
 
-    InGameDebug("Check stability: " .. iStability)
     if -Game.Rand(100, "Determining whether to start a revolution") > iStability then
         print("Revolution for " .. Players[iPlayer]:GetName() .. " from Stability " .. iStability)
---        InGameDebug("Revolution roll success")
---
---        for cCity in Players[iPlayer]:Cities() do
---            InGameDebug("City: " .. cCity:GetName())
---
---            -- TODO: test this
+        InGameDebug("Revolution roll success")
+
+        for cCity in Players[iPlayer]:Cities() do
+            InGameDebug("City: " .. cCity:GetName())
+
+            -- TODO: test this
 --            if cCity ~= Players[iPlayer]:GetCapitalCity() then
 --                InGameDebug(cCity:GetName() .. " is not the capital")
 --
---                -- By default it will be barbarian
---                local iNewOwner = BARBARIAN_PLAYER
---
 --                -- If a city state makes a valid roll they will spawn
 --                if -Game.Rand(100, "Checkng revolt for " .. cCity:GetName()) > iStability + CheckCityStability(cCity, tToleratedReligions) * CITY_REVOLT_MODIFIER then
---                    iNewOwner = nil
+--                    SpawnCityStateFromCity(cCity)
 --                end
---
---                -- TODO: Investigate the crash. It might be coming from the other mod
---                SpawnCityStateFromCity(cCity)
 --            end
---        end
+        end
     elseif iPlayer == Game.GetActivePlayer() then
         if iStability < 1 then
             Players[iPlayer]:AddNotification(NotificationTypes.NOTIFICATION_REBELS, "You are at risk of Civil War. Increase your stability soon!", "Your empire is unstable!")
@@ -293,12 +288,11 @@ function CheckStability(iPlayer)
 end
 
 function NotifyStability()
-    -- TODO: Remove
-    local p = Players[Game.GetActivePlayer()]
-    for cCity in p:Cities() do
-        cCity:ChangePopulation(5, true)
-        p:ChangeGold(200)
-    end
+--    local p = Players[Game.GetActivePlayer()]
+--    for cCity in p:Cities() do
+--        cCity:ChangePopulation(5, true)
+--        p:ChangeGold(200)
+--    end
 
 
     local popupText = ""
@@ -325,7 +319,7 @@ function NotifyStability()
 	Events.AdvisorDisplayShow(AdvisorDisplayShowData);
 end
 
-function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
+function CivLostCity(hexPos, playerID, iCityID, newPlayerID)
     InGameDebug("Lost city")
     local iCitiesLostQueue = LoadCivCitiesLost(playerID)
 
@@ -335,6 +329,5 @@ function CivLostCity(playerID, bCapital, iX, iY, newPlayerID, bConquest)
         -- We had to make the check because if it is 1, and we add 1, then we get 0 here
         iCitiesLostQueue = iCitiesLostQueue + 1
     end
-
     SaveCivCitiesLost(playerID, iCitiesLostQueue)
 end

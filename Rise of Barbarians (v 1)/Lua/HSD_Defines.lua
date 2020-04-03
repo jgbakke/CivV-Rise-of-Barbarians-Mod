@@ -108,7 +108,7 @@ ELAPSED_TURNS_FOR_BALANCE =			2 -- Before this number of turns ingame, no balanc
 ALLOW_BARBARIAN_CONVERTION =		true -- Convert all barbarians units in range = CONVERT_BARBARIAN_RANGE * (era+1*CONVERT_ERA_RANGE_MOD/100)
 CONVERT_BARBARIAN_RANGE =			4 
 CONVERT_ERA_RANGE_MOD =				45 
-ALLOW_CITY_STATES_CONVERTION =		false -- Convert all city-states units and remove city-states territory in range = CONVERT_CITY_STATES_RANGE
+ALLOW_CITY_STATES_CONVERTION =		true -- Convert all city-states units and remove city-states territory in range = CONVERT_CITY_STATES_RANGE
 CONVERT_CITY_STATES_RANGE =			4
 ALLOW_CITY_STATES_ALLY =			false -- Give allied influence on city-states in range = ALLY_CITY_STATES_RANGE
 ALLY_CITY_STATES_RANGE =			8

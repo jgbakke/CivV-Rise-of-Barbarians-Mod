@@ -148,3 +148,5 @@ SELECT	'MINOR_CIV_PANAMA_CITY',	1519,	0,			'UNIT_PIKEMAN',			'UNIT_WORKER',			'U
 SELECT	'_END_OF_INSERT_',			-10000,	0,			NULL,					NULL,					NULL,					NULL,					NULL,					NULL;
 
 DELETE FROM Civilization_HistoricalSpawnDates WHERE Type = '_END_OF_INSERT_';
+-- Disable minor civs from spawning
+UPDATE Civilization_HistoricalSpawnDates SET StartYear = 3000 WHERE Type LIKE 'MINOR%';

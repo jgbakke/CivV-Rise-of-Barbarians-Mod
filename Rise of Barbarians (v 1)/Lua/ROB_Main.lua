@@ -86,4 +86,4 @@ end
 ContextPtr:SetInputHandler(InputHandler)
 
 GameEvents.PlayerDoTurn.Add(CheckStability)
-GameEvents.CityCaptureComplete.Add(CivLostCity)
+Events.SerialEventCityCaptured.Add(CivLostCity)

@@ -79,7 +79,7 @@ function Hibernate ()
 		local civType = GetCivTypeFromiPlayer (iPlayer)
 		
 		-- need to check if the table entry exist before comparing, else the script will crash
-		if civType and player:GetNumUnits() > 0  and GameInfo.Civilization_HistoricalSpawnDates[civType] and ( GameInfo.Civilization_HistoricalSpawnDates[civType].StartYear > Game.GetGameTurnYear() ) then 
+		if not GameInfo.Civilization_HistoricalSpawnDates[civType] or (civType and player:GetNumUnits() > 0  and GameInfo.Civilization_HistoricalSpawnDates[civType] and ( GameInfo.Civilization_HistoricalSpawnDates[civType].StartYear > Game.GetGameTurnYear() )) then
 			-- kill all units for this CS
 			for v in player:Units() do
 				v:Kill(true, -1)
@@ -173,12 +173,16 @@ function WakeUp ()
 						player:InitCity(startX, startY)
 						initialSettler:Kill(true, -1)
 						OnFirstCity(iPlayer, startX, startY) -- GameEvents.PlayerCityFounded is not called when using player:InitCity ?
-					end 
+					end
 				end
 
 				civHibernating[iPlayer] = false
 			end
 		end
+	end
+
+	if true then
+		SaveCivHibernating( civHibernating )
 	end
 	
 	-- Minor civs
@@ -510,7 +514,6 @@ function ConvertNearbyBarbarians(iPlayer, startX, startY)
 	local bIncludeCenter = true
 	local range = Round(CONVERT_BARBARIAN_RANGE * math.max(((g_Era + 1) * CONVERT_ERA_RANGE_MOD / 100), 1) * GetConvertionRangePercent(iPlayer) / 100)
 	for pAreaPlot in PlotAreaSpiralIterator(plot, range, SECTOR_NORTH, DIRECTION_CLOCKWISE, DIRECTION_OUTWARDS, bIncludeCenter) do
-    	-- TODO: If there is a city, convert it
 		for i = 0, pAreaPlot:GetNumUnits() - 1, 1 do
     		local unit = pAreaPlot:GetUnit(i);
 			if unit and (unit:GetOwner() == BARBARIAN_PLAYER) then
@@ -557,8 +560,13 @@ function ConvertNearbyCS(iPlayer, startX, startY)
 			local city = pAreaPlot:GetPlotCity()
 			local owner = Players[city:GetOwner()]
 			if owner:IsMinorCiv() then
-				owner:Disband(city)	-- better than kill (update graphic...)
-				player:InitUnit(SETTLER, pAreaPlot:GetX(), pAreaPlot:GetY())
+				-- TODO: Test this, I changed it
+				for pMinorCity in owner:Cities() do
+					player:AcquireCity(pMinorCity, false, true)
+				end
+
+--				owner:Disband(city)	-- better than kill (update graphic...)
+--				player:InitUnit(SETTLER, pAreaPlot:GetX(), pAreaPlot:GetY())
 				-- give all other units of this CS if it had only one City
 				if (owner:GetNumCities() == 0) then
 					for u in owner:Units() do
