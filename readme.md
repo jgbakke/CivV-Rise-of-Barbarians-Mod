@@ -1,5 +1,9 @@
 ## Civilization V: Rise of Barbarians
 
+**Put on hold**
+
+I have found a game-breaking bug in the Historical Spawn Dates mod caused by a city-state spawning. Because my mod is dependent on this mod, I am temporarily putting this project on hold.
+
 **Still in development**
 
 This is a mod for the game Civilization V. The goal of this mod is to make a more historically accurate and challenging game. The core concept of this mod is to recreate the rise and fall of civilizations throughout history.
