@@ -1,10 +1,12 @@
 ## Civilization V: Rise of Barbarians
 
-**Put on hold**
+**Canceled**
 
-I have found a game-breaking bug in the Historical Spawn Dates mod caused by a city-state spawning. Because my mod is dependent on this mod, I am temporarily putting this project on hold.
+I have decided to cancel the development of this mod. This is because Rhye's and Fall of Civilization is coming to Civilization V, and this was going to be very similar to that.
 
-**Still in development**
+I am leaving this up because it is a good reference and has example code that can be used to learn or review the Civ V Lua API methods.
+
+**Background**
 
 This is a mod for the game Civilization V. The goal of this mod is to make a more historically accurate and challenging game. The core concept of this mod is to recreate the rise and fall of civilizations throughout history.
 
@@ -20,4 +22,4 @@ By adding these concepts, the game will be more realistic. New civilizations wil
 
 Thanks to the Historical Spawn Dates, Civ Names by Policies, and Barbarians Evolved Mods.
 
-I made some changes to each of those to make certain parts of this possible. That is why they are included in this repo; I added some new functionality to each of those, so if you use their most recent version it will not work
+I made some changes to each of those to make certain parts of this possible. That is why they are included in this repo. I added some new functionality to each of those, so if you use their most recent version it will not work
